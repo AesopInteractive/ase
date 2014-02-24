@@ -1,0 +1,79 @@
+
+
+// threaded comments
+ol.commentlist { list-style:none; margin:0 0 1em; padding:0; text-indent:0;font-size:@font-size-small; }
+ol.commentlist li { }
+ol.commentlist li.alt { }
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment { padding:15px;margin-bottom:20px;}
+ol.commentlist li div.comment-author {font-size:@font-size-xsmall;}
+ol.commentlist li div.vcard { }
+ol.commentlist li div.vcard cite.fn { display: block; }
+ol.commentlist li div.vcard cite.fn a.url {}
+ol.commentlist li div.vcard img.avatar { }
+ol.commentlist li div.vcard img.avatar-32 {}
+ol.commentlist li div.vcard img.photo {}
+ol.commentlist li div.vcard span.says {}
+ol.commentlist li div.comment-metadata {}
+ol.commentlist li div.comment-meta {font-size:@font-size-xsmall;}
+ol.commentlist li div.comment-meta a {  }
+ol.commentlist li p { margin:0 0 0.5rem; }
+ol.commentlist li ul { list-style:square; margin:0 0 1em 2em; }
+ol.commentlist li div.reply {  }
+ol.commentlist li div.reply a { font-weight:bold;}
+ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; .avatar {max-width:50px;}}
+ol.commentlist li ul.children li {}
+ol.commentlist li ul.children li.alt {}
+ol.commentlist li ul.children li.bypostauthor {}
+ol.commentlist li ul.children li.byuser {}
+ol.commentlist li ul.children li.comment {}
+ol.commentlist li ul.children li.comment-author-admin {}
+ol.commentlist li ul.children li.depth-2 { border-bottom:1px solid @baseContrast; margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-3 { border-bottom:1px solid darken(@baseContrast,5); margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-4 { border-bottom:1px solid darken(@baseContrast,10); margin:0 0 .25em .25em; }
+ol.commentlist li ul.children li.depth-5 {}
+ol.commentlist li ul.children li.odd {}
+ol.commentlist li.even {  }
+ol.commentlist li.odd { }
+ol.commentlist li.parent { border-bottom:1px solid @baseContrast; }
+ol.commentlist li.pingback { border-bottom:1px solid @baseContrast; padding:1em; }
+ol.commentlist li.thread-alt { }
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+.flacker-content .commentlist .comment.comment-author-admin {
+    border:1px solid fadeout(@link-color,70);
+}
+ol.commentlist li.comment .comment-body{
+    margin-bottom:0;
+    border-bottom:none;
+ }
+
+
+//comments
+.ase-comments-wrap {
+    position: relative;
+    .ase-content;
+    .ase-alt-text;
+
+    code {
+        display: block;
+    }
+    .ase-comments-toggle {
+        position: absolute;
+        right:1rem;
+        top:-32px;
+        display: block;
+        padding:0.2rem 0.6rem;
+        border:1px solid @baseContrast;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        font-size:@font-size-small;
+
+        &:hover {
+            cursor: pointer;
+            color:@link-color;
+        }
+    }
+}

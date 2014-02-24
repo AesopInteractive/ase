@@ -1,0 +1,8 @@
+html .mceContentBody {
+    width:100%;
+    max-width:800px;
+	font-family: 'Droid Serif',"Times New Roman",Times,serif;
+	font-size: 21px;
+	line-height: 1.428571429;
+	color:#303538;
+}
