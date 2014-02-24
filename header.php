@@ -26,10 +26,7 @@
 	<?php do_action('aesop_inside_body_top');?>
 
 	<header id="header" class="ase-site-header" role="banner">
-		<h1 class="ase-site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
-			<a href="#" class="ase-collapse ase-menu-toggle" data-toggle="collapse" data-target="#ase-primary-nav"><i class="asecon asecon-bars"></i></a>
-			<nav id="ase-primary-nav" class="collapse">
+		<nav id="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>
 	</header>
