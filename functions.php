@@ -18,6 +18,7 @@ class aseFunctions{
 
 		// theme setup
 		add_action('after_setup_theme', array($this,'setup'));
+		add_action('wp_footer', array($this,'aesop_timeline_loader'),21);
 
 	}
 
@@ -42,6 +43,38 @@ class aseFunctions{
 
 	}
 
+
+
+
+	function aesop_timeline_loader(){
+
+		if(is_front_page()):
+			?>
+				<!-- Aesop Timeline -->
+				<script>
+				jQuery(document).ready(function(){
+
+					adminBar = jQuery('#wpadminbar').outerHeight();
+					header   = jQuery('.ase-site-header').outerHeight();
+					navbar	  = jQuery('.aesop-timeline').outerHeight();
+
+					jQuery('.aesop-entry-content').scrollNav({
+					    sections: '.aesop-timeline-stop',
+					    arrowKeys: true,
+					    insertTarget: '.aesop-timeline',
+					    insertLocation: 'appendTo',
+					    showTopLink: false,
+					    showHeadline: false,
+					    scrollOffset: header + adminBar + navbar + 114
+					});
+
+				});
+
+				</script>
+
+			<?php 
+		endif;
+	}
 }
 
 
