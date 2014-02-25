@@ -46,12 +46,12 @@
 
 		<div class="ase-section ase-extras">
 			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Add Ons"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Extras"]');?>
 				<div class="ase-extra">
 					<h4>Aesop Essentials</h4>
 					<img class="ase-section-img" src="http://placehold.it/400x250">
 					<p class="ase-sub-title">An add-on plugin that enables additional functionality within Aesop such as image lazy loading, Google Analytics integration, and more.</p>
-					<a href="#" class="btn btn-default">Get it</a>
+					<a href="/extras/aesop-essentials" class="btn btn-default">Get it</a>
 				</div>
 			</div>
 		</div>

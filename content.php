@@ -4,9 +4,9 @@
 $thumbclass = has_post_thumbnail(get_the_ID()) ? 'ase-has-thumb' : 'ase-no-thumb';
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('ase-content'); ?>>
 
-	<!-- Entry Mast -->
+
 	<header class="ase-entry-top <?php echo $thumbclass;?>">
 
 		<span class="ase-cat-links"><?php echo get_the_category_list( _x( ' ', 'Used between list items, there is a space after the comma.', 'ase' ) ); ?></span>
@@ -18,8 +18,9 @@ $thumbclass = has_post_thumbnail(get_the_ID()) ? 'ase-has-thumb' : 'ase-no-thumb
 
 	</header>
 
+
 	<!-- Entry Body -->
-	<section class="aesop-entry-content ase-entry-content ase-entry-content">
+	<section class="aesop-entry-content ase-entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
 			'before'      => '<div class="ase-page-links"><span class="ase-page-links-title">' . __( 'Pages:', 'ase' ) . '</span>',

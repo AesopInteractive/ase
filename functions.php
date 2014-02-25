@@ -41,6 +41,10 @@ class aseFunctions{
 			'primary'   => __( 'Top primary menu', 'ase' )
 		) );
 
+		//edd
+		define('EDD_SLUG', 'extras');
+
+		add_image_size( 'ase-store-img',  600, 300, true ); // main product image
 	}
 
 
