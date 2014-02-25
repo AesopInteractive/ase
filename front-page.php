@@ -28,6 +28,18 @@
 		<div class="ase-section ase-quotes">
 			<div class="ase-content">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Quotes"]');?>
+				<div class="ase-quote-row">
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+				</div>
+				<div class="ase-quote-row">
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
+				</div>
 			</div>
 		</div>
 
