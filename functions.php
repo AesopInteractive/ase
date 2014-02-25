@@ -52,7 +52,7 @@ class aseFunctions{
 
 	function aesop_timeline_loader(){
 
-		if(is_front_page()):
+		if(is_front_page() || is_page_template('doc.php')):
 			?>
 				<!-- Aesop Timeline -->
 				<script>
@@ -69,7 +69,11 @@ class aseFunctions{
 					    insertLocation: 'appendTo',
 					    showTopLink: false,
 					    showHeadline: false,
+					    <?php if (is_front_page()){?>
 					    scrollOffset: header + adminBar + 182
+					    <?php } else { ?>
+					    scrollOffset: header + adminBar
+					    <?php }?>
 					});
 
 				});

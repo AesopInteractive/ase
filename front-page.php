@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php 
+
+/*
+* Template Name: Front Page
+*/
+
+get_header();
+
+ ?>
 
 <main id="main-content" class="main-content">
 
@@ -57,8 +65,8 @@
 
 		<div class="ase-section ase-actions">
 			<div class="ase-content">
-				<h2>Download Aesop</h2>
-				<p>sdfsdf</p>
+				<h2>Download Aesop Story Engine</h2>
+				<p>Install within your WordPress administration area, or download below on WordPress.org</p>
 				<?php get_template_part('partials/actionlinks');?>
 			</div>
 		</div>

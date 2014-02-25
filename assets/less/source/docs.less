@@ -1,0 +1,107 @@
+.ase-docs {
+
+    .ase-docs-left,
+    .ase-docs-right {
+        float:left;
+    }
+    .ase-docs-left {
+        width:30%;
+    }
+    .ase-docs-right {
+        width:70%;
+    }
+}
+
+.ase-docs-left {
+    .ase-docs-left-title {
+        margin-top:0;
+    }
+    .aesop-timeline {
+
+        .scroll-nav{
+
+            &.fixed {
+                position: fixed;
+                overflow: hidden;
+                width:30%;
+            }
+        }
+
+        .scroll-nav__list {
+            list-style: none;
+            padding:0;
+            width:100%;
+            text-align: left;
+
+
+            li {
+                display: block;
+                margin:0;
+                position: relative;
+
+                a {
+                    font-size:@font-size-xsmall - 2;
+                    line-height: @font-size-xsmall - 2;
+                    font-family: @font-family-sans-serif;
+                    color:inherit;
+                    margin:0.35rem 0;
+                    padding:0.85rem;
+                    display: block;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color:@link-color;
+                        text-decoration: none;
+                    }
+                }
+
+                &.active a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.ase-docs-right {
+    .aesop-timeline-stop {
+        margin:0 0 2rem;
+    }
+}
+
+.ase-step-list {
+    counter-reset: sequence-counter;
+
+    li {
+        position: relative;
+        padding-left:4rem;
+        margin:2rem auto;
+        .clearfix();
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight:bold;
+            content: counter(sequence-counter);
+            counter-increment: sequence-counter;
+            border:1px solid @baseContrast;
+            border-radius:50%;
+            text-align: center;
+            display: inline-block;
+            height:30px;
+            width:30px;
+            line-height: 1.5;
+        }
+        p {
+            float:left;
+            padding-right:2rem;
+            width:60%;
+        }
+
+        img{
+            width:40%;
+            float: right;
+        }
+    }
+}
