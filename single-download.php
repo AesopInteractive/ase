@@ -8,7 +8,7 @@
 		<div class="ase-content">
 
 			<div class="ase-extra">
-				<?php the_title('<h4>', '</h4>' );?>
+				<?php the_title('<h2>', '</h2>' );?>
 				<?php echo the_content(); ?>
 			</div>
 

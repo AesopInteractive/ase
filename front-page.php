@@ -8,8 +8,7 @@
 			<div class="ase-content">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Aesop Story Engine"]');?>
 				<p class="ase-sub-title">An easy-to-use set of tools that help you tell rich, interactive stories using an open-source WordPress plugin.</p>
-				<a href="#" class="btn btn-default ase-welcome-btn">Link</a>
-				<a href="#" class="btn btn-default ase-welcome-btn">Link</a>
+				<?php get_template_part('partials/actionlinks');?>
 			</div>
 		</div>
 
@@ -60,8 +59,7 @@
 			<div class="ase-content">
 				<h2>Download Aesop</h2>
 				<p>sdfsdf</p>
-				<a href="#" class="btn btn-default ase-welcome-btn">Link</a>
-				<a href="#" class="btn btn-default ase-welcome-btn">Link</a>
+				<?php get_template_part('partials/actionlinks');?>
 			</div>
 		</div>
 
