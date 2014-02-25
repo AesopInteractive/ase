@@ -24,7 +24,6 @@
 
     .aesop-character-float {
         margin: .65rem 0;
-        width:150px;
         text-align: center;
 
         .aesop-character-title {
@@ -318,8 +317,8 @@
     left:0;
     right:0;
     z-index: 99;
+    border-top:1px solid @baseContrast;
     border-bottom:1px solid @baseContrast;
-    padding-bottom:0.5rem;
 
     .scroll-nav__list {
         list-style: none;
@@ -331,15 +330,18 @@
 
         li {
             display: inline-block;
-            margin:0 2rem;
+            margin:0 0.5rem;
             position: relative;
-            padding:0.25rem 0;
 
             a {
-                font-size:@font-size-xsmall;
+                font-size:@font-size-xsmall - 2;
+                line-height: @font-size-xsmall - 2;
                 font-family: @font-family-sans-serif;
                 color:inherit;
                 margin:0 0.35rem;
+                padding:0.85rem;
+                display: block;
+                text-transform: uppercase;
 
                 &:hover {
                     color:@link-color;
