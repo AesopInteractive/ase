@@ -100,6 +100,8 @@
 .ase-site-footer{
     text-align: center;
     .ase-content;
+    border-top:1px solid @baseContrast;
+    padding:1.5rem 0;
 
     p {
         color:fadeout(@text-color,25);
@@ -108,9 +110,14 @@
 
     a {
         color:inherit;
+        font-size:@font-size-xsmall;
 
         &:hover {
             color:@link-color;
         }
+    }
+    .ase-primary-nav {
+        margin:1rem auto 2rem;
+        font-size:@font-size-xsmall;
     }
 }

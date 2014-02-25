@@ -65,7 +65,7 @@ class aseFunctions{
 					    insertLocation: 'appendTo',
 					    showTopLink: false,
 					    showHeadline: false,
-					    scrollOffset: header + adminBar + navbar + 180
+					    scrollOffset: header + adminBar + 182
 					});
 
 				});

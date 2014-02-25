@@ -46,7 +46,7 @@
 
 		<div class="ase-section ase-extras">
 			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Extras"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Add Ons"]');?>
 				<div class="ase-extra">
 					<h4>Aesop Essentials</h4>
 					<img class="ase-section-img" src="http://placehold.it/400x250">

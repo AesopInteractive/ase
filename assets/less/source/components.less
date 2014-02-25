@@ -23,8 +23,9 @@
 .aesop-character-component {
 
     .aesop-character-float {
-        margin: .65rem 0;
+        margin: .65rem auto;
         text-align: center;
+        width:80%;
 
         .aesop-character-title {
             vertical-align: top;
@@ -56,8 +57,10 @@
         }
     }
     .aesop-character-avatar {
-        width: 90%;
+        width: 60%;
+        margin:0.75rem auto;
         border-radius:50%;
+        display: block;
     }
     .aesop-character-cap {
         font-size:@font-size-xsmall;
@@ -65,7 +68,6 @@
         font-family:@font-family-sans-serif;
         font-style: italic;
         margin-top:0.8rem;
-        border-top:1px dotted @link-color;
         padding-top:0.3rem;
     }
 }
@@ -309,16 +311,6 @@
 
 
 .aesop-timeline {
-    width:100%;
-    background:@body-bg;
-    position: fixed;
-    height:auto;
-    top:0;
-    left:0;
-    right:0;
-    z-index: 99;
-    border-top:1px solid @baseContrast;
-    border-bottom:1px solid @baseContrast;
 
     .scroll-nav__list {
         list-style: none;
