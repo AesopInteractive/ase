@@ -24,6 +24,7 @@
                 position: fixed;
                 overflow: hidden;
                 width:30%;
+                top:90px;
             }
         }
 
@@ -71,18 +72,18 @@
 
 .ase-step-list {
     counter-reset: sequence-counter;
+    margin:5rem auto;
 
     li {
         position: relative;
-        padding-left:4rem;
-        margin:2rem auto;
+        padding-left:5rem;
+        margin:4rem auto;
         .clearfix();
 
         &:before {
             position: absolute;
             left: 0;
             top: 0;
-            font-weight:bold;
             content: counter(sequence-counter);
             counter-increment: sequence-counter;
             border:1px solid @baseContrast;
@@ -91,17 +92,34 @@
             display: inline-block;
             height:30px;
             width:30px;
-            line-height: 1.5;
+            line-height: 1.6;
+            font-size:@font-size-small;
+            background:@text-color;
+            color:@body-bg;
         }
         p {
             float:left;
             padding-right:2rem;
             width:60%;
+            font-size:@font-size-base - 1;
+            line-height: @font-size-base + 3;
+            font-weight:400;
         }
 
         img{
             width:40%;
             float: right;
         }
+    }
+}
+
+.ase-doc-note {
+    background:@baseContrast;
+    padding:1.6rem 2rem 1.8rem;
+    border-radius:3px;
+    margin:3rem auto;
+
+    span {
+        margin-right:1.2rem;
     }
 }
