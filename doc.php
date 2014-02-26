@@ -47,24 +47,77 @@ get_header();
 
 				<hr />
 				<?php echo do_shortcode('[aesop_timeline_stop num="Gallery Component"]');?>
+				<p>This component creates a gallery of images. Several different gallery types are available within the same component. Galleries are created and managed under the Galleries post type, and are inserted into a story with a shortcode. Each story can have unlimited galleries.</p>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et turpis est. Cras id quam non neque elementum eleifend et sed metus. Cras vestibulum, turpis id semper aliquam, mi ligula cursus purus, ac mattis neque justo eget leo. Nunc suscipit scelerisque ligula, eu faucibus ipsum euismod ut. Duis et justo varius, iaculis libero vel, auctor tellus. Phasellus hendrerit lectus enim, nec molestie nulla scelerisque at. Etiam tempor tempus magna rutrum suscipit. Nunc venenatis euismod risus, nec pellentesque nisi venenatis rhoncus. Nulla facilisi.</p>
+				<p>WordPress galleries are used for this component. Refer to the "help" tab in WordPress admin, in the Galleries post type, for instructions on how to create the gallery.</p>
 
-				<p>Vivamus sit amet tortor vitae orci iaculis condimentum non quis magna. Nunc vehicula venenatis condimentum. Cras ac faucibus mauris, eget condimentum elit. In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis sit amet leo gravida, ultrices dui at, vulputate nibh. Nulla et turpis lectus. Phasellus pulvinar sed lacus quis sollicitudin. Proin quis posuere tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ullamcorper venenatis volutpat. In tincidunt dui augue, vel pretium odio pellentesque at. Proin nec leo viverra, viverra velit id, posuere massa. Pellentesque tellus nunc, iaculis ac tellus sit amet, scelerisque dapibus orci.</p>
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal dl-ase">
+						<dt>id</dt>
+						<dd>id of the gallery</dd>
+					</dl>
+					<dl class="dl-horizontal dl-ase">
+						<dt>a_type</dt>
+						<dd>thumbnail, grid, stacked, or sequence</dd>
+					</dl>
+				</div>
+
+				<p>Curabitur sodales augue at leo adipiscing posuere. Donec feugiat arcu at quam malesuada, et lacinia enim feugiat. Aenean urna felis, commodo laoreet mi in, laoreet egestas urna. Integer gravida lacinia nulla, in eleifend velit. Pellentesque sed turpis vel elit auctor tempor. Duis sodales convallis convallis.</p>
 
 				<p class="ase-doc-note"><span class="label label-primary">tip</span> whatevers</p>
-
-				<p>Curabitur sodales augue at leo adipiscing posuere. Donec feugiat arcu at quam malesuada, et lacinia enim feugiat. Aenean urna felis, commodo laoreet mi in, laoreet egestas urna. Integer gravida lacinia nulla, in eleifend velit. Pellentesque sed turpis vel elit auctor tempor. Duis sodales convallis convallis. In varius condimentum quam ac aliquet. Vivamus luctus tellus sed commodo tincidunt. Aliquam tincidunt nisl malesuada neque placerat lobortis. Pellentesque tortor lorem, auctor in purus quis, elementum consectetur enim. Pellentesque pulvinar ipsum sed dictum fringilla. Cras eu nibh a libero aliquet tempus mattis in nunc. Nulla nec commodo neque.</p>
-
-				<p>Vestibulum viverra massa sem, nec varius arcu semper ut. Quisque tempor iaculis est, vel congue orci ornare eu. Etiam vitae sodales purus, eu varius felis. Integer auctor arcu nisl, at consectetur urna dapibus non. Nunc velit ipsum, faucibus in metus eu, vulputate commodo ligula. Fusce sed lacus sed magna posuere aliquet. Ut malesuada laoreet mattis. Curabitur pretium adipiscing sem id placerat. Maecenas accumsan quis magna a viverra.</p>
-
-				<p>Morbi non dictum nunc. Pellentesque pharetra at arcu quis iaculis. Phasellus tincidunt convallis aliquam. Vivamus a quam metus. Suspendisse egestas quis ligula in ornare. Ut nec molestie quam. Nunc odio elit, gravida non ultricies sit amet, ullamcorper quis sem. Etiam a lacinia nisl, non dictum magna. Nullam dolor sapien, fermentum sit amet magna tristique, fermentum volutpat massa. Nulla facilisi. Aenean erat lorem, egestas eget nisl luctus, volutpat aliquet quam. Proin sit amet lacus vitae lorem facilisis mattis eget ut arcu. Donec elementum auctor dignissim.</p>
 
 				<hr />
 				<?php echo do_shortcode('[aesop_timeline_stop num="Quote Component"]');?>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et turpis est. Cras id quam non neque elementum eleifend et sed metus. Cras vestibulum, turpis id semper aliquam, mi ligula cursus purus, ac mattis neque justo eget leo. Nunc suscipit scelerisque ligula, eu faucibus ipsum euismod ut. Duis et justo varius, iaculis libero vel, auctor tellus. Phasellus hendrerit lectus enim, nec molestie nulla scelerisque at. Etiam tempor tempus magna rutrum suscipit. Nunc venenatis euismod risus, nec pellentesque nisi venenatis rhoncus. Nulla facilisi.</p>
+				<p>Draws a full width quote component with large text, colored background, optional background image and parallax effect.
+</p>
 
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>width</dt>
+					<dd>controls master width of the component. pass 'content' to make content width*</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>background</dt>
+					<dd>color of the quote background</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>background image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>text</dt>
+					<dd>color of the quote text</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>height</dt>
+					<dd>height of the component. default is auto. quote will always center vertically</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>align</dt>
+					<dd>quote alignment</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>size</dt>
+					<dd>quote size. enter whole numbers like 1, 2, or 3.</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>parallax</dt>
+					<dd>enable parallax effect on the quote</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>direction</dt>
+					<dd>if parallax is enabled, which direction should the quote travel from. left | right | top | bottom</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>speed</dt>
+					<dd>speed of parallax item. smaller numbers are faster</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>offset</dt>
+					<dd>if using parallax, the distance offset from the top. enter whole numbers like <code>500</code>.</dd>
+					</dl>
+				</div>
 
 
 			</div>
