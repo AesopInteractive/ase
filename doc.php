@@ -24,6 +24,7 @@ get_header();
 			<div class="ase-docs-left">
 				<h2 class="ase-docs-left-title">Docs</h2>
 				<div class="aesop-timeline"></div>
+				<a href="/developers">Developer? Click here.</a>
 			</div>
 			<div class="ase-docs-right">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Installing Aesop"]');?>
@@ -69,8 +70,7 @@ get_header();
 				<hr />
 				<?php echo do_shortcode('[aesop_timeline_stop num="Quote Component"]');?>
 
-				<p>Draws a full width quote component with large text, colored background, optional background image and parallax effect.
-</p>
+				<p>Draws a full width quote component with large text, colored background, optional background image and parallax effect.</p>
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">

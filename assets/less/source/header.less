@@ -1,0 +1,102 @@
+//header
+.ase-site-header {
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    overflow: hidden; // just needed for overly large gallery
+    padding:5rem 2rem;
+
+    .ase-site-logo {
+        top:0;
+        text-align: center;
+        z-index:9999;
+        margin:0 auto;
+    }
+    .ase-site-title,
+    .ase-sub-title {
+        text-align: center;
+    }
+
+    .ase-site-title {
+
+    }
+
+    .ase-sub-title {
+
+    }
+
+    .aesop-gallery-component {
+        margin:0;
+        z-index: -1;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        max-height:500px; //temporary
+
+        .fotorama:hover {
+            cursor: default;
+        }
+
+        .fotorama__arr,
+        .fotorama__fullscreen-icon {
+            display: none !important;
+        }
+    }
+}
+.admin-bar {
+    .ase-primary-nav.fixed {
+        top:32px;
+    }
+}
+.ase-primary-nav {
+    position: relative;
+    background:black;
+    border-top:2px solid white;
+
+    &.fixed {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+        padding:0;
+        width:100%;
+        max-width: @ase-width;
+        margin:0 auto;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin:0 0.5rem;
+            position: relative;
+
+            a {
+                font-size:@font-size-xsmall - 2;
+                line-height: @font-size-xsmall - 2;
+                font-family: @font-family-sans-serif;
+                color:white;
+                margin:0 0.35rem;
+                padding:0.85rem;
+                display: block;
+                text-transform: uppercase;
+
+                &:hover {
+                    color:@link-color;
+                    text-decoration: none;
+                }
+            }
+
+            &.active a {
+                font-weight: bold;
+            }
+        }
+    }
+}

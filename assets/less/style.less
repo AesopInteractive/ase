@@ -31,95 +31,19 @@
 @import 'source/components.less';
 @import 'source/wp-core.less';
 @import 'source/docs.less';
+@import 'source/comments.less';
+
+@import 'source/header.less';
 @import 'source/frontpage.less';
 @import 'source/store.less';
-@import 'source/comments.less';
+@import 'source/footer.less';
+
 @import "source/responsive-utilities.less";
 @import 'source/responsive.less';
 
 // general
-.ase-content {
-    width:100%;
-    max-width:@ase-width;
-    margin-left:auto;
-    margin-right: auto;
-}
-.aesop-content {
-    width:100%;
-    max-width:@ase-width;
-    margin-left:auto;
-    margin-right: auto;
-}
-.ase-alt-text {
-    font-size:@font-size-small;
-    font-family: @font-family-sans-serif;
-}
 
-.ase-bg-img {
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-//header
-.ase-site-header {
+#main-content {
+    position: relative;
     background:@body-bg;
-    text-align: center;
-    padding:1rem 0;
-    width:100%;
-    position: fixed;
-    height:auto;
-    top:0;
-    left:0;
-    right:0;
-    z-index: 99;
-}
-
-// navigation menu
-.ase-nav-menu {
-    padding-top:1rem;
-    ul {
-        list-style: none;
-        padding:0;
-        margin:0;
-    }
-    li {
-        display: inline-block;
-        margin:0 0.5rem;
-
-        a {
-            color:@text-color;
-            font-size:@font-size-small;
-
-            &:hover {
-                color:@link-color;
-            }
-        }
-    }
-}
-
-
-//footer
-.ase-site-footer{
-    text-align: center;
-    .ase-content;
-    border-top:1px solid @baseContrast;
-    padding:1.5rem 0;
-
-    p {
-        color:fadeout(@text-color,25);
-        font-size:@font-size-xsmall;
-    }
-
-    a {
-        color:inherit;
-        font-size:@font-size-xsmall;
-
-        &:hover {
-            color:@link-color;
-        }
-    }
-    .ase-primary-nav {
-        margin:1rem auto 2rem;
-        font-size:@font-size-xsmall;
-    }
 }

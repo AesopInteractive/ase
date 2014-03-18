@@ -12,42 +12,38 @@ get_header();
 
 	<div class="aesop-entry-content ase-front-page">
 
-		<div class="ase-section ase-welcome">
-			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Aesop Story Engine"]');?>
-				<p class="ase-sub-title">An easy-to-use set of tools that help you tell rich, interactive stories using an open-source WordPress plugin.</p>
-				<?php get_template_part('partials/actionlinks');?>
+		<div class="ase-section ase-features">
+			<div class="ase-content clearfix">
+				<div class="ase-features-img col-md-7">
+					<img src="http://placehold.it/800x540" alt="">
+				</div>
+				<div class="ase-features-text col-md-5">
+					<?php echo do_shortcode('[aesop_timeline_stop num="Features"]');?>
+					<p>Maybe you're building a site for writers. Or, maybe you're a business and you're looking for something new, fresh, and innovative.</p>
+					<p>With the Aesop Story Engine, you can deliver interactive content without having to write a lot of code to make it happen.</p>
+				</div>
 			</div>
 		</div>
 
-		<div class="ase-section ase-features">
-			<div class="ase-content clearfix">
-				<div class="ase-features-gallery col-md-8">
 
-					<?php echo do_shortcode('[aesop_gallery id="25"]');?>
+		<div class="ase-section ase-components">
+			<div class="ase-content clearfix">
+				<div class="ase-features-text col-md-5">
+					<?php echo do_shortcode('[aesop_timeline_stop num="Components"]');?>
+					<p>Maybe you're building a site for writers. Or, maybe you're a business and you're looking for something new, fresh, and innovative.</p>
+					<p>With the Aesop Story Engine, you can deliver interactive content without having to write a lot of code to make it happen.</p>
+
 				</div>
-				<div class="ase-features-text col-md-4">
-					<?php echo do_shortcode('[aesop_timeline_stop num="Features"]');?>
-					<p>sdrsdfsdf</p>
+				<div class="ase-features-gallery col-md-7">
+					<?php echo do_shortcode('[aesop_gallery id="25"]');?>
 				</div>
 			</div>
 		</div>
 
 		<div class="ase-section ase-quotes">
 			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Quotes"]');?>
-				<div class="ase-quote-row">
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-				</div>
-				<div class="ase-quote-row">
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-					<?php echo do_shortcode('[aesop_character img="http://placehold.it/400/400" name="Sup Yo" caption="Quote Here" align="center"]');?>
-				</div>
+				
+				<p>Character Carousel Here</p>
 			</div>
 		</div>
 
@@ -55,18 +51,17 @@ get_header();
 			<div class="ase-content">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Extras"]');?>
 				<div class="ase-extra">
-					<h4>Aesop Essentials</h4>
 					<img class="ase-section-img" src="http://placehold.it/400x250">
-					<p class="ase-sub-title">An add-on plugin that enables additional functionality within Aesop such as image lazy loading, Google Analytics integration, and more.</p>
-					<a href="/extras/aesop-essentials" class="btn btn-default">Get it</a>
+					<p class="ase-sub-title">Make your Aesop Story Engine site faster, and more social, with low-priced add-ons.</p>
+					<a href="/extras" class="btn btn-default">Browse Extras</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="ase-section ase-actions">
 			<div class="ase-content">
-				<h2>Download Aesop Story Engine</h2>
-				<p>Install within your WordPress administration area, or download below on WordPress.org</p>
+				<h2>Sign up for our newsletter</h2>
+				<p>Get notified of new stuff and important news</p>
 				<?php get_template_part('partials/actionlinks');?>
 			</div>
 		</div>
