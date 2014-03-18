@@ -1,4 +1,24 @@
 //header
+.ase-sticky-nav {
+    position: absolute;
+    left:-10000px;
+
+    &.visible {
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        z-index: 1;
+    }
+
+    .ase-sticky-menu {
+        ul {
+            li {
+                display: block;
+            }
+        }
+    }
+}
 .ase-site-header {
 
     position: fixed;
@@ -7,29 +27,41 @@
     right:0;
     overflow: hidden; // just needed for overly large gallery
     padding:5rem 2rem;
+    height:700px;
 
     .ase-site-logo {
         top:0;
         text-align: center;
         z-index:9999;
-        margin:0 auto;
+        margin:0 auto 5rem;
+
+        &.fixed {
+            position: relative;
+            z-index:9999
+        }
     }
     .ase-site-title,
     .ase-sub-title {
+        color:white;
         text-align: center;
+        max-width:88%;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     .ase-site-title {
-
+        font-size:9rem;
+        text-transform: uppercase;
     }
 
     .ase-sub-title {
-
+        font-size:2.6rem;
+        line-height: 3rem;
     }
 
     .aesop-gallery-component {
         margin:0;
-        z-index: -1;
+        z-index: -2;
         position: absolute;
         top:0;
         left:0;
@@ -46,23 +78,11 @@
         }
     }
 }
-.admin-bar {
-    .ase-primary-nav.fixed {
-        top:32px;
-    }
-}
+
 .ase-primary-nav {
     position: relative;
     background:black;
-    border-top:2px solid white;
-
-    &.fixed {
-        position: fixed;
-        top:0;
-        left:0;
-        right:0;
-        z-index: 1;
-    }
+    border-top:3px solid white;
 
     ol,
     ul {
@@ -79,12 +99,10 @@
             position: relative;
 
             a {
-                font-size:@font-size-xsmall - 2;
-                line-height: @font-size-xsmall - 2;
                 font-family: @font-family-sans-serif;
                 color:white;
                 margin:0 0.35rem;
-                padding:0.85rem;
+                padding:1.8rem 0.85rem;
                 display: block;
                 text-transform: uppercase;
 

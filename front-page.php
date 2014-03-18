@@ -14,42 +14,32 @@ get_header();
 
 		<div class="ase-section ase-features">
 			<div class="ase-content clearfix">
-				<div class="ase-features-img col-md-7">
-					<img src="http://placehold.it/800x540" alt="">
-				</div>
-				<div class="ase-features-text col-md-5">
-					<?php echo do_shortcode('[aesop_timeline_stop num="Features"]');?>
-					<p>Maybe you're building a site for writers. Or, maybe you're a business and you're looking for something new, fresh, and innovative.</p>
-					<p>With the Aesop Story Engine, you can deliver interactive content without having to write a lot of code to make it happen.</p>
-				</div>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Features"]');?>
+				<p>Choose from twelve unique story components, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
+				<img src="http://placehold.it/1200x850">
 			</div>
 		</div>
 
 
 		<div class="ase-section ase-components">
 			<div class="ase-content clearfix">
-				<div class="ase-features-text col-md-5">
-					<?php echo do_shortcode('[aesop_timeline_stop num="Components"]');?>
-					<p>Maybe you're building a site for writers. Or, maybe you're a business and you're looking for something new, fresh, and innovative.</p>
-					<p>With the Aesop Story Engine, you can deliver interactive content without having to write a lot of code to make it happen.</p>
 
-				</div>
-				<div class="ase-features-gallery col-md-7">
-					<?php echo do_shortcode('[aesop_gallery id="25"]');?>
-				</div>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Components"]');?>
+				
+				GRID COMPONENT THINGEE HERE
 			</div>
 		</div>
 
-		<div class="ase-section ase-quotes">
+		<div class="ase-section ase-reviews">
 			<div class="ase-content">
-				
-				<p>Character Carousel Here</p>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
+				REVIEWS HERE
 			</div>
 		</div>
 
 		<div class="ase-section ase-extras">
 			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Extras"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 				<div class="ase-extra">
 					<img class="ase-section-img" src="http://placehold.it/400x250">
 					<p class="ase-sub-title">Make your Aesop Story Engine site faster, and more social, with low-priced add-ons.</p>
