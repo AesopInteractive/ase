@@ -1,2 +1,0 @@
-<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-default ase-welcome-btn"><i class="asecon asecon-cloud-download"></i> Download</a>
-<a href="http://playground.aesopstories.com" class="btn btn-default ase-welcome-btn"><i class="asecon asecon-globe"></i> Demo</a>

@@ -20,12 +20,11 @@ get_header();
 			</div>
 		</div>
 
-
 		<div class="ase-section ase-components">
 			<div class="ase-content clearfix">
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Components"]');?>
-				
+
 				GRID COMPONENT THINGEE HERE
 			</div>
 		</div>
@@ -37,22 +36,51 @@ get_header();
 			</div>
 		</div>
 
-		<div class="ase-section ase-extras">
+		<div class="ase-section ase-resources">
 			<div class="ase-content">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
-				<div class="ase-extra">
-					<img class="ase-section-img" src="http://placehold.it/400x250">
-					<p class="ase-sub-title">Make your Aesop Story Engine site faster, and more social, with low-priced add-ons.</p>
-					<a href="/extras" class="btn btn-default">Browse Extras</a>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="http://placehold.it/300/224">
+						<h3>Quick Start Guide</h3>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="ase-section ase-actions">
+		<div class="ase-section ase-newsletter">
 			<div class="ase-content">
 				<h2>Sign up for our newsletter</h2>
 				<p>Get notified of new stuff and important news</p>
-				<?php get_template_part('partials/actionlinks');?>
+				<?php get_template_part('partials/newsform');?>
 			</div>
 		</div>
 

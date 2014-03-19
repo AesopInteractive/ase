@@ -40,19 +40,21 @@
 
 	<header id="header" class="ase-site-header">
 
-		<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/temp-logo.png';?>" alt="logo">
+		<div class="aesop-content">
+			<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/temp-logo.png';?>" alt="logo">
 
-		<h2 class="ase-site-title">Write stories instead of code</h2>
-		<p class="ase-sub-title">Aesop Story ENgine is a collection of twelve unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
+			<h2 class="ase-site-title">Write stories instead of code</h2>
+			<p class="ase-sub-title">Aesop Story ENgine is a collection of twelve unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
 
-		<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-red btn-ase-download">
-			<span class="ase-dl-btn-top">Download Aesop Story Engine</span>
-			<span class="ase-dl-btn-top">and start telling stories with wordpress</span>
-		</a>
+			<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-red btn-ase-big-action">
+				<span class="ase-dl-btn-top">Download Aesop Story Engine</span>
+				<span class="ase-dl-btn-top">and start telling stories with wordpress</span>
+			</a>
 
-		<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with Aesop Story Engine.</p>
+			<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with Aesop Story Engine.</p>
+		</div>
 
-		<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="30000">
+		<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="15000">
 			<div style="background:url(http://placekitten.com/1200/800);background-size:cover;"></div>
 			<div style="background:url(http://placekitten.com/1200/400);background-size:cover;"></div>
 			<div style="background:url(http://placekitten.com/1200/500);background-size:cover;"></div>

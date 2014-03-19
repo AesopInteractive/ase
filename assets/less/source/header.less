@@ -63,7 +63,6 @@
     .ase-sub-title {
         color:white;
         text-align: center;
-        max-width:88%;
         margin-left:auto;
         margin-right:auto;
     }
@@ -89,7 +88,7 @@
         top:0;
         left:0;
         right:0;
-        height:700px;
+        height:@ase-header-height;
 
         div {
             width:100%;
@@ -100,35 +99,6 @@
         }
     }
 
-    .btn-ase-download {
-        margin:3rem auto 3rem;
-        display:block;
-        max-width:600px;
-        padding:1rem 1.6rem;
-        position: relative;
-
-        &:before {
-            content:'\f0ed';
-            font-family: FontAwesome;
-            position: absolute;
-            left: 8px;
-            top:4px;
-            font-size:3.2rem;
-            padding:1rem 2rem;
-            border-right:3px solid white;
-        }
-
-        span {
-            display: block;
-            color:white;
-            text-align: left;
-            padding-left:10rem;
-
-            &.ase-dl-btn-top {
-                text-transform: uppercase;
-            }
-        }
-    }
 }
 
 .ase-primary-nav {

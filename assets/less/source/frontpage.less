@@ -1,13 +1,10 @@
 .ase-section {
-    padding:150px 0;
-    border-bottom:1px solid @baseContrast;
-
-    &:last-of-type {
-        border-bottom:none;
-    }
+    padding:2rem 0;
 
     .aesop-timeline-stop {
-        margin:0 auto 8rem;
+        margin:0;
+        text-align: center;
+        .ase-blue;
     }
 
     .ase-welcome-btn {
@@ -26,42 +23,31 @@
         display: block;
     }
 }
-.ase-welcome {
+.ase-components {
     text-align: center;
     .aesop-timeline-stop {
-        margin:0 auto 2rem;
+        .ase-red;
     }
 }
 
-.ase-features {
-    .ase-features-gallery {
-        padding-left:0;
-
-        .aesop-gallery-component {
-            margin:0;
-        }
-    }
+.ase-reviews {
+    .ase-orange-back;
     .aesop-timeline-stop {
-        margin:0 0 2rem 0;
+        .ase-black;
     }
 }
 
-.ase-actions {
-    text-align: center;
-}
-
-.ase-quotes {
-    text-align: center;
-    .ase-quote-row {
-        margin-bottom:2rem;
-        .clearfix;
-
-        .aesop-character-component {
-            float: left;
-            width:25%;
-        }
+.ase-resources {
+    .aesop-timeline-stop {
+        .ase-red;
     }
 }
-.ase-extras {
-    text-align: center;
+
+.ase-newsletter {
+    .ase-blue-back;
+    h2,
+    p {
+        .ase-white;
+        text-align: center;
+    }
 }
