@@ -68,3 +68,5 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>
 	<?php } ?>
+
+	<main id="main-content" class="main-content">

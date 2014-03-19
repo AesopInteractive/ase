@@ -8,7 +8,7 @@ get_header();
 
  ?>
 
-<main id="main-content" class="main-content">
+
 
 	<div class="aesop-entry-content ase-front-page">
 
@@ -189,7 +189,5 @@ get_header();
 
 	</div>
 
-
-</main>
 
 <?php get_footer();

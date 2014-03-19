@@ -42,7 +42,7 @@ class aseFunctions{
 		) );
 
 		//edd
-		define('EDD_SLUG', 'extras');
+		define('EDD_SLUG', 'library');
 
 		add_image_size( 'ase-store-img',  600, 300, true ); // main product image
 	}
