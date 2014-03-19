@@ -99,6 +99,23 @@
     }
 }
 
+.ase-section-triangle(@color) {
+    position: relative;
+
+    &:after {
+        content:'';
+        position: absolute;
+        left:48%;
+        bottom:-30px;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid @color;
+        z-index:1;
+    }
+}
+
 // Utilities
 // -------------------------
 
