@@ -111,25 +111,45 @@
 
     ol,
     ul { //.scroll-nav
+        margin:0;
+        padding:0;
+    }
+
+    .scroll-nav {
+        width:55%;
+        float:left;
         list-style: none;
         padding:0;
-        //width:100%;
         margin:0 auto;
         text-align: center;
 
         .nav-li;
-    }
 
-    .scroll-nav {
-        width:50%;
-        float:left;
+        .scroll-nav__wrapper {
+            float:right;
+        }
     }
 }
 
 .ase-secondary-nav {
     float:right;
     text-align: left;
-    width:50%;
+    width:45%;
 
     .nav-li;
+
+    li {
+        border:none;
+
+        &:nth-child(2),
+        &:first-child,
+        &:last-child {
+            border-left:none;
+            border-right:3px solid white;
+        }
+
+        &.ase-nav-social a{
+            padding:1.8rem;
+        }
+    }
 }
