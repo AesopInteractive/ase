@@ -19,8 +19,8 @@ jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondar
 									<li><a href="">Blog</a></li>\
 									<li><a href="">Contact</a></li>\
 									<li class="ase-nav-social"><a href=""><i class="asecon asecon-twitter"></i></a></li>\
-									<li class="ase-nav-social"><a href=""><i class="asecon asecon-twitter"></i></a></li>\
-									<li class="ase-nav-social"><a href=""><i class="asecon asecon-twitter"></i></a></li>\
-									<li class="ase-nav-social"><a href=""><i class="asecon asecon-twitter"></i></a></li>\
+									<li class="ase-nav-social"><a href=""><i class="asecon asecon-facebook"></i></a></li>\
+									<li class="ase-nav-social"><a href=""><i class="asecon asecon-google-plus-square"></i></a></li>\
+									<li class="ase-nav-social"><a href=""><i class="asecon asecon-pinterest-square"></i></a></li>\
 									</nav>
 									');

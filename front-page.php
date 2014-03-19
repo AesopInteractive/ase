@@ -23,16 +23,117 @@ get_header();
 		<div class="ase-section ase-components">
 			<div class="ase-content clearfix">
 
-				<?php echo do_shortcode('[aesop_timeline_stop num="Components"]');?>
+				<h2>Twelve Unique Story Components</h2>
 
-				GRID COMPONENT THINGEE HERE
+				<div class="row">
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+					<div class="col-md-4 ase-comp-col">
+						<h2>Audio</h2>
+						<p>asdfasdfsdf</p>
+					</div>
+				</div>
+
+				<?php echo get_template_part('partials/red-btn');?>
+
 			</div>
 		</div>
 
 		<div class="ase-section ase-reviews">
 			<div class="ase-content">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
-				REVIEWS HERE
+				<div class="row">
+					<div class="col-md-6 ase-review-col">
+						<img src="http://placehold.it/100/100">
+						<blockquote class="ase-review-quote">
+						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<footer>
+						  		<cite>Sarah Gooding, WP Tavern</cite>
+						  		<a href="">An Open Source WordPress Plugin for Storytelling</a>
+						  	</footer>
+						</blockquote>
+					</div>
+					<div class="col-md-6 ase-review-col">
+						<img src="http://placehold.it/100/100">
+						<blockquote class="ase-review-quote">
+						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<footer>
+						  		<cite> Crazy hunch-backed old guy from the movie Aladdi</cite>
+						  		<a href="">Link to the quote</a>
+						  	</footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 ase-review-col">
+						<img src="http://placehold.it/100/100">
+						<blockquote class="ase-review-quote">
+						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<footer>
+						  		<cite>Sarah Gooding, WP Tavern</cite>
+						  		<a href="">An Open Source WordPress Plugin for Storytelling</a>
+						  	</footer>
+						</blockquote>
+					</div>
+					<div class="col-md-6 ase-review-col">
+						<img src="http://placehold.it/100/100">
+						<blockquote class="ase-review-quote">
+						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<footer>
+						  		<cite> Crazy hunch-backed old guy from the movie Aladdi</cite>
+						  		<a href="">Link to the quote</a>
+						  	</footer>
+						</blockquote>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -74,6 +175,7 @@ get_header();
 					</div>
 				</div>
 			</div>
+
 		</div>
 
 		<div class="ase-section ase-newsletter">
