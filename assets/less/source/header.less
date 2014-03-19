@@ -107,43 +107,29 @@
     position: relative;
     background:black;
     border-top:3px solid white;
+    .clearfix;
 
     ol,
-    ul {
+    ul { //.scroll-nav
         list-style: none;
         padding:0;
-        width:100%;
-        max-width: @ase-width;
+        //width:100%;
         margin:0 auto;
         text-align: center;
 
-        li {
-            display: inline-block;
-            margin:0 0.5rem;
-            position: relative;
-            border-right:3px solid white;
-
-            &:first-child {
-                border-left:3px solid white;
-            }
-
-            a {
-                font-family: @font-family-sans-serif;
-                color:white;
-                margin:0 0.35rem;
-                padding:1.8rem 3rem;
-                display: block;
-                text-transform: uppercase;
-
-                &:hover {
-                    color:@link-color;
-                    text-decoration: none;
-                }
-            }
-
-            &.active a {
-                font-weight: bold;
-            }
-        }
+        .nav-li;
     }
+
+    .scroll-nav {
+        width:70%;
+        float:left;
+    }
+}
+
+.ase-secondary-nav {
+    float:right;
+    text-align: left;
+    width:30%;
+
+    .nav-li;
 }

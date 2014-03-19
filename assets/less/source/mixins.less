@@ -56,6 +56,37 @@
     background: white;
 }
 
+.nav-li {
+    li {
+        display: inline-block;
+        margin:0 0.5rem;
+        position: relative;
+        border-right:3px solid white;
+
+        &:first-child {
+            border-left:3px solid white;
+        }
+
+        a {
+            font-family: @font-family-sans-serif;
+            color:white;
+            margin:0 0.35rem;
+            padding:1.8rem 3rem;
+            display: block;
+            text-transform: uppercase;
+
+            &:hover {
+                color:@link-color;
+                text-decoration: none;
+            }
+        }
+
+        &.active a {
+            font-weight: bold;
+        }
+    }
+}
+
 // Utilities
 // -------------------------
 
