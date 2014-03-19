@@ -59,8 +59,7 @@ class aseFunctions{
 				jQuery(document).ready(function(){
 
 					adminBar = jQuery('#wpadminbar').outerHeight();
-					header   = jQuery('.ase-site-header').outerHeight();
-					navbar	  = jQuery('.aesop-timeline').outerHeight();
+					header   = jQuery('.ase-site-header').height();
 
 					jQuery('.aesop-entry-content').scrollNav({
 					    sections: '.aesop-timeline-stop',
@@ -69,11 +68,7 @@ class aseFunctions{
 					    insertLocation: 'appendTo',
 					    showTopLink: false,
 					    showHeadline: false,
-					    <?php if (is_front_page()){?>
-					    scrollOffset: header + adminBar + 182
-					    <?php } else { ?>
-					    scrollOffset: header + adminBar
-					    <?php }?>
+					    scrollOffset: 240
 					});
 
 				});

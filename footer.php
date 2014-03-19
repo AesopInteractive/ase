@@ -4,9 +4,7 @@
 
 		</footer>
 
-		<div>
-			<?php wp_footer(); ?>
-		</div>
+		<div><?php wp_footer(); ?></div>
 
 		<?php do_action('aesop_inside_body_bottom');?>
 
