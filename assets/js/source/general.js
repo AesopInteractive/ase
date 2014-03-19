@@ -18,4 +18,9 @@ jQuery(document).ready(function(){
 jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondary-nav">\
 									<li><a href="">Blog</a></li>\
 									<li><a href="">Contact</a></li>\
-									</nav>');
+									<li><a href=""><i class="asecon asecon-twitter"></i></a></li>\
+									<li><a href=""><i class="asecon asecon-twitter"></i></a></li>\
+									<li><a href=""><i class="asecon asecon-twitter"></i></a></li>\
+									<li><a href=""><i class="asecon asecon-twitter"></i></a></li>\
+									</nav>
+									');
