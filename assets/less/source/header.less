@@ -13,7 +13,7 @@
         top:0;
         z-index: 9;
         text-align: center;
-        max-width: 200px;
+        max-width: 194px;
         margin: 0 auto;
         .transition(opacity 0.25s ease-in-out);
     }
@@ -22,10 +22,13 @@
         margin:0 auto;
         position: relative;
         max-width:200px;
+        .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+        z-index: 1;
     }
     .ase-sticky-nav-menu {
         background:@body-bg;
         position: relative;
+          .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
         ol,
         ul {
             .unstyled;

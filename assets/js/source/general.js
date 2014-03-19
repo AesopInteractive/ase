@@ -12,7 +12,10 @@ jQuery(document).ready(function(){
 	   jQuery('.ase-sticky-nav').toggleClass('visible');
 	});
 
-
+	jQuery("a[href='#top']").click(function() {
+	  jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+	  return false;
+	});
 });
 
 jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondary-nav">\

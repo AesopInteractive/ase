@@ -8,7 +8,7 @@
 				<ul class="ase-footer-links">
 					<li><a href="">Terms |</a></li>
 					<li><a href="">Privacy Policy |</a></li>
-					<li><a href="">Back to Top</a></li>
+					<li><a href="#top">Back to Top</a></li>
 				</ul>
 			</div>
 
