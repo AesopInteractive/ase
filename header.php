@@ -43,10 +43,12 @@
 		<h2 class="ase-site-title">Write stories instead of code</h2>
 		<p class="ase-sub-title">Aesop Story ENgine is a collection of twelve unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
 
-		<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-ase-download">
+		<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-red btn-ase-download">
 			<span class="ase-dl-btn-top">Download Aesop Story Engine</span>
 			<span class="ase-dl-btn-top">and start telling stories with wordpress</span>
 		</a>
+
+		<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with Aesop Story Engine.</p>
 
 		<?php echo do_shortcode('[aesop_gallery id="53"]');?>
 

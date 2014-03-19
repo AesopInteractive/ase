@@ -40,6 +40,7 @@
             z-index:9999
         }
     }
+    .ase-site-sub-title-more,
     .ase-site-title,
     .ase-sub-title {
         color:white;
@@ -59,6 +60,10 @@
         line-height: 3rem;
     }
 
+    .ase-site-sub-title-more {
+
+    }
+
     .aesop-gallery-component {
         margin:0;
         z-index: -2;
@@ -75,6 +80,36 @@
         .fotorama__arr,
         .fotorama__fullscreen-icon {
             display: none !important;
+        }
+    }
+
+    .btn-ase-download {
+        margin:3rem auto 3rem;
+        display:block;
+        max-width:600px;
+        padding:1rem 1.6rem;
+        position: relative;
+
+        &:before {
+            content:'\f0ed';
+            font-family: FontAwesome;
+            position: absolute;
+            left: 8px;
+            top:4px;
+            font-size:3.2rem;
+            padding:1rem 2rem;
+            border-right:3px solid white;
+        }
+
+        span {
+            display: block;
+            color:white;
+            text-align: left;
+            padding-left:10rem;
+
+            &.ase-dl-btn-top {
+                text-transform: uppercase;
+            }
         }
     }
 }
