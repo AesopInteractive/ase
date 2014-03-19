@@ -14,9 +14,9 @@ get_header();
 
 		<div class="ase-section ase-features">
 			<div class="ase-content clearfix">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Features"]');?>
-				<p>Choose from twelve unique story components, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
-				<img src="http://placehold.it/1200x850">
+				<?php echo do_shortcode('[aesop_timeline_stop num="Features" title="Aesop Story Engine Features"]');?>
+				<p class="ase-italic"><span class="ase-bold">Choose from twelve unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
+				<?php echo do_shortcode('[aesop_image img="/wp-content/themes/ase/assets/img/aesop-ui.png" caption="Create rich, interactive stories with our easy-to-use plugin interface right in the WordPress editor!" align="center" captionposition="left" lightbox="off" imgwidth="100%"]');?>
 			</div>
 		</div>
 
@@ -26,62 +26,45 @@ get_header();
 				<h2>Twelve Unique Story Components</h2>
 
 				<div class="row">
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
-					</div>
-					<div class="col-md-4 ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+					<div class="col-md-4">
+						<div class="ase-comp-col">
+							<h2>Audio</h2>
+							<p>asdfasdfsdf</p>
+						</div>
 					</div>
 				</div>
-
 				<?php echo get_template_part('partials/red-btn');?>
 
 			</div>
@@ -139,39 +122,51 @@ get_header();
 
 		<div class="ase-section ase-resources">
 			<div class="ase-content">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Resources" title="The Library"]');?>
 				<div class="row">
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Quick Start Guide</h3>
+							<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						</div>
 					</div>
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Aesop Themes</h3>
+							<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
+						</div>
 					</div>
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Add-ons</h3>
+							<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
+						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Documentation</h3>
+							<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						</div>
 					</div>
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Developer Portal</h3>
+							<p>Interested in building themes and add-ons for Aesop Story Engine? This place is just for you.</p>
+						</div>
 					</div>
 					<div class="col-md-4">
-						<img src="http://placehold.it/300x180">
-						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<img class="ase-img" src="http://placehold.it/300x180">
+						<div class="ase-resource">
+							<h3>Latest News</h3>
+							<p>Catch up with the latest Aesop Story Engine themes, tips, and tutorials.</p>
+						</div>
 					</div>
 				</div>
 			</div>

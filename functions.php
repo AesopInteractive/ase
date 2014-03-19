@@ -70,6 +70,11 @@ class aseFunctions{
 					    showHeadline: false,
 					    scrollOffset: 240
 					});
+					
+					jQuery('.aesop-timeline-stop').each(function(){
+						var label = jQuery(this).attr('data-title');
+						jQuery(this).text(label);
+					});
 
 				});
 
