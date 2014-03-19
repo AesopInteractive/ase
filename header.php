@@ -28,7 +28,7 @@
 	<div class="ase-sticky-nav">
 		<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/temp-logo.png';?>" alt="logo">
 		<?php if (is_front_page()) {?>
-			<nav class="ase-sticky-nav-menu aesop-timeline collapse"></nav>
+			<div class="ase-sticky-nav-menu aesop-timeline collapse"></div>
 			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
 		<?php } else { ?>
 			<nav class="ase-sticky-nav-menu collapse">
@@ -65,7 +65,7 @@
 
 
 	<?php if (is_front_page()) {?>
-		<nav class="ase-primary-nav aesop-timeline"></nav>
+		<div class="ase-primary-nav aesop-timeline"></div>
 	<?php } else { ?>
 		<nav class="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>

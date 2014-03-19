@@ -15,11 +15,12 @@
         text-align: center;
         max-width: 194px;
         margin: 0 auto;
-        .transition(opacity 0.5s ease-in-out);
+        .transition(opacity 0.25s ease-in-out);
     }
 
     .ase-site-logo {
         margin:0 auto;
+        position: relative;
     }
     .ase-sticky-nav-menu {
         background:@body-bg;
@@ -35,6 +36,7 @@
         .btn;
         .btn-orange;
         font-size:@font-size-small;
+        margin-top:-3px;
     }
 }
 .ase-site-header {
@@ -119,12 +121,17 @@
             display: inline-block;
             margin:0 0.5rem;
             position: relative;
+            border-right:3px solid white;
+
+            &:first-child {
+                border-left:3px solid white;
+            }
 
             a {
                 font-family: @font-family-sans-serif;
                 color:white;
                 margin:0 0.35rem;
-                padding:1.8rem 0.85rem;
+                padding:1.8rem 3rem;
                 display: block;
                 text-transform: uppercase;
 
