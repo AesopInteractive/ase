@@ -11,7 +11,7 @@ get_header();?>
 	<div class="ase-section ase-features">
 		<div class="ase-content clearfix">
 			<?php echo do_shortcode('[aesop_timeline_stop num="Features" title="Aesop Story Engine Features"]');?>
-			<p class="ase-italic"><span class="ase-bold">Choose from twelve unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
+			<p class="ase-italic"><span class="ase-bold">Choose from thirteen unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
 			<?php echo do_shortcode('[aesop_image img="/wp-content/themes/ase/assets/img/aesop-ui.png" caption="Create rich, interactive stories with our easy-to-use plugin interface right in the WordPress editor!" align="center" captionposition="left" lightbox="off" imgwidth="100%"]');?>
 		</div>
 	</div>
@@ -24,40 +24,80 @@ get_header();?>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Media</h2>
+						<p>Display an audio player with MP3 support, or a video player with YouTube, Vimeo, and more.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Chapters</h2>
+						<p>Break up a story into multiple chapters with easy scroll-to points.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Content</h2>
+						<p>Display a background image or color, or split content into multiple columns.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Character</h2>
+						<p>This component displays an avatar, title, and short bio to remind you of key characters.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Quote</h2>
+						<p>Control the text color and background on this full width component featuring large type.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Audio</h2>
-						<p>asdfasdfsdf</p>
+						<h2>Parallax</h2>
+						<p>A full width image component with caption and lightbox that moves as you scroll.</p>
+					</div>
+				</div>
+			</div>
+			 <div class="row">
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Image</h2>
+						<p>An image and caption you can align and offset; open a larger version in an optional lightbox.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Gallery</h2>
+						<p>Create unlimited grid, thumbnail, or stacked galleries-all with caption support</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Location</h2>
+						<p>Create a map for your story that displays markers with your custom messages on them.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Timeline</h2>
+						<p>Segement a story into sections so readers can scroll to a story milestone with a single click.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Documents</h2>
+						<p>Once a reader clicks this component they can view an uploaded PDF or image file.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="ase-comp-col">
+						<h2>Collections</h2>
+						<p>Display a collection of stories from the same category on any page of your site.</p>
 					</div>
 				</div>
 			</div>
@@ -117,7 +157,7 @@ get_header();?>
 
 	<div class="ase-section ase-resources">
 		<div class="ase-content">
-			<?php echo do_shortcode('[aesop_timeline_stop num="Resources" title="The Library"]');?>
+			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 			<div class="row">
 				<div class="col-md-4">
 					<img class="ase-img" src="http://placehold.it/300x150">
@@ -159,8 +199,8 @@ get_header();?>
 				<div class="col-md-4">
 					<img class="ase-img" src="http://placehold.it/300x150">
 					<div class="ase-resource">
-						<h3>Latest News</h3>
-						<p>Catch up with the latest Aesop Story Engine themes, tips, and tutorials.</p>
+						<h3>The Latest</h3>
+						<p>Catch up with the latest Aesop Story Engine themes, tips, tutorials, and hand-crafted stories.</p>
 					</div>
 				</div>
 			</div>
