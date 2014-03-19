@@ -1,8 +1,7 @@
    <form action="https://madmimi.com/signups/subscribe/74148" id="mad_mimi_signup_form" method="post" target="_blank">
        <div class="mimi_field required">
-          <label for="signup_email">Email*</label>
-          <br/>
-          <input id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="you@example.com"/>
+          	<input id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="you@example.com"/>
+          	<label for="signup_email">Email*</label>
        </div>
        <div>
           <input type="submit" class="submit" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending…" data-invalid-text="↑ You forgot some required fields" data-choose-list="↑ Choose a list">

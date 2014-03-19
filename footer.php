@@ -2,7 +2,15 @@
 	</main>
 		<footer id="colophon" class="ase-site-footer" role="contentinfo">
 
-			<p class="ase-footer-cred"><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'aesop' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'aesop' ), 'WordPress' ); ?></a></p>
+			<div class="ase-content">
+				<p class="ase-copyright">&copy;2014 Aesopinteractive L.L.C.</p>
+				<p class="ase-footer-cred">Proudly built with WordPress and the Aesop Story Engine</p>
+				<ul class="ase-footer-links">
+					<li><a href="">Terms |</a></li>
+					<li><a href="">Privacy Policy |</a></li>
+					<li><a href="">Back to Top</a></li>
+				</ul>
+			</div>
 
 		</footer>
 

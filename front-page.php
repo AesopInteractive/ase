@@ -77,20 +77,19 @@ get_header();
 					<div class="col-md-6 ase-review-col">
 						<img src="http://placehold.it/100/100">
 						<blockquote class="ase-review-quote">
-						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<p>At WooThemes we love to back innovation upon WordPress, especially when that innovation unobtrusively extends the content publishing experience and a theme’s capabilities - solving problems for theme developers and end users. Well done Aesop.</p>
 						  	<footer>
-						  		<cite>Sarah Gooding, WP Tavern</cite>
-						  		<a href="">An Open Source WordPress Plugin for Storytelling</a>
+						  		<cite>Mark Forrester, Co-founder WooThemes</cite>
 						  	</footer>
 						</blockquote>
 					</div>
 					<div class="col-md-6 ase-review-col">
 						<img src="http://placehold.it/100/100">
 						<blockquote class="ase-review-quote">
-						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+							<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen ina  long time.</p>
 						  	<footer>
-						  		<cite> Crazy hunch-backed old guy from the movie Aladdi</cite>
-						  		<a href="">Link to the quote</a>
+						  		<cite>Sarah Gooding, WP Tavern</cite>
+						  		<a href="http://wptavern.com/aesop-story-engine-an-open-source-wordpress-plugin-for-storytelling">An Open Source WordPress Plugin for Storytelling</a>
 						  	</footer>
 						</blockquote>
 					</div>
@@ -99,20 +98,20 @@ get_header();
 					<div class="col-md-6 ase-review-col">
 						<img src="http://placehold.it/100/100">
 						<blockquote class="ase-review-quote">
-						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<p>The ASE potentially takes WordPress’ content capabilities to a new level of maturity and sophistication. More than that though, it represents everything that WordPress stands for: democratizing publishing.</p>
 						  	<footer>
-						  		<cite>Sarah Gooding, WP Tavern</cite>
-						  		<a href="">An Open Source WordPress Plugin for Storytelling</a>
+						  		<cite>Chris Knowles, WPMU</cite>
+						  		<a href="http://premium.wpmudev.org/blog/aesop-story-engine-the-next-big-thing-in-wordpress/">Aesop Story Engine: The Next Big Thing For WordPress?</a>
 						  	</footer>
 						</blockquote>
 					</div>
 					<div class="col-md-6 ase-review-col">
 						<img src="http://placehold.it/100/100">
 						<blockquote class="ase-review-quote">
-						  	<p>You know the golden rule, don’t you boy? Those who have the gold make the rules.</p>
+						  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 						  	<footer>
-						  		<cite> Crazy hunch-backed old guy from the movie Aladdi</cite>
-						  		<a href="">Link to the quote</a>
+						  		<cite>Brian Krogsgard</cite>
+						  		<a href="http://www.poststat.us/aesop-medium-esque-story-engine-wordpress/">Aesop, a Medium-esque “story engine” for WordPress</a>
 						  	</footer>
 						</blockquote>
 					</div>
