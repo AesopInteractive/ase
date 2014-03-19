@@ -28,11 +28,13 @@
 	<div class="ase-sticky-nav">
 		<img class="ase-site-logo" src="http://placekitten.com/100/100" alt="logo">
 		<?php if (is_front_page()) {?>
-			<nav class="ase-sticky-nav-menu aesop-timeline"></nav>
+			<nav class="ase-sticky-nav-menu aesop-timeline collapse"></nav>
+			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
 		<?php } else { ?>
-			<nav class="ase-sticky-nav-menu">
+			<nav class="ase-sticky-nav-menu collapse">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-sticky-menu unstyled' ) ); ?>
 			</nav>
+			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
 		<?php } ?>
 	</div>
 
