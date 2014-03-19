@@ -50,6 +50,7 @@ module.exports = function(grunt) {
                      	'js/source/collapse.js',
                         'js/source/modal.js',
                         'js/source/tooltip.js',
+                        'js/source/cycle.js',
                         'js/source/general.js'
                     ]
                 }

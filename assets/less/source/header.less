@@ -1,27 +1,40 @@
 //header
+
 .ase-sticky-nav {
-    position: absolute;
-    left:-10000px;
+   .opacity(0);
+   position: absolute;
+   left:-10000px;
 
     &.visible {
         position: fixed;
+        .opacity(1.0);
         left:0;
         right:0;
         top:0;
         z-index: 1;
         text-align: center;
-    }
-
-    ol,
-    ul {
-        .unstyled;
-        li {
-            display: block;
-        }
+        max-width: 200px;
+        margin: 0 auto;
+        .transition(opacity 0.5s ease-in-out);
     }
 
     .ase-site-logo {
         margin:0 auto;
+    }
+    .ase-sticky-nav-menu {
+        background:@body-bg;
+        ol,
+        ul {
+            .unstyled;
+            li {
+                display: block;
+            }
+        }
+    }
+    .ase-sticky-toggle-menu {
+        .btn;
+        .btn-orange;
+        font-size:@font-size-small;
     }
 }
 .ase-site-header {
@@ -32,7 +45,7 @@
     right:0;
     overflow: hidden; // just needed for overly large gallery
     padding:5rem 2rem;
-    height:700px;
+    height:@ase-header-height;
 
     .ase-site-logo {
         top:0;
@@ -69,22 +82,21 @@
 
     }
 
-    .aesop-gallery-component {
+    .ase-header-show {
         margin:0;
         z-index: -2;
         position: absolute;
         top:0;
         left:0;
         right:0;
-        max-height:500px; //temporary
+        height:700px;
 
-        .fotorama:hover {
-            cursor: default;
-        }
-
-        .fotorama__arr,
-        .fotorama__fullscreen-icon {
-            display: none !important;
+        div {
+            width:100%;
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
         }
     }
 

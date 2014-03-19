@@ -52,7 +52,12 @@
 
 		<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with Aesop Story Engine.</p>
 
-		<?php echo do_shortcode('[aesop_gallery id="53"]');?>
+		<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div">
+			<div style="background:url(http://placekitten.com/1200/800);background-size:cover;">
+			<div style="background:url(http://placekitten.com/1200/400);background-size:cover;">
+			<div style="background:url(http://placekitten.com/1200/500);background-size:cover;">
+			<div style="background:url(http://placekitten.com/1200/600);background-size:cover;">
+		</div>
 
 	</header>
 
