@@ -160,7 +160,7 @@ input[type="button"] {
 .btn-ase-big-action {
     margin:3rem auto 3rem;
     display:block;
-    max-width:600px;
+    max-width:700px;
     padding:1rem 1.6rem;
     position: relative;
 
@@ -168,9 +168,9 @@ input[type="button"] {
         content:'\f0ed';
         font-family: FontAwesome;
         position: absolute;
-        left: 8px;
-        top:4px;
-        font-size:3.2rem;
+        left: 6px;
+        top:0;
+        font-size:3rem;
         padding:1rem 2rem;
         border-right:3px solid white;
     }
@@ -184,9 +184,14 @@ input[type="button"] {
         &.ase-dl-btn-top {
             text-transform: uppercase;
             font-family: @ase-trend-slab;
+            letter-spacing: -0.05em;
+            font-size:2.6rem;
+            line-height: 2.6rem;
         }
         &.ase-dl-btn-bottom {
             text-transform: uppercase;
+            font-family: @ase-source-sans;
+            line-height: @font-size-base;
         }
     }
 }
