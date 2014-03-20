@@ -25,7 +25,7 @@
 	<?php do_action('aesop_inside_body_top');?>
 
 	<div class="ase-sticky-nav">
-		<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/temp-logo.png';?>" alt="logo">
+		<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.gif';?>" alt="logo">
 		<?php if (is_front_page()) {?>
 			<div class="ase-sticky-nav-menu aesop-timeline collapse"></div>
 			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
@@ -40,7 +40,7 @@
 	<header id="header" class="ase-site-header">
 
 		<div class="aesop-content">
-			<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/temp-logo.png';?>" alt="logo">
+			<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.gif';?>" alt="logo">
 
 			<h2 class="ase-site-title">Write stories instead of code</h2>
 			<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of twelve unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
@@ -51,10 +51,12 @@
 		</div>
 
 		<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="15000">
-			<div style="background:url(http://placekitten.com/1200/800);background-size:cover;"></div>
-			<div style="background:url(http://placekitten.com/1200/400);background-size:cover;"></div>
-			<div style="background:url(http://placekitten.com/1200/500);background-size:cover;"></div>
-			<div style="background:url(http://placekitten.com/1200/600);background-size:cover;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/04.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/02.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/03.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/06.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/05.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
 		</div>
 
 	</header>

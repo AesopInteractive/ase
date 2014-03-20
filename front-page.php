@@ -152,6 +152,27 @@ get_header();?>
 					</blockquote>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-6 ase-review-col">
+					<img src="http://placehold.it/100/100">
+					<blockquote class="ase-review-quote">
+					  	<p>Aesop's storytelling engine is a huge win for fans of dedicated, distraction-free reading experiences. It's a win for the web.</p>
+					  	<footer>
+					  		<cite>Collis Ta'eed, CEO - Envato</cite>
+					  	</footer>
+					</blockquote>
+				</div>
+				<div class="col-md-6 ase-review-col">
+					<img src="http://placehold.it/100/100">
+					<blockquote class="ase-review-quote">
+					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
+					  	<footer>
+					  		<cite>Brian Krogsgard</cite>
+					  		<a href="http://www.poststat.us/aesop-medium-esque-story-engine-wordpress/">Aesop, a Medium-esque “story engine” for WordPress</a>
+					  	</footer>
+					</blockquote>
+				</div>
+			</div>
 		</div>
 	</div>
 

@@ -24,11 +24,25 @@
         max-width:200px;
         .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
         z-index: 1;
+        border-right:3px solid white;
+        border-bottom:3px solid white;
+        border-left:3px solid white;
+    }
+    .ase-secondary-nav,
+    .scroll-nav {
+        li {
+            border-bottom: 1px solid #a1a099;
+            a {
+                .ase-sticky-nav-a;
+            }
+        }
     }
     .ase-sticky-nav-menu {
-        background:@body-bg;
+        background:white;
         position: relative;
-          .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+        .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+        .ase-sticky-nav-pad;
+
         ol,
         ul {
             .unstyled;
@@ -45,6 +59,8 @@
             width:100%;
             background:white; // only so it covers the first while sliding down
             text-align: center;
+            .ase-sticky-nav-pad;
+
             li {
                 display: block;
                 margin-right:0;
@@ -54,13 +70,12 @@
 
                 &.ase-nav-social {
                     display: inline-block;
+                    border-bottom:none;
                 }
             }
         }
 
         a {
-            font-size:@font-size-small;
-            color:gray;
             text-transform: uppercase;
         }
     }
@@ -72,11 +87,10 @@
     }
 
     .scroll-nav {
-        padding-bottom:82px;
+        padding-bottom:80px;
     }
 }
 .ase-site-header {
-
     position: fixed;
     top:0;
     left:0;
@@ -85,11 +99,27 @@
     padding:0 2rem;
     height:@ase-header-height;
 
+
+    &:before {
+        content:'';
+        z-index: -1;
+        position: absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        right:0;
+        background:rgba(0,0,0,0.4);
+    }
+
     .ase-site-logo {
         top:0;
         text-align: center;
         z-index:9999;
-        margin:0 auto 10rem;
+        margin:0 auto;
+        border-right:3px solid white;
+        border-bottom:3px solid white;
+        border-left:3px solid white;
 
         &.fixed {
             position: relative;
@@ -103,20 +133,23 @@
         text-align: center;
         margin-left:auto;
         margin-right:auto;
-        text-shadow:0 1px 1px rgba(0,0,0,0.8);
+        text-shadow:0 1px 3px rgba(20, 13, 1, .5);
     }
 
     .ase-site-title {
-        font-size:9rem;
-        text-transform: uppercase;
-        letter-spacing: -0.05em;
-        line-height: 8.6rem;
+        background: url(../img/title.png) no-repeat top center;
+        height: 280px;
+        margin: 0 auto;
+        text-align: left;
+        text-indent: -9999px;
+        display: inline-block;
+        width: 100%;
     }
 
     .ase-sub-title {
-        font-size:2.7rem;
+        font-size:2.6rem; //26px
         line-height: 3rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 2.5rem; //25px
     }
 
     .ase-site-sub-title-more {
@@ -146,6 +179,7 @@
 .ase-primary-nav {
     position: relative;
     background:black;
+    .ase-speckle;
     border-top:3px solid white;
     .clearfix;
 
