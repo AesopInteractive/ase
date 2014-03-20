@@ -9,7 +9,7 @@ class aseScripts{
 
 	public function load_assets(){
 
-		wp_enqueue_style('ase-style', ASE_URL.'/style.css', ASE_VERSION);
+		wp_enqueue_style('ase-style', ASE_URL.'/style.css', array( 'dashicons' ), ASE_VERSION);
 		wp_enqueue_script('ase-script', ASE_URL.'/assets/js/ase.min.js', array('jquery'), ASE_VERSION, true );
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -43,7 +43,7 @@
 			<img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.gif';?>" alt="logo">
 
 			<h2 class="ase-site-title">Write stories instead of code</h2>
-			<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of twelve unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
+			<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
 
 			<?php get_template_part('partials/red-btn');?>
 

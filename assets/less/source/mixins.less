@@ -71,7 +71,7 @@
 .nav-li {
     li {
         display: inline-block;
-        margin:0 -4px 0 0;
+        margin:0;
         position: relative;
         border-right:3px solid white;
 
@@ -83,13 +83,13 @@
             font-family: @ase-trend-sans;
             font-size:1.5rem;
             color:white;
-            margin:0 0.35rem;
+            margin:0;
             padding:1.8rem 3rem;
             display: block;
             text-transform: uppercase;
 
             &:hover {
-                color:@link-color;
+                .ase-blue-back;
                 text-decoration: none;
             }
         }
@@ -105,6 +105,12 @@
     font-family: @ase-trend-sans;
     font-size:@font-size-small - 1;
     letter-spacing: -1.25px;
+
+    &:hover {
+        background:transparent;
+        text-decoration: none;
+        color:@link-color;
+    }
 
 }
 .ase-sticky-nav-pad {

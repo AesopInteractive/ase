@@ -19,24 +19,24 @@ get_header();?>
 	<div class="ase-section ase-components">
 		<div class="ase-content clearfix">
 
-			<h2>Twelve Unique Story Components</h2>
+			<h2>Thirteen Unique Story Components</h2>
 
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Media</h2>
+						<h2 class="media-comp">Media</h2>
 						<p>Display an audio player with MP3 support, or a video player with YouTube, Vimeo, and more.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Chapters</h2>
+						<h2 class="chap-comp">Chapters</h2>
 						<p>Break up a story into multiple chapters with easy scroll-to points.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Content</h2>
+						<h2 class="cont-comp">Content</h2>
 						<p>Display a background image or color, or split content into multiple columns.</p>
 					</div>
 				</div>
@@ -44,19 +44,19 @@ get_header();?>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Character</h2>
+						<h2 class="char-comp">Character</h2>
 						<p>This component displays an avatar, title, and short bio to remind you of key characters.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Quote</h2>
+						<h2 class="quote-comp">Quote</h2>
 						<p>Control the text color and background on this full width component featuring large type.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Parallax</h2>
+						<h2 class="par-comp">Parallax</h2>
 						<p>A full width image component with caption and lightbox that moves as you scroll.</p>
 					</div>
 				</div>
@@ -64,19 +64,19 @@ get_header();?>
 			 <div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Image</h2>
+						<h2 class="img-comp">Image</h2>
 						<p>An image and caption you can align and offset; open a larger version in an optional lightbox.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Gallery</h2>
+						<h2 class="gall-comp">Gallery</h2>
 						<p>Create unlimited grid, thumbnail, or stacked galleries-all with caption support</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Location</h2>
+						<h2 class="loc-comp">Location</h2>
 						<p>Create a map for your story that displays markers with your custom messages on them.</p>
 					</div>
 				</div>
@@ -84,19 +84,19 @@ get_header();?>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Timeline</h2>
+						<h2 class="time-comp">Timeline</h2>
 						<p>Segement a story into sections so readers can scroll to a story milestone with a single click.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Documents</h2>
+						<h2 class="doc-comp">Documents</h2>
 						<p>Once a reader clicks this component they can view an uploaded PDF or image file.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2>Collections</h2>
+						<h2 class="coll-comp">Collections</h2>
 						<p>Display a collection of stories from the same category on any page of your site.</p>
 					</div>
 				</div>

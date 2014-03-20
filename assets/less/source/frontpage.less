@@ -30,7 +30,7 @@
 // triangles
 .ase-components,
 .ase-resources {
-    .ase-section-triangle(white);
+    .ase-section-triangle(@body-bg);
 }
 .ase-reviews{
     .ase-section-triangle(@brand-warning);
@@ -59,22 +59,59 @@
         margin:0;
         position: relative;
         font-size:2.2rem;
-        padding:.95rem .5rem .4rem 6rem;
+        padding:1rem .5rem .4rem 6rem;
         height:45px;
         font-family:@ase-trend-sans;
         text-transform: uppercase;
         .ase-blue;
 
         &:before {
-            content:'\f045';
-            font-family: FontAwesome;
+            font-family: 'Dashicons';
             position: absolute;
             font-size:2rem;
             left:0;
             top:0;
             border-right:1px solid gray;
             height:45px;
-            padding:1.25rem 1.25rem .2rem;
+            padding:1.15rem 1.25rem .2rem;
+            .ase-orange;
+        }
+
+        &.media-comp:before {
+            content: "\f126";
+        }
+        &.chap-comp:before {
+            content: "\f330";
+        }
+        &.cont-comp:before {
+            content: "\f207";
+        }
+        &.char-comp:before {
+           content: "\f338";
+        }
+        &.quote-comp:before {
+            content: "\f122";
+        }
+        &.par-comp:before {
+            content: "\f168";
+        }
+        &.img-comp:before {
+            content: "\f128";
+        }
+        &.gall-comp:before {
+            content: "\f161";
+        }
+        &.loc-comp:before {
+            content: "\f319";
+        }
+        &.time-comp:before {
+            content: "\f469";
+        }
+        &.doc-comp:before {
+            content: "\f123";
+        }
+        &.coll-comp:before {
+            content: "\f175";
         }
     }
     p {
