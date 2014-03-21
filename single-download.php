@@ -1,22 +1,15 @@
-<?php get_header(); ?>
+<?php get_header();
 
-<main id="main" class="clearfix">
-
-	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-	<section class="ase-extras">
-
-		<div class="ase-content">
-
-			<div class="ase-extra">
-				<?php the_title('<h2>', '</h2>' );?>
-				<?php echo the_content(); ?>
-			</div>
+if(have_posts()) : while(have_posts()) : the_post(); ?>
+	<div class="ase-content clearfix">
+		<div class="col-md-9 ase-library-main">
+			<?php the_title('<h2>', '</h2>' );?>
+			<?php echo the_content(); ?>
+		</div>
+		<div class="col-md-3 ase-library-sb">
 
 		</div>
-	<?php endwhile;endif; ?>
+	</div>
+<?php endwhile;endif;
 
-	</section>
-
-</main>
-
-<?php get_footer();
+get_footer();

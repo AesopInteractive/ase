@@ -181,61 +181,52 @@ get_header();?>
 			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 			<div class="row">
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/quick-start-guide"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.<a class="ase-resource-arr" href="/quick-start-guide">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/library/themes"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Aesop Themes</h3>
-						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
+						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.<a class="ase-resource-arr" href="/library/themes">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/library/add-ons"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Add-ons</h3>
-						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
+						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.<a class="ase-resource-arr" href="/library/add-ons">&rarr;</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/library/documentation"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Documentation</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.<a class="ase-resource-arr" href="/documentation">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/developers"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Developer Portal</h3>
-						<p>Interested in building themes and add-ons for Aesop Story Engine? This place is just for you.</p>
+						<p>Interested in building themes and add-ons for Aesop Story Engine? This place is just for you.<a class="ase-resource-arr" href="/developers">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="ase-img" src="http://placehold.it/300x150">
+					<a href="/blog"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>The Latest</h3>
-						<p>Catch up with the latest Aesop Story Engine themes, tips, tutorials, and hand-crafted stories.</p>
+						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.<a class="ase-resource-arr" href="/blog">&rarr;</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	</div>
-
-	<div class="ase-section ase-newsletter">
-		<div class="ase-content">
-			<h2>Aesop Story Engine newsletter</h2>
-			<p>Stay up to date with the latest news about fresh Aesop-compatible themes, updates, tutorials, and tips and tricks.</p>
-			<p>Sign up for our email newsletter to get all that (and more) delivered right to your email in-box.</p>
-			<?php get_template_part('partials/newsform');?>
-		</div>
 	</div>
 
 </div>

@@ -1,4 +1,17 @@
 //header
+.page-template-front-page-php {
+
+    padding-top:@ase-header-height - 32; //height of header
+
+    .ase-header-show,
+    .ase-site-header {
+        height:@ase-header-height;
+    }
+}
+.ase-header-show,
+.ase-site-header {
+    height:@ase-header-height / 2;
+}
 
 .ase-sticky-nav {
    .opacity(0);
@@ -97,8 +110,6 @@
     right:0;
     overflow: hidden; // just needed for overly large gallery
     padding:0 2rem;
-    height:@ase-header-height;
-
 
     &:before {
         content:'';
@@ -163,7 +174,6 @@
         top:0;
         left:0;
         right:0;
-        height:@ase-header-height;
 
         div {
             width:100%;

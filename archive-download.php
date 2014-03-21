@@ -1,27 +1,41 @@
 <?php get_header(); ?>
 
-<main id="main" class="clearfix ase-content">
+	<section class="clearfix ase-content ase-library-welcome">
+		<h2 class="ase-blue">Themes & Add-ons Built for Aesop</h2>
+		<p class="ase-italic"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power of themes and add-ons built specifically for Aesop Story Engine.</p>
+	</section>
 
-<?php
-	$i = 0;
+	<div class="ase-content ase-product-loop clearfix" role="main">
 
-	if (have_posts()) : while (have_posts()) : the_post();
+		<?php
 
-	 	$open = !($i%3) ? '<div class="row">' : ''; //Create open wrapper if count is divisible by 3
-	    $close = !($i%3) && $i ? '</div>' : ''; //Close the previous wrapper if count is divisible by 3 and greater than 0
-	    echo $close.$open;
+			$i = 0;
 
-		get_template_part('partials/product');
+			if (have_posts()) : while (have_posts()) : the_post();
 
-		$i++;
+			 	$open = !($i%3) ? '<div class="row">' : ''; //Create open wrapper if count is divisible by 3
+			    $close = !($i%3) && $i ? '</div>' : ''; //Close the previous wrapper if count is divisible by 3 and greater than 0
+			    echo $close.$open;
 
-	endwhile;else:
+				get_template_part('partials/product');
 
-		get_template_part('partials/not_found');
+				$i++;
 
-	endif;
+			endwhile;else:
 
-	echo $i ? '</div>' : '';
-?></main>
+				get_template_part('partials/not_found');
+
+			endif;
+
+			echo $i ? '</div>' : '';
+
+		?>
+
+		<div class="ase-pagination clearfix">
+			<?php echo ase_get_pagination(); ?>
+		</div>
+
+	</div>
+
 
 <?php get_footer();
