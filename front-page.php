@@ -188,23 +188,23 @@ get_header();?>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/themes"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/library/category/themes"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Aesop Themes</h3>
-						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.<a class="ase-resource-arr" href="/library/themes">&rarr;</a></p>
+						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.<a class="ase-resource-arr" href="/library/category/themes">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/add-ons"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/library/category/add-ons"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Add-ons</h3>
-						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.<a class="ase-resource-arr" href="/library/add-ons">&rarr;</a></p>
+						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.<a class="ase-resource-arr" href="/library/category/add-ons">&rarr;</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/library/documentation"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/documentation"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Documentation</h3>
 						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.<a class="ase-resource-arr" href="/documentation">&rarr;</a></p>
