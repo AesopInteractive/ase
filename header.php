@@ -50,6 +50,9 @@
 				<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
 			<?php } elseif ('download' == get_post_type()) {?>
 				<h2 class="ase-page-title">Library</h2>
+
+				<p class="ase-sub-title"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power <br />  of themes and add-ons built specifically for Aesop Story Engine.</p>
+
 			<?php } else {?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
 			<?php } ?>

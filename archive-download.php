@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 
-	<section class="clearfix ase-content ase-library-welcome">
-		<h2 class="ase-blue">Themes & Add-ons Built for Aesop</h2>
-		<p class="ase-italic"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power of themes and add-ons built specifically for Aesop Story Engine.</p>
-	</section>
-
 	<div class="ase-content ase-product-loop clearfix" role="main">
 
 		<?php
