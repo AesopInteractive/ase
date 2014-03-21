@@ -48,6 +48,8 @@
 				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
 				<?php get_template_part('partials/red-btn');?>
 				<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
+			<?php } elseif ('download' == get_post_type()) {?>
+				<h2 class="ase-page-title">Library</h2>
 			<?php } else {?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
 			<?php } ?>
