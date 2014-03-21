@@ -45,9 +45,17 @@ class aseFunctions{
 		define('EDD_SLUG', 'library');
 
 		add_image_size( 'ase-store-img',  600, 300, true ); // main product image
+
+		//sidebar
+		register_sidebars(1, array(
+			'name' => 'Library Sidebar',
+			'id' => 'library_sb',
+	      	'before_title' => '<h5 class="widget_title">',
+	      	'after_title' => '</h5>',
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>'
+	    ));
 	}
-
-
 
 
 	function aesop_timeline_loader(){
@@ -83,6 +91,8 @@ class aseFunctions{
 			<?php 
 		endif;
 	}
+
+
 }
 
 

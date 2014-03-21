@@ -7,7 +7,7 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<?php echo the_content(); ?>
 		</div>
 		<div class="col-md-3 ase-library-sb">
-
+			<?php if(is_active_sidebar('library_sb')) { dynamic_sidebar('library_sb'); } ?>
 		</div>
 	</div>
 <?php endwhile;endif;

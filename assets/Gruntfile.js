@@ -46,7 +46,8 @@ module.exports = function(grunt) {
                 },
                	files: {
                     'js/ase.min.js': [
-                    	'js/source/transition.js',
+                        'js/source/transition.js',
+                    	'js/source/tab.js',
                      	'js/source/collapse.js',
                         'js/source/modal.js',
                         'js/source/tooltip.js',
