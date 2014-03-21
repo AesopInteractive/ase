@@ -1,0 +1,39 @@
+.blog {
+    #main-content {
+        padding-top:0;
+    }
+    .ase-primary-nav {
+        border-bottom:3px solid @body-bg;
+    }
+}
+
+.ase-index-post {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content:'';
+        width:100%;
+        height:100%;
+        position: absolute;
+        background:rgba(0,0,0,0.45);
+    }
+
+    .ase-index-post-inner {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        margin:0 auto;
+        max-width:@ase-width;
+        z-index: 1;
+        color:white;
+        text-align: center;
+    }
+    .ase-index-bg-img {
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index: 0;
+    }
+}

@@ -24,7 +24,7 @@ get_header();
 			<div class="ase-docs-left">
 				<h2 class="ase-docs-left-title">Dev Docs</h2>
 				<div class="aesop-timeline"></div>
-				<a href="/documentation">Not a developer? Click here.</a>
+				<a class="btn btn-red" href="/documentation">Not a developer? Click here.</a>
 			</div>
 			<div class="ase-docs-right">
 				<?php the_content();?>

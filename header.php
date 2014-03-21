@@ -50,23 +50,33 @@
 				<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
 			<?php } elseif ('download' == get_post_type()) {?>
 				<h2 class="ase-page-title">Library</h2>
-
 				<p class="ase-sub-title"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power <br />  of themes and add-ons built specifically for Aesop Story Engine.</p>
-
+			<?php } elseif (is_home()) {?>
+				<h2 class="ase-page-title">Blog</h2>
+				<p class="ase-sub-title"><span class="ase-bold">Tips, tricks, tutorials</span>, and original <br />  hand-crafted stories using Aesop Story Engine.</p>
 			<?php } else {?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
 			<?php } ?>
 
 		</div>
 
-		<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="15000">
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/04.jpg';?>);background-size:cover;background-position:center center;"></div>
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/02.jpg';?>);background-size:cover;background-position:center center;"></div>
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/03.jpg';?>);background-size:cover;background-position:center center;"></div>
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/06.jpg';?>);background-size:cover;background-position:center center;"></div>
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/05.jpg';?>);background-size:cover;background-position:center center;"></div>
-			<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
-		</div>
+		<?php if (!is_single()){?>
+			<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="15000">
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/04.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/02.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/03.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/06.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/05.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
+			</div>
+		<?php } else {
+			$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full');
+
+			?>
+			<div class="ase-header-show">
+				<div class="ase-header-single-show" style="background:url(<?php echo $imgsrc[0];?>);background-size:cover;background-position:center center;"></div>
+			</div>
+		<?php } ?>
 
 	</header>
 

@@ -1,0 +1,132 @@
+@ase-forum-bg-color:   white;
+@ase-forum-border: gray;
+
+#bbpress-forums {
+    font-size:@font-size-base;
+
+    // First some general resets and things
+    .bbp-the-content.wp-editor-area {
+        min-height: 120px;
+    }
+    div.bbp-search-form {
+        margin-bottom:10px;
+    }
+    #wp-bbp_reply_content-editor-container {
+        border:1px solid @ase-forum-border;
+    }
+
+    // Now style it all
+    div.even,
+    ul.even,
+    div.odd,
+    ul.odd {
+        background-color: @ase-forum-bg-color;
+    }
+    
+    div.bbp-forum-header,
+    div.bbp-topic-header,
+    div.bbp-reply-header {
+        background-color:@baseContrast;
+        border-bottom:1px solid @ase-forum-border;
+    }
+
+    ul.bbp-lead-topic,
+    ul.bbp-topics,
+    ul.bbp-forums,
+    ul.bbp-replies,
+    ul.bbp-search-results {
+        font-size: @font-size-base - 2;
+    }
+
+    .bbp-replies {
+        background: @ase-forum-bg-color;
+        border:1px solid @ase-forum-border;
+    }
+
+    .status-trash.even,
+    .status-spam.even {
+        background-color: @baseContrast;
+    }
+    .status-trash.odd,
+    .status-spam.odd {
+        background-color: lighten(@baseContrast,3);
+    }
+
+    .status-closed,
+    .status-closed a {
+        color: #ccc;
+    }
+    li.bbp-header,
+    li.bbp-footer {
+        color:@link-color;
+        background: lighten(@ase-forum-bg-color,2);
+    }
+
+    li.bbp-header {
+        background: @ase-forum-bg-color; //cant find this
+    }
+
+    .bbp-forums-list {
+        border-left: 1px solid @ase-forum-bg-color;
+    }
+    div.bbp-forum-header,
+    div.bbp-topic-header,
+    div.bbp-reply-header {
+        border-top: 1px solid @body-bg;
+    }
+    div.bbp-topic-content code,
+    div.bbp-reply-content code,
+    div.bbp-topic-content pre,
+    div.bbp-reply-content pre {
+        background-color: lighten(@ase-forum-bg-color,2);
+        border: 1px solid @ase-forum-bg-color;
+    }
+
+    fieldset.bbp-form {
+        background: @ase-forum-bg-color;
+        border:1px solid @ase-forum-border;
+    }
+
+
+    .bbp-reply-post-date ,
+    .bbp-admin-links a{
+        font-size:@font-size-xsmall;
+    }
+    .bbp-admin-links a {
+        //color: @btn-action-bg;
+    }
+    .bbp-reply-permalink {
+       // color:@flacker-accent-secondary
+    }
+    #bbp_reply_submit {
+        .btn;
+        .btn-orange;
+    }
+}
+
+.bbpress .default-sb-wrap {
+    margin-top:40px;
+
+    ul {
+        padding:0;
+    }
+}
+
+// Forum Hours Widget
+.sidebar,
+.flacker-forum-hours {
+    margin-bottom:30px;
+    .flacker-forum-hours-inner {
+      
+        padding:2rem;
+    }
+    .forums-closed {
+       // color:@btn-action-bg;
+    }
+    .forums-open {
+        //color:@flacker-accent-secondary;
+    }
+    .forum_hours {
+        margin-top:7px;
+    }
+}
