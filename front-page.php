@@ -214,7 +214,7 @@ get_header();?>
 					<a href="/developers"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Developer Portal</h3>
-						<p>Interested in building themes and add-ons for Aesop Story Engine? This place is just for you.<a class="ase-resource-arr" href="/developers">&rarr;</a></p>
+						<p>Interested in building themes and add-ons for Aesop? This place is just for you.<a class="ase-resource-arr" href="/developers">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">

@@ -70,11 +70,10 @@
 				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
 			</div>
 		<?php } else {
-			$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full');
 
 			?>
 			<div class="ase-header-show">
-				<div class="ase-header-single-show" style="background:url(<?php echo $imgsrc[0];?>);background-size:cover;background-position:center center;"></div>
+				<div class="ase-header-single-show" style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
 			</div>
 		<?php } ?>
 
