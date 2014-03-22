@@ -15,6 +15,7 @@ class aseFunctions{
 		require_once(ASE_DIR.'/inc/options.php');
 		require_once(ASE_DIR.'/inc/scripts.php');
 		require_once(ASE_DIR.'/inc/misc_functions.php');
+		require_once(ASE_DIR.'/inc/do-ssl.php');
 
 		// theme setup
 		add_action('after_setup_theme', array($this,'setup'));
