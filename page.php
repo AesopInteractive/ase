@@ -1,15 +1,17 @@
 <?php
 
-get_header(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('ase-content'); ?>>
-	<div class="ase-entry-content">
-		<?php if(have_posts()): while(have_posts()) : the_post();
-		
-		the_content();
+get_header();
 
-		endwhile;endif;
-		?>
-	</div>
-</article>
+if(have_posts()): while(have_posts()) : the_post();
+	?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('ase-content'); ?>>
 
-<?php get_footer();
+		<div class="ase-entry-content">
+			<?php the_content();?>
+		</div>
+
+	</article>
+	<?php
+endwhile;endif;
+
+get_footer();
