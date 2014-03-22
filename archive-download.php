@@ -30,10 +30,8 @@
 				<?php echo ase_get_pagination(); ?>
 			</div>
 		</div>
-		<div class="col-md-3">
-			<?php if(is_active_sidebar('library_sb')) { dynamic_sidebar('library_sb'); } ?>
-		</div>
 
+		<?php get_template_part('partials/product-sb');?>
 
 	</div>
 
