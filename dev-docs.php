@@ -22,7 +22,7 @@ get_header();
 		<div class="ase-content clearfix aesop-entry-content">
 
 			<div class="ase-docs-left">
-				<h2 class="ase-docs-left-title">Dev Docs</h2>
+				<h2 class="ase-docs-left-title">Developer Docs</h2>
 				<div class="aesop-timeline"></div>
 				<a class="btn btn-red" href="/documentation">back to Basic Docs</a>
 			</div>
