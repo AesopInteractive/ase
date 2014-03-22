@@ -50,8 +50,8 @@ class aseFunctions{
 		register_sidebars(1, array(
 			'name' => 'Library Sidebar',
 			'id' => 'library_sb',
-	      	'before_title' => '<h5 class="widget_title">',
-	      	'after_title' => '</h5>',
+	      	'before_title' => '<h3 class="widget_title">',
+	      	'after_title' => '</h3>',
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '</div>'
 	    ));
