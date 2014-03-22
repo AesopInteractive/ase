@@ -1,4 +1,4 @@
-<div class="ase-product col-sm-4">
+<div class="ase-product col-sm-6">
 	<div class="ase-product-outer">
 		<a class="ase-product-img-link" href="<?php the_permalink();?>">
 			<?php echo the_post_thumbnail('product-image ase-img');?>

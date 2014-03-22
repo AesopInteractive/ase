@@ -6,7 +6,7 @@ class aseFunctions{
 	public function __construct(){
 
 		// Set some constants
-		define('ASE_VERSION', '0.3');
+		define('ASE_VERSION', '0.4');
 		define('ASE_DIR', get_template_directory());
 		define('ASE_URL', get_template_directory_uri());
 
@@ -20,6 +20,8 @@ class aseFunctions{
 		// theme setup
 		add_action('after_setup_theme', array($this,'setup'));
 		add_action('wp_footer', array($this,'aesop_timeline_loader'),21);
+		add_filter('body_class', 		array($this,'body_class'));
+		add_filter('widget_text', 'do_shortcode');
 
 	}
 
@@ -92,7 +94,11 @@ class aseFunctions{
 			<?php 
 		endif;
 	}
+	function body_class($classes){
 
+		$classes[] = 'ase';
+		return $classes;
+	}
 
 }
 

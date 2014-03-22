@@ -1,34 +1,39 @@
 <?php get_header(); ?>
 
 	<div class="ase-content ase-product-loop clearfix" role="main">
+		<div class="col-md-9">
 
-		<?php
+			<?php
 
-			$i = 0;
+				$i = 0;
 
-			if (have_posts()) : while (have_posts()) : the_post();
+				if (have_posts()) : while (have_posts()) : the_post();
 
-			 	$open = !($i%3) ? '<div class="row">' : ''; //Create open wrapper if count is divisible by 3
-			    $close = !($i%3) && $i ? '</div>' : ''; //Close the previous wrapper if count is divisible by 3 and greater than 0
-			    echo $close.$open;
+				 	$open = !($i%2) ? '<div class="row">' : ''; //Create open wrapper if count is divisible by 3
+				    $close = !($i%2) && $i ? '</div>' : ''; //Close the previous wrapper if count is divisible by 3 and greater than 0
+				    echo $close.$open;
 
-				get_template_part('partials/product');
+					get_template_part('partials/product');
 
-				$i++;
+					$i++;
 
-			endwhile;else:
+				endwhile;else:
 
-				get_template_part('partials/not_found');
+					get_template_part('partials/not_found');
 
-			endif;
+				endif;
 
-			echo $i ? '</div>' : '';
+				echo $i ? '</div>' : '';
 
-		?>
-
-		<div class="ase-pagination clearfix">
-			<?php echo ase_get_pagination(); ?>
+			?>
+			<div class="ase-pagination clearfix">
+				<?php echo ase_get_pagination(); ?>
+			</div>
 		</div>
+		<div class="col-md-3">
+			<?php if(is_active_sidebar('library_sb')) { dynamic_sidebar('library_sb'); } ?>
+		</div>
+
 
 	</div>
 
