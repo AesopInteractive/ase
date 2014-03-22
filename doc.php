@@ -24,7 +24,7 @@ get_header();
 			<div class="ase-docs-left">
 				<h2 class="ase-docs-left-title">Docs</h2>
 				<div class="aesop-timeline"></div>
-				<a class="btn btn-red" href="/developers">Developer? Click here.</a>
+				<a class="btn btn-red" href="/developers">Go to Advanced Docs</a>
 			</div>
 			<div class="ase-docs-right">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Installing Aesop"]');?>
@@ -46,7 +46,7 @@ get_header();
 					</li>
 				</ul>
 
-				<?php echo do_shortcode('[aesop_timeline_stop num="Gallery Component"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Gallery" title="Gallery Component"]');?>
 				<p>Galleries are created and managed under the "Galleries" tab located on the left side within WordPress admin, and uses normal WordPress galleries. This means you can add and remove images, and even add captions. The gallery component creates a gallery of images, available in multiple formats, and are inserted into a story with a shortcode. Each story can have unlimited galleries.</p>
 
 				<p>Refer to the "help" tab in WordPress admin, in the Galleries post type, for additional help on how to create the gallery.</p>
@@ -113,11 +113,77 @@ get_header();
 					<dt>offset</dt>
 					<dd>if using parallax, the distance offset from the top. enter whole numbers like <code>500</code>.</dd>
 					</dl>
+					<dl class="dl-horizontal">
+					<dt>quote</dt>
+					<dd>the actual quote to be used.</dd>
+					</dl>
 				</div>
 
 				<img src="http://placehold.it/800x400">
 				<p class="ase-doc-note"><span class="label label-primary">tip</span> The Parallax, Offset, and Direction properties are all used with the Parallax option. Refer to the illustration above for a visual guide on how the offset is applied.</p>
 
+				<?php echo do_shortcode('[aesop_timeline_stop num="Image" title="Image Component"]');?>
+				<p>Draws an image with the option to have the image open into a lightbox. Image component can also display a caption, and photo credit..</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>the source path of the image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>imgwidth</dt>
+					<dd>width of the image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>offset</dt>
+					<dd>distance offset from the post - ex -150px</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>alt</dt>
+					<dd>image alt</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>align</dt>
+					<dd>left or right - alignment in relation to the main story text</dd></dl>
+					<dl class="dl-horizontal">
+						<dt>caption</dt>
+						<dd>image caption</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>credit</dt>
+						<dd>credit typically used as image credit</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>captionposition</dt>
+						<dd>bottom or top - position of the caption in relation to the image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>lightbox</dt>
+					<dd>on or off - enables image to click open into lightbox</dd>
+					</dl>
+				</div>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Character" title="Character Component"]');?>
+				<p>Draws a character with avatar, name, and bio.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>path to image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>name</dt>
+					<dd>character name</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>caption</dt>
+					<dd>the character caption</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>align</dt>
+					<dd>left or right - in relation to the main story text</dd>
+					</dl>
+				</div>
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Content" title="Content Component"]');?>
 
@@ -170,24 +236,24 @@ get_header();
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
-					<dt>label</dt>
-					<dd>this is what is displayed in the chapter navigation element appended to .aesop-entry-header</dd>
+						<dt>label</dt>
+						<dd>this is what is displayed in the chapter navigation element appended to .aesop-entry-header</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>title</dt>
-					<dd>displayed as chapter title</dd>
+						<dt>title</dt>
+						<dd>displayed as chapter title</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>subtitle</dt>
-					<dd>optional chapter subtitle</dd>
+						<dt>subtitle</dt>
+						<dd>optional chapter subtitle</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>bgtype</dt>
-					<dd>img or video</dd>
+						<dt>bgtype</dt>
+						<dd>img or video</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>img</dt>
-					<dd>path to the image, OR video , IF using video</dd>
+						<dt>img</dt>
+						<dd>path to the image, OR video , IF using video</dd>
 					</dl>
 				</div>
 
@@ -265,24 +331,40 @@ get_header();
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
-					<dt>width</dt>
-					<dd>width of the component - pass 'content' to use as content width</dd>
+						<dt>width</dt>
+						<dd>width of the component - pass 'content' to use as content width</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>align</dt>
-					<dd>left or right - hint, choose 400px as a video width and align right</dd>
+						<dt>align</dt>
+						<dd>left or right - hint, choose 400px as a video width and align right</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>src</dt>
-					<dd>vimeo, dailymotion, youtube, kickstarter, viddler, or self - self is for self hosted video</dd>
+						<dt>src</dt>
+						<dd>vimeo, dailymotion, youtube, kickstarter, viddler, vine, instagram, or <code>self</code> - self is for self hosted video</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>hosted</dt>
-					<dd>source of the hosted video, if using hosted video option</dd>
+						<dt>hosted</dt>
+						<dd>source of the hosted video, if using hosted video option</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>id</dt>
-					<dd>id of the video from vimeo, youtube, etc. use the entire URL for kickstarter</dd>
+						<dt>id</dt>
+						<dd>id of the video from vimeo, youtube, etc. use the entire URL for kickstarter</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>loop</dt>
+						<dd>for self hosted videos, should the video loop - <code>on</code> or <code>off</code> | default is <code>on</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>autoplay</dt>
+						<dd>for self hosted videos, should the video automatically start playing - <code>on</code> or <code>off</code> | default is <code>on</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>controls</dt>
+						<dd>for self hosted videos, should the controls be visible - <code>on</code> or <code>off</code> | default is <code>off</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>caption</dt>
+						<dd>optional caption for this video</dd>
 					</dl>
 				</div>
 
