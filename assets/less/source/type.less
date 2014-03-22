@@ -261,17 +261,24 @@ ol {
 
 // Description Lists
 dl {
-  margin-top: 0; // Remove browser default
-  margin-bottom: @line-height-computed;
+    margin-top: 0; // Remove browser default
+    margin-bottom: @line-height-computed;
+
+    &:nth-child(odd) {
+        background: darken(@body-bg,2);
+    }
+
 }
 dt,
 dd {
   line-height: @line-height-base;
 }
 dt {
+
   font-weight: bold;
 }
 dd {
+    
   margin-left: 0; // Undo browser default
 }
 

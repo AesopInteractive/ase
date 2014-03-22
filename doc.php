@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 *	 Template Name: Docs
@@ -13,7 +13,7 @@ get_header();
 
 <main id="main" class="clearfix">
 
-	
+
 
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
@@ -46,11 +46,10 @@ get_header();
 					</li>
 				</ul>
 
-				<hr />
 				<?php echo do_shortcode('[aesop_timeline_stop num="Gallery Component"]');?>
-				<p>This component creates a gallery of images. Several different gallery types are available within the same component. Galleries are created and managed under the Galleries post type, and are inserted into a story with a shortcode. Each story can have unlimited galleries.</p>
+				<p>Galleries are created and managed under the "Galleries" tab located on the left side within WordPress admin, and uses normal WordPress galleries. This means you can add and remove images, and even add captions. The gallery component creates a gallery of images, available in multiple formats, and are inserted into a story with a shortcode. Each story can have unlimited galleries.</p>
 
-				<p>WordPress galleries are used for this component. Refer to the "help" tab in WordPress admin, in the Galleries post type, for instructions on how to create the gallery.</p>
+				<p>Refer to the "help" tab in WordPress admin, in the Galleries post type, for additional help on how to create the gallery.</p>
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal dl-ase">
@@ -63,12 +62,9 @@ get_header();
 					</dl>
 				</div>
 
-				<p>Curabitur sodales augue at leo adipiscing posuere. Donec feugiat arcu at quam malesuada, et lacinia enim feugiat. Aenean urna felis, commodo laoreet mi in, laoreet egestas urna. Integer gravida lacinia nulla, in eleifend velit. Pellentesque sed turpis vel elit auctor tempor. Duis sodales convallis convallis.</p>
+				<p class="ase-doc-note"><span class="label label-primary">note</span> Some gallery types may not appear correctly, as themes are responsible for what the galleries look like.</p>
 
-				<p class="ase-doc-note"><span class="label label-primary">tip</span> whatevers</p>
-
-				<hr />
-				<?php echo do_shortcode('[aesop_timeline_stop num="Quote Component"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Quote" title="Quote Component"]');?>
 
 				<p>Draws a full width quote component with large text, colored background, optional background image and parallax effect.</p>
 
@@ -119,8 +115,245 @@ get_header();
 					</dl>
 				</div>
 
+				<img src="http://placehold.it/800x400">
+				<p class="ase-doc-note"><span class="label label-primary">tip</span> The Parallax, Offset, and Direction properties are all used with the Parallax option. Refer to the illustration above for a visual guide on how the offset is applied.</p>
 
-			</div>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Content" title="Content Component"]');?>
+
+				<p>This component transforms the content that is put between the tags, and can run a background image, as well as magazine style columns. This component can also run a column of text that is offset to the left or right.</p>
+
+				<p>To use this component, start with the opening component tag, then continue writing. Close the component tag when you’re ready to close that section..</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>width</dt>
+					<dd>master width of the component</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>columns</dt>
+					<dd>number of columns to break the content into</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>position</dt>
+					<dd>left, center, or right - position of one column of text</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>background image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>imgrepeat</dt>
+					<dd>repeat-x, repeat-y, or no-repeat - controls the repeating of the background is using a tiled image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>imgposition</dt>
+					<dd>position of the background image, if using img repeat</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>color</dt>
+					<dd>color of the text. helpful when using colored or image background</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>background</dt>
+					<dd>color of the background</dd>
+					</dl>
+				</div>
+
+				<p class="ase-doc-note"><span class="label label-primary">tip</span> Some components allow you to pass the word "content" as an option for the width. This will only work if the theme is built to support this feature. Click <a href="">here</a> if you're a developer and interested on how to make this happen.</p>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Chapters" title="Chapter Component"]');?>
+
+				<p>This component provides a scroll-to point for the story. We call them “Chapters.” Each chapter point can have an image as a cover, or a video bg as a cover. Can also have a title, and subtitle.</p>
+
+				<p>Adding this component will create a scroll-to point, and will also append a scrollnav to <code>.aesop-story-header</code>. As with all components, the markup comes unstyled.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>label</dt>
+					<dd>this is what is displayed in the chapter navigation element appended to .aesop-entry-header</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>title</dt>
+					<dd>displayed as chapter title</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>subtitle</dt>
+					<dd>optional chapter subtitle</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>bgtype</dt>
+					<dd>img or video</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>path to the image, OR video , IF using video</dd>
+					</dl>
+				</div>
+
+				<p class="ase-doc-note"><span class="label label-primary">note</span> This component will not function unless your theme has provided support for it. If you're a developer and interested in building in support, click <a href="">here</a>.</p>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Parallax" title="Parallax Component"]');?>
+
+				<p>Draws a fullwidth image component with parallax, lightbox, and captions. Also features a “floater” media item that can float from left to right, right to left, top to bottom, or bottom to top, over-layed on top of the image component.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>img</dt>
+					<dd>path to image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>height</dt>
+					<dd>height of the parallax component</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>parallaxbg</dt>
+					<dd>on or off - turn the parallax effect on or off</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floater</dt>
+					<dd>on or false - enable an additional floater item to site above the parallax image</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floatermedia</dt>
+					<dd>path to the floater item (could be an image)</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floaterposition</dt>
+					<dd>left or right - what side should the floater item be aligned to</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floaterdirection</dt>
+					<dd>up or down - when you scroll, should the floater travel up, or down (parallax)</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floateroffset</dt>
+					<dd>distance offset. enter whole integers like 400 or -400</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>caption</dt>
+					<dd>optional caption</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>captionposition</dt>
+					<dd>bottom-left, top-left, top-right, or bottom-right - position of the caption</dd>
+					</dl><dl class="dl-horizontal">
+					<dt>lightbox</dt>
+					<dd>on or false - set to 'on' to enable the image to click open into a lightbox</dd>
+					</dl>
+
+				</div>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Audio" title="Audio Component"]');?>
+
+				<p>Draws an audio player with the ability to have it automatically start once the audio player comes into view.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+						<dt>src</dt>
+						<dd>path to the mp3</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>viewstart</dt>
+						<dd>automatically start the audio once in view | default is <code>off</code></dd>
+					</dl>
+				</div>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Video" title="Video Component"]');?>
+
+				<p>Draws a fullwidth video component with optional caption.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>width</dt>
+					<dd>width of the component - pass 'content' to use as content width</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>align</dt>
+					<dd>left or right - hint, choose 400px as a video width and align right</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>src</dt>
+					<dd>vimeo, dailymotion, youtube, kickstarter, viddler, or self - self is for self hosted video</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>hosted</dt>
+					<dd>source of the hosted video, if using hosted video option</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>id</dt>
+					<dd>id of the video from vimeo, youtube, etc. use the entire URL for kickstarter</dd>
+					</dl>
+				</div>
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Map" title="Map Component"]');?>
+
+				<p>Draws a fullwidth map component with custom location markers. The location markers are added with post meta inside the story screen, to the right of the story. Only one map is allowed per story at this time.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>height</dt>
+					<dd>height of the map component</dd>
+					</dl>
+				</div>
+
+				<hr />
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Timeline" title="Timeline Component"]');?>
+
+				<p>Draws a scroll-to type navigation that we call a ‘Timeline.’ It acts similar to the chapter component, in that it creates a scroll-to point. Ideal labels include Months, or years. Each component creates a scroll-to point in the form of an h2 tag.</p>
+
+				<p>This component can be used in pages as well, to create a one-page scrolling website.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+						<dt>num</dt>
+						<dd>any word or number to be displayed in navigation</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>title</dt>
+						<dd>text to be displayed for page heading</dd>
+					</dl>
+				</div>
+
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Document" title="Document Component"]');?>
+
+				<p>Draws a small Document heading, and when clicked will slide down to reveal the document/image. Ideally used to reference documents such as a PDF.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>type</dt>
+					<dd>pdf or image - use an image or display an embedded PDF</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>src</dt>
+					<dd>path to image or document</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>caption</dt>
+					<dd>caption for the document</dd>
+					</dl>
+
+				</div>
+
+
+				<?php echo do_shortcode('[aesop_timeline_stop num="Collections" title="Collections Component"]');?>
+
+				<p>This component creates a collection of stories. For example, if you placed stories within a collection called Art, you could display those in a grid form on, say, the home page of your story site.</p>
+
+				<div class="ase-doc-atts">
+					<dl class="dl-horizontal">
+					<dt>collection</dt>
+					<dd>id of the collection</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>title</dt>
+					<dd>display an optional title for this collection</dd>
+					</dl>
+				</div>
+
+			</div><!-- end docs right-->
 
 		</div>
 	</section>
@@ -132,7 +365,3 @@ get_header();
 
 
 <?php get_footer();
-
-
-
-

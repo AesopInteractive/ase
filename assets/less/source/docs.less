@@ -5,10 +5,10 @@
         float:left;
     }
     .ase-docs-left {
-        width:30%;
+        width:25%;
     }
     .ase-docs-right {
-        width:70%;
+        width:75%;
     }
 }
 
@@ -39,14 +39,15 @@
                 display: block;
                 margin:0;
                 position: relative;
+                line-height: 1;
 
                 a {
-                    font-size:@font-size-xsmall - 2;
-                    line-height: @font-size-xsmall - 2;
+                    font-size:@font-size-xsmall;
+                    line-height: @font-size-xsmall;
                     font-family: @font-family-sans-serif;
                     color:inherit;
                     margin:0.35rem 0;
-                    padding:0.85rem;
+                    padding:0.2rem .85rem;
                     display: block;
                     text-transform: uppercase;
 
@@ -66,7 +67,13 @@
 
 .ase-docs-right {
     .aesop-timeline-stop {
-        margin:0 0 2rem;
+        margin:7rem auto 2rem;
+    }
+
+    .scroll-nav__section {
+        margin-top:5rem;
+        padding-bottom:5rem;
+        border-bottom:1px solid @baseContrast;
     }
 }
 
@@ -129,7 +136,7 @@
     dl {
         font-size:@font-size-small;
         font-family: @font-family-sans-serif;
-        margin:0;
+        margin-bottom:1rem;
     }
 
 }
