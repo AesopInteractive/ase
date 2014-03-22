@@ -22,6 +22,7 @@ class aseFunctions{
 		add_action('wp_footer', array($this,'aesop_timeline_loader'),21);
 		add_filter('body_class', 		array($this,'body_class'));
 		add_filter('widget_text', 'do_shortcode');
+		add_filter('edd_download_supports', array($this,'modify_edd_product_supports'));
 
 	}
 
@@ -58,8 +59,14 @@ class aseFunctions{
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '</div>'
 	    ));
+
+
 	}
 
+	function modify_edd_product_supports($supports) {
+		$supports[] = 'comments';
+		return $supports;	
+	}
 
 	function aesop_timeline_loader(){
 
