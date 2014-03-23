@@ -37,6 +37,7 @@
 		<?php } ?>
 	</div>
 
+	<?php if(!is_home()){ ?>
 	<header id="header" class="ase-site-header">
 
 		<div class="aesop-content">
@@ -78,11 +79,12 @@
 		<?php } ?>
 
 	</header>
+	<?php } ?>
 
 
 	<?php if (is_front_page()) {?>
 		<div class="ase-primary-nav aesop-timeline"></div>
-	<?php } else { ?>
+	<?php } elseif (!is_home()) { ?>
 		<nav class="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>
