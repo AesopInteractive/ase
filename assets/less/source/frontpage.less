@@ -34,6 +34,12 @@
     }
 }
 
+.ase-welcome-blurb {
+    font-size:2.2rem;
+    line-height: 3rem;
+    margin-bottom:4rem;
+}
+
 //backs
 
 .ase-reviews,
@@ -77,7 +83,6 @@
         padding:1rem .5rem .4rem 6rem;
         height:45px;
         font-family:@ase-trend-sans;
-        text-transform: uppercase;
         .ase-blue;
 
         &:before {
@@ -165,9 +170,10 @@
 
         img {
             border-radius:50%;
-            border:5px solid white;
+            .ase-img;
             float:left;
             max-width:95px;
+
         }
     }
     .ase-review-quote {
@@ -187,9 +193,17 @@
 
         footer {
             font-size:1.3rem;
+            text-shadow:0 1px 2px rgba(255,255,255,0.8);
+            font-style: italic;
+            margin-top:0.25rem;
+            cite {
+                line-height: 1.1;
+                font-style: italic;
+            }
             a {
+                line-height: 1.1;
                 display: block;
-                .ase-red;
+                font-weight: bold;
             }
         }
     }

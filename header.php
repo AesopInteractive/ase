@@ -55,7 +55,16 @@
 			<?php } elseif (is_home()) {?>
 				<h2 class="ase-page-title">Blog</h2>
 				<p class="ase-sub-title"><span class="ase-bold">Tips, tricks, tutorials</span>, and original <br />  hand-crafted stories using Aesop Story Engine.</p>
-			<?php } else {?>
+			<?php } elseif (is_single()) {?>
+				<h2 class="ase-page-title"><?php the_title();?></h2>
+				<?php
+
+	                $author_id = get_queried_object()->post_author;
+    				$name = get_the_author_meta('display_name', $author_id);
+
+	                printf('<p class="ase-sub-title">By <strong>%s</strong> on %s</p>',$name, get_the_date());
+
+			} else {?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
 			<?php } ?>
 

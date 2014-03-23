@@ -11,7 +11,7 @@ get_header();?>
 	<div class="ase-section ase-features">
 		<div class="ase-content clearfix">
 			<?php echo do_shortcode('[aesop_timeline_stop num="Features" title="Aesop Story Engine Features"]');?>
-			<p class="ase-italic"><span class="ase-bold">Choose from thirteen unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
+			<p class="ase-italic ase-welcome-blurb"><span class="ase-bold">Choose from thirteen unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cacke. Even timelines and story collections are built in.</p>
 			<?php echo do_shortcode('[aesop_image img="/wp-content/themes/ase/assets/img/aesop-ui.png" caption="Create rich, interactive stories with our easy-to-use plugin interface right in the WordPress editor!" align="center" captionposition="left" lightbox="off" imgwidth="100%"]');?>
 		</div>
 	</div>
@@ -115,7 +115,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 					  	<p>At WooThemes we love to back innovation upon WordPress, especially when that innovation unobtrusively extends the content publishing experience and a theme’s capabilities - solving problems for theme developers and end users. Well done Aesop.</p>
 					  	<footer>
-					  		<cite>Mark Forrester, Co-founder WooThemes</cite>
+					  		<cite><strong>Mark Forrester</strong>, Co-founder WooThemes</cite>
 					  	</footer>
 					</blockquote>
 				</div>
@@ -124,7 +124,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 						<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen ina  long time.</p>
 					  	<footer>
-					  		<cite>Sarah Gooding, WP Tavern</cite>
+					  		<cite><strong>Sarah Gooding</strong>, WP Tavern</cite>
 					  		<a href="http://wptavern.com/aesop-story-engine-an-open-source-wordpress-plugin-for-storytelling">An Open Source WordPress Plugin for Storytelling</a>
 					  	</footer>
 					</blockquote>
@@ -136,7 +136,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 					  	<p>The ASE potentially takes WordPress’ content capabilities to a new level of maturity and sophistication. More than that though, it represents everything that WordPress stands for: democratizing publishing.</p>
 					  	<footer>
-					  		<cite>Chris Knowles, WPMU</cite>
+					  		<cite><strong>Chris Knowles</strong>, WPMU</cite>
 					  		<a href="http://premium.wpmudev.org/blog/aesop-story-engine-the-next-big-thing-in-wordpress/">Aesop Story Engine: The Next Big Thing For WordPress?</a>
 					  	</footer>
 					</blockquote>
@@ -146,7 +146,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 					  	<footer>
-					  		<cite>Brian Krogsgard</cite>
+					  		<cite><strong>Brian Krogsgard</strong></cite>
 					  		<a href="http://www.poststat.us/aesop-medium-esque-story-engine-wordpress/">Aesop, a Medium-esque “story engine” for WordPress</a>
 					  	</footer>
 					</blockquote>
@@ -158,7 +158,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop's storytelling engine is a huge win for fans of dedicated, distraction-free reading experiences. It's a win for the web.</p>
 					  	<footer>
-					  		<cite>Collis Ta'eed, CEO - Envato</cite>
+					  		<cite><strong>Collis Ta'eed</strong>, CEO - Envato</cite>
 					  	</footer>
 					</blockquote>
 				</div>
@@ -167,7 +167,7 @@ get_header();?>
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 					  	<footer>
-					  		<cite>Brian Krogsgard</cite>
+					  		<cite><strong>Brian Krogsgard</strong></cite>
 					  		<a href="http://www.poststat.us/aesop-medium-esque-story-engine-wordpress/">Aesop, a Medium-esque “story engine” for WordPress</a>
 					  	</footer>
 					</blockquote>
