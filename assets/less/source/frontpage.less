@@ -34,6 +34,13 @@
     }
 }
 
+//backs
+
+.ase-reviews,
+.ase-newsletter {
+    .ase-light-texture;
+}
+
 // triangles
 .ase-components,
 .ase-resources {
@@ -55,10 +62,11 @@
 }
 
 .ase-comp-col {
-    background:white;
     border:1px solid gray;
     text-align: left;
     padding:0;
+    background:white;
+    .ase-white-texture;
     .box-shadow(0 2px 3px rgba(0,0,0,0.2));
 
     h2 {
@@ -144,7 +152,7 @@
 }
 
 .ase-reviews {
-    .ase-orange-back;
+    background-color:@brand-warning;
     .aesop-timeline-stop {
         .ase-black;
     }
@@ -201,12 +209,13 @@
 }
 
 .ase-newsletter {
-    .ase-blue-back;
+    background-color: @brand-primary;
     position: relative;
     h2,
     p {
         .ase-white;
         margin:0;
+        text-shadow: 0 1px 3px rgba(20,13,1,.5);
     }
     h2 {
         text-align: center;

@@ -9,6 +9,7 @@
     }
     .ase-docs-right {
         width:75%;
+        padding-left:3%;
     }
 }
 
@@ -34,28 +35,43 @@
 }
 
 .ase-docs-left {
+
+    .btn {
+        width:100%;
+        display: block;
+        margin-top:1rem;
+    }
+
     .ase-docs-left-title {
-        margin-top:0;
+        margin:0;
+        padding:0.6rem;
         font-size:2rem;
+        .ase-blue-back;
+        color:white;
+        .ase-speckle;
+        z-index: 1;
     }
     .aesop-timeline {
 
         .scroll-nav{
+            background:white;
+            .ase-white-texture;
+            .ase-spiffy-box;
 
             &.fixed {
                 position: fixed;
                 overflow: hidden;
-                width:30%;
+                width:254px;
                 top:90px;
             }
         }
 
         .scroll-nav__list {
             list-style: none;
-            padding:0;
+            padding:0.6rem;
             width:100%;
             text-align: left;
-
+            margin:0;
 
             li {
                 display: block;
@@ -77,6 +93,14 @@
                         color:@link-color;
                         text-decoration: none;
                     }
+
+                }
+
+                &:first-child a {
+                    margin-top:0;
+                }
+                &:last-child a {
+                    margin-bottom: 0;
                 }
 
                 &.active a {

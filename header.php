@@ -25,7 +25,7 @@
 	<?php do_action('aesop_inside_body_top');?>
 
 	<div class="ase-sticky-nav">
-		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.gif';?>" alt="logo"></a>
+		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
 		<?php if (is_front_page()) {?>
 			<div class="ase-sticky-nav-menu aesop-timeline collapse"></div>
 			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
@@ -41,7 +41,7 @@
 
 		<div class="aesop-content">
 
-			<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.gif';?>" alt="logo"></a>
+			<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
 
 			<?php if(is_front_page()) {?>
 				<h2 class="ase-site-title">Write stories instead of code</h2>
