@@ -19,7 +19,7 @@
 <!-- Comments -->
 
 <section id="ase-comments-wrap" class="ase-comments-wrap">
-	<p class="ase-comments-toggle" data-target="#ase-comments" data-toggle="collapse"><i class="asecon asecon-comments"></i></p>
+	<p class="ase-comments-toggle" data-target="#ase-comments" data-toggle="collapse"><i class="jorgencon jorgencon-comments"></i>&nbsp;&nbsp;Comments <?php comments_number( ' ', '<span>( 1 )</span>', '<span>( % )</span>' ); ?></p>
 	<div class="ase-story-shares unstyled">
 		<a href="#" class="ase-twitter-share"><i class="asecon asecon-twitter-square"></i></a>
 		<a href="#" class="ase-fb-share"><i class="asecon asecon-facebook-square"></i></a>

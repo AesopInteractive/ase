@@ -24,7 +24,7 @@ get_header();?>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="ase-comp-col">
-						<h2 class="media-comp">Media</h2>
+						<h2 class="media-comp">Audio & Video</h2>
 						<p>Display an audio player with MP3 support, or a video player with YouTube, Vimeo, and more.</p>
 					</div>
 				</div>

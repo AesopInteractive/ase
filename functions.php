@@ -18,9 +18,10 @@ class aseFunctions{
 		require_once(ASE_DIR.'/inc/do-ssl.php');
 
 		// theme setup
-		add_action('after_setup_theme', array($this,'setup'));
-		add_action('wp_footer', array($this,'aesop_timeline_loader'),21);
-		add_filter('body_class', 		array($this,'body_class'));
+		add_action('after_setup_theme', 	array($this,'setup'));
+		add_action('wp_head', 				array($this,'fb_init'));
+		add_action('wp_footer', 			array($this,'aesop_timeline_loader'),21);
+		add_filter('body_class', 			array($this,'body_class'));
 		add_filter('widget_text', 'do_shortcode');
 		add_filter('edd_download_supports', array($this,'modify_edd_product_supports'));
 
@@ -106,7 +107,43 @@ class aseFunctions{
 		$classes[] = 'ase';
 		return $classes;
 	}
+	function fb_init(){
 
+		if( is_single() ){
+			$img 		= wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID() ), 'large' );
+			?>
+			<script>
+
+				function fbAsyncInit() {
+					FB.init({
+					    appId: "492973480802758",
+					    status: true,
+					    cookie: true,
+					    xfbml: true
+					});
+
+				  	jQuery(".ase-fb-share").click(function(e){
+				  		e.preventDefault();
+
+					    FB.ui({
+					      	name: '<?php echo the_title();?>',
+					      	link: '<?php the_permalink();?>',
+					      	caption: "",
+					      	description: '<?php echo the_excerpt();?>',
+					      	method: "feed",
+					      	picture: '<?php echo $img[0];?>'
+					    });
+
+				  	});
+				}
+
+				jQuery(document).ready(function(){
+					jQuery(".ase-twitter-share").attr('href', "https://twitter.com/intent/tweet?text=<?php echo the_title();?>&nbsp;<?php the_permalink();?>&url=<?php the_permalink();?>");
+				});
+
+			</script>
+		<?php }
+	}
 }
 
 
