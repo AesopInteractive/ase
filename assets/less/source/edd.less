@@ -3,6 +3,14 @@
         margin:0;
         list-style: none;
         padding:1rem;
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    .edd-cart-item:first-child {
+        margin-top:-15px;
     }
 
     .edd-cart-number-of-items {
@@ -11,16 +19,31 @@
         padding-left:1rem;
     }
 
+    .cart_item.edd_subtotal,
+    .edd-remove-from-cart,
+    .edd_empty_cart {
+        font-size: 1.5rem;
+    }
+
+    .cart_item.edd_subtotal {
+        .ase-orange;
+        font-weight:bold;
+        margin-top:0.5rem;
+    }
+
+    // button
     .edd_checkout a {
         .btn;
         .btn-red;
         width:100%;
+        margin-top:1rem;
     }
 }
 
 .edd-taxonomy-widget {
     .unstyled;
     padding:1rem;
+    font-size:1.5rem;
 }
 
 // edd buttons
@@ -34,6 +57,7 @@
 .edd-cart-saving-button {
     font-size:@font-size-xsmall;
 }
+
 
 //checkout table-layout
 

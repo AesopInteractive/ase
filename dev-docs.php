@@ -24,8 +24,8 @@ get_header();
 			</div>
 			<div class="col-md-4">
 				<div class="ase-dev-doc-block">
-					<h3>Theme Implementation</h3>
-					<p>Find out what you need to get your theme or framework compatible with ASE.<a class="ase-resource-arr" href="#scrollNav-3">&rarr;</a></p>
+					<h3>Theme Compatibility</h3>
+					<p>Find out what you need to get your theme or framework compatible with ASE.<a class="ase-resource-arr" href="#scrollNav-1">&rarr;</a></p>
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -47,7 +47,7 @@ get_header();
 			<div class="ase-docs-left">
 				<h2 class="ase-docs-left-title">Developer Docs</h2>
 				<div class="aesop-timeline"></div>
-				<a class="btn btn-red" href="/documentation">back to Basic Docs</a>
+				<a class="btn btn-primary" href="/documentation">Basic Docs <span style="position:relative;top:2px;left:3px;">&rarr;</span></a>
 			</div>
 			<div class="ase-docs-right">
 				<?php the_content();?>
