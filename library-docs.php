@@ -202,6 +202,12 @@ get_header();
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Character Carousel" title="Aesop Character Carousel"]');?>
 				<p>Character Carousel is a great way to show multiple characters in a story without any code at all. You can create and manage unlimited carousels, all within WordPress.</p>
+
+				<p>To get started, head into your WordPress admin area, and click on the Carousels tab on the left. Here you can create a carousel, so go ahead and do so. The name isn't used, and is only for your reference. This carousel uses the Character Component within Aesop Story Engine, so it uses all those options found within it. You can upload an image as an avatar, specify a name, and bio.</p>
+
+				<p>There are only two options available, and that is to automatically start the carousel when the page loads, in addition to specifying how many characters are shown at once.</p>
+
+				<p>After setting up your first carousel, copy and paste the included shortcode on a page or post where you want the carousel to be shown.</p>
 			</div><!-- end docs right-->
 
 		</div>
