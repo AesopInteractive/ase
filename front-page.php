@@ -19,7 +19,7 @@ get_header();?>
 	<div class="ase-section ase-components">
 		<div class="ase-content clearfix">
 
-			<h2>Thirteen Unique Story Components</h2>
+			<h2 class="zmt ase-components-title">Thirteen Unique Story Components</h2>
 
 			<div class="row">
 				<div class="col-md-4">
@@ -184,22 +184,26 @@ get_header();?>
 					<a href="/quick-start-guide"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.<a class="ase-resource-arr" href="/quick-start-guide">&rarr;</a></p>
+						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.</p>
+
 					</div>
+					<a class="btn btn-primary" href="/quick-start-guide">Get going</a>
 				</div>
 				<div class="col-md-4">
 					<a href="/library/category/themes"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Aesop Themes</h3>
-						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.<a class="ase-resource-arr" href="/library/category/themes">&rarr;</a></p>
+						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
 					</div>
+					<a class="btn btn-primary" href="/library/category/themes">See all themes</a>
 				</div>
 				<div class="col-md-4">
 					<a href="/library/category/add-ons"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Add-ons</h3>
-						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.<a class="ase-resource-arr" href="/library/category/add-ons">&rarr;</a></p>
+						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
 					</div>
+					<a class="btn btn-primary" href="/library/category/add-ons">See all add-ons</a>
 				</div>
 			</div>
 			<div class="row">
@@ -207,22 +211,25 @@ get_header();?>
 					<a href="/documentation"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Documentation</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.<a class="ase-resource-arr" href="/documentation">&rarr;</a></p>
+						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
 					</div>
+					<a class="btn btn-primary" href="/documentation">Read the docs</a>
 				</div>
 				<div class="col-md-4">
 					<a href="/developers"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Developer Portal</h3>
-						<p>Interested in building themes and add-ons for Aesop? This place is just for you.<a class="ase-resource-arr" href="/developers">&rarr;</a></p>
+						<p>Interested in building themes and add-ons for Aesop? This place is just for you.</p>
 					</div>
+					<a class="btn btn-primary" href="/developers">Write code</a>
 				</div>
 				<div class="col-md-4">
 					<a href="/blog"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>The Latest</h3>
-						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.<a class="ase-resource-arr" href="/blog">&rarr;</a></p>
+						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.</p>
 					</div>
+					<a class="btn btn-primary" href="/blog">Check it out</a>
 				</div>
 			</div>
 		</div>
