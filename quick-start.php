@@ -1,13 +1,13 @@
 <?php
 
 /*
-*	 Template Name: Dev Docs
+*	 Template Name: Quick Start Guide
 */
 
 get_header();
 
 ?>
-<div class="ase-dev-docs-welcome ase-content">
+<div class="ase-quick-start ase-content">
 
 	<div class="clearfix">
 		<div class="col-md-4">

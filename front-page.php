@@ -111,7 +111,7 @@ get_header();?>
 			<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/forrester.jpeg';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>At WooThemes we love to back innovation upon WordPress, especially when that innovation unobtrusively extends the content publishing experience and a theme’s capabilities - solving problems for theme developers and end users. Well done Aesop.</p>
 					  	<footer>
@@ -120,7 +120,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/gooding.jpeg';?>">
 					<blockquote class="ase-review-quote">
 						<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen ina  long time.</p>
 					  	<footer>
@@ -132,7 +132,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/knowles.png';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>The ASE potentially takes WordPress’ content capabilities to a new level of maturity and sophistication. More than that though, it represents everything that WordPress stands for: democratizing publishing.</p>
 					  	<footer>
@@ -142,7 +142,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/krogsgard.jpeg';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 					  	<footer>
@@ -154,7 +154,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/collis.png';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop's storytelling engine is a huge win for fans of dedicated, distraction-free reading experiences. It's a win for the web.</p>
 					  	<footer>
@@ -163,7 +163,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="http://placehold.it/100/100">
+					<img src="<?php echo ASE_URL.'/assets/img/krogsgard.jpeg';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 					  	<footer>
@@ -184,7 +184,7 @@ get_header();?>
 					<a href="/quick-start-guide"><img class="ase-img" src="http://placehold.it/300x150"></a>
 					<div class="ase-resource">
 						<h3>Quick Start Guide</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.<a class="ase-resource-arr" href="/quick-start-guide">&rarr;</a></p>
+						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.<a class="ase-resource-arr" href="/quick-start-guide">&rarr;</a></p>
 					</div>
 				</div>
 				<div class="col-md-4">

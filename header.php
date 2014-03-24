@@ -99,4 +99,4 @@
 		</nav>
 	<?php } ?>
 
-	<main id="main-content" class="main-content">
+	<main id="main-content" class="main-content clearfix">
