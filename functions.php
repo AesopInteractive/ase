@@ -50,6 +50,7 @@ class aseFunctions{
 		define('EDD_SLUG', 'library');
 
 		add_image_size( 'ase-store-img',  600, 300, true ); // main product image
+		add_image_size( 'ase-product-img',  360, 220, true ); // main product image
 
 		//sidebar
 		register_sidebars(1, array(
