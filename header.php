@@ -46,7 +46,7 @@
 
 			<?php if(is_front_page()) {?>
 				<h2 class="ase-site-title">Write stories instead of code</h2>
-				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any W0rdPress theme.</p>
+				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any WordPress theme.</p>
 				<?php get_template_part('partials/red-btn');?>
 				<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
 			<?php } elseif ('download' == get_post_type()) {?>
