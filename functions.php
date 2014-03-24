@@ -71,7 +71,7 @@ class aseFunctions{
 
 	function aesop_timeline_loader(){
 
-		if(is_front_page() || is_page_template('doc.php') || is_page_template('dev-docs.php')):
+		if(is_front_page() || is_page_template('doc.php') || is_page_template('dev-docs.php') || is_page_template('library-docs.php')):
 			?>
 				<!-- Aesop Timeline -->
 				<script>
