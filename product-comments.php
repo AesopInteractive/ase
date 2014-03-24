@@ -19,7 +19,7 @@
 <!-- Comments -->
 
 <section id="ase-comments-wrap" class="ase-comments-wrap">
-	<p class="ase-comments-toggle" data-target="#ase-comments" data-toggle="collapse"><i class="jorgencon jorgencon-comments"></i>&nbsp;&nbsp;Comments <?php comments_number( ' ', '<span>( 1 )</span>', '<span>( % )</span>' ); ?></p>
+	<p class="ase-comments-toggle ase-product-comments-toggle" data-target="#ase-comments" data-toggle="collapse"><i class="asecon asecon-info-circle"></i>&nbsp;&nbsp;Pre-Sales Questions <?php comments_number( ' ', '<span>( 1 )</span>', '<span>( % )</span>' ); ?></p>
 	<div id="ase-comments" class="collapse">
 		<ol class="commentlist">
 		  <?php wp_list_comments(); ?>

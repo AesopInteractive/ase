@@ -65,19 +65,29 @@ ol.commentlist li.comment .comment-body{
         display: block;
     }
     .ase-comments-toggle {
-        position: absolute;
-        right:1rem;
-        top:-32px;
         display: block;
-        padding:0.2rem 0.6rem;
-        border:1px solid @baseContrast;
-        border-bottom-right-radius: 3px;
-        border-bottom-left-radius: 3px;
+        padding:0.6rem;
+        margin-top:2rem;
+        margin-bottom:0;
+        border-top:1px solid @baseContrast;
+        border-bottom:1px solid @baseContrast;
         font-size:@font-size-small;
+        .ase-blue;
+        background:white;
+        .ase-white-texture;
+
+        i {
+            .ase-orange;
+        }
 
         &:hover {
             cursor: pointer;
             color:@link-color;
         }
+
+        &.ase-product-comments-toggle {
+        }
     }
 }
+
+// product comments
