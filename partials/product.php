@@ -10,6 +10,7 @@
 			<p><?php echo wp_trim_words(get_the_excerpt(),16,'...');?></p>
 
 		</div>
+		<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
 	</div>
 </div>
 <?php do_action( 'ase_after_product' );

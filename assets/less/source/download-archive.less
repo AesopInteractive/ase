@@ -13,29 +13,32 @@
     display: block;
 }
 .ase-product-inner {
-    background:white;
-    .ase-white-texture;
     border:1px solid gray;
     text-align: left;
     padding:0;
+    background:white;
+    .ase-white-texture;
     .box-shadow(0 2px 3px rgba(0,0,0,0.2));
 
     .ase-product-title {
+        border-bottom:1px solid gray;
         margin:0;
-        padding:1rem 0.6rem;
-        .ase-blue-back;
-        font-size:2rem;
-        .ase-speckle;
-        text-align: center;
-
-        a {
-            color:white;
-        }
+        position: relative;
+        font-size:2.2rem;
+        padding:1rem .5rem .4rem;
+        height:45px;
+        font-family:@ase-trend-sans;
+        .ase-blue;
     }
 
     p {
         font-size:1.5rem;
         margin:0;
         padding:0.6rem;
+    }
+}
+.ase-product-outer {
+    .edd_download_purchase_form {
+        margin-top:1rem;
     }
 }
