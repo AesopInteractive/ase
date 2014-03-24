@@ -183,36 +183,16 @@ get_header();
 				<p>All settings are entered with the Theme Customizer. While logged in, head to Appearence-->Customize, and click the Aesop Social tab.</p>
 
 				<h5>Social Options</h5>
-				<div class="ase-doc-atts">
-					<dl class="dl-horizontal">
-					<dt>Enable Twitter Cards</dt>
-					<dd>sdfsdf.</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Enable FB Open Graph</dt>
-					<dd>Isdfsdf.</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Google Analytics</dt>
-					<dd>asdfasdf</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Facebook App ID</dt>
-					<dd>sdfasdfsadf</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Twitter Handle</dt>
-					<dd>sdfasdfsadf</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Google+ Profile URL</dt>
-					<dd>sdfasdfsadf</dd>
-					</dl>
-					<dl class="dl-horizontal">
-					<dt>Facebook URL</dt>
-					<dd>asdfsadf.</dd>
-					</dl>
-				</div>
+				<p><strong>Enable Twitter Cards - </strong>Checking this box will integrate Twitter Meta Card data within your site. The "description" is pulled from your post or pages excerpt, and if no description if found, it will fall back to your sites description.</p>
+				<p><strong>Twitter Image Fallback - </strong>Here you can provide a fallback image for the Twitter Meta Card Image property. By default it will take your post or pages featured image, but if one is not present, it will fallback to the you upload here.</p>
+				<p><strong>Enable Facebook Open Graph - </strong>This works just like the Twitter Meta Card info above, and enables rich sharing within your site.</p>
+				<p><strong>Facebook Image Fallback - </strong>Here you can provide a fallback image for the Facebook Open Graph Image property. By default it will take your post or pages featured image, but if one is not present, it will fallback to the you upload here.</p>
+				<p><strong>Google Analytics - </strong>Enter your Google Analytics UA-XXXX-XXX code to enable Google Analytics site tracking.</p>
+				<p><strong>Facebook App ID - </strong>By providing a Facebook App ID you can enrich the quality of snippets shared from your site.</p>
+				<p><strong>Twitter Username - </strong>Provide your Twitter handle. Some themes and especially Twitter Meta cards will use this.</p>
+				<p><strong>Facebook Profile or Page URL - </strong>Provide your Facebook page or profile URL, as some Aesop themes will utilize this.</p>
+				<p><strong>Google+ Profile URL - </strong>This is helpful for validing your website when setting up a Google+ Profile.</p>
+
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Lazy Loader" title="Aesop Lazy Loader"]');?>
 				<p>The Aesop Lazy Loader add-on will convieniently optimize the loading of the images within your site. It's important to note that this plugin doesn't have any options, and just works "automatically" with all Aesop Story Engine components.</p>
