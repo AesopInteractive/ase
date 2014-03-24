@@ -72,13 +72,14 @@
 // Danger and error appear as red
 .btn-red {
   .button-variant(@btn-danger-color; @btn-danger-bg);
+
 }
 .btn-orange {
   .button-variant(@btn-warning-color; @btn-warning-bg);
 
-  &:hover {
-    .btn-red;
-  }
+    &:hover {
+        .btn-red;
+    }
 }
 
 // Link buttons
@@ -181,12 +182,13 @@ input[type="button"] {
         content:'\f0ed';
         font-family: FontAwesome;
         position: absolute;
-        left: 6px;
+        left: 0;
         top:0;
-        height:68px;
+        height:69px;
         font-size:3rem;
-        padding:1rem 2rem;
+        padding:1.4rem 2rem;
         border-right:3px solid white;
+        text-shadow: 0 1px 3px rgba(20, 13, 1, .5);
     }
 
     span {
@@ -206,6 +208,21 @@ input[type="button"] {
         &.ase-dl-btn-bottom {
             font-family: @ase-trend-sans;
             line-height: @font-size-base;
+        }
+    }
+
+    &:hover {
+        .ase-orange-back;
+        .ase-speckle;
+        .transition(background .2s ease-in-out);
+    }
+
+    &:active {
+        span{
+            text-shadow:none;
+        }
+        &:before {
+            text-shadow:none;
         }
     }
 }
