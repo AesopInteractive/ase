@@ -1,3 +1,31 @@
+.edd-tables {
+    th {
+        .ase-blue-back;
+        .ase-speckle;
+        border:none;
+        color:white;
+        font-family: @ase-trend-slab;
+        height:32px;
+        font-size:1.5rem;
+        padding-left:0.6rem;
+    }
+
+    tbody {
+        background-color:white;
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        border-bottom:1px solid gray;
+    }
+
+    tr:nth-child(even) {
+        background:lighten(@body-bg,4);
+    }
+
+    td {
+        padding:0 0.6rem;
+    }
+
+}
 .widget {
     .edd-cart {
         margin:0;
@@ -79,27 +107,12 @@
         .edd-submit {
             margin-bottom:1rem;
         }
-    }
-    .edd_cart_header_row {
-        .ase-blue-back;
-        .ase-speckle;
-        border:none;
-        color:white;
-        font-family: @ase-trend-slab;
-        height:32px;
-        font-size:1.5rem;
-
         th {
-            line-height: 0;
+            background-image:none;
+            background: transparent;
         }
-
     }
-    tbody {
-        background:white;
-        border-left:1px solid gray;
-        border-right:1px solid gray;
-        border-bottom:1px solid gray;
-    }
+    .edd-tables;
     .edd_cart_item {
         height:45px;
     }
@@ -117,7 +130,7 @@
         .ase-red;
     }
     .edd_cart_total {
-
+        color:@text-color;
     }
 
 }
@@ -213,3 +226,23 @@
 }
 
 // end EDD checkout
+
+// purchase receipt
+#edd_user_history,
+#edd_purchase_receipt_products,
+#edd_purchase_receipt {
+    .edd-tables;
+}
+
+#edd_purchase_receipt_products {
+    tfoot{
+
+        td {
+            padding-top:0.6rem;
+        }
+        td:last-of-type {
+            .ase-red;
+            font-weight: bold;
+        }
+    }
+}
