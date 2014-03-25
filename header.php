@@ -63,6 +63,7 @@
 				<p class="ase-sub-title"><span class="ase-bold">Tips, tricks, tutorials</span>, and original <br />  hand-crafted stories using Aesop Story Engine.</p>
 			<?php } elseif (is_single()) {?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
+
 				<?php
 
 	                $author_id = get_queried_object()->post_author;
@@ -70,8 +71,20 @@
 
 	                printf('<p class="ase-sub-title">By <strong>%s</strong> on %s</p>',$name, get_the_date());
 
-			} else {?>
+			} else { ?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
+				<?php
+
+				$page_subtitle = get_post_meta(get_the_ID(), 'ase_page_excerpt', true);
+
+				if ($page_subtitle){ ?>
+					<div class="ase-sub-title">
+						<?php
+						echo wpautop($page_subtitle);
+						?>
+					</div>
+				<?php } ?>
+
 			<?php } ?>
 
 		</div>

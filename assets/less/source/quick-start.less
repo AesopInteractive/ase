@@ -1,0 +1,65 @@
+.ase-quick-start {
+
+    .ase-section {
+        max-width:700px;
+        margin:0 auto 5rem;
+
+        img {
+            margin-bottom:1rem;
+        }
+    }
+
+    .ase-step-inner {
+        border:1px solid gray;
+        text-align: left;
+        padding:0;
+        background:white;
+        .ase-white-texture;
+        .box-shadow(0 2px 3px rgba(0,0,0,0.2));
+
+        h2 {
+            border-bottom:1px solid gray;
+            margin:0;
+            position: relative;
+            font-size:2.2rem;
+            padding:1rem .5rem .4rem 11rem;
+            height:45px;
+            font-family:@ase-trend-sans;
+            .ase-blue;
+
+            &:before {
+                position: absolute;
+                font-size:2rem;
+                font-weight: bold;
+                left:0;
+                top:0;
+                border-right:1px solid gray;
+                height:45px;
+                padding:1.15rem 1.25rem .2rem;
+                .ase-orange;
+            }
+        }
+        p {
+            font-size:1.7rem;
+            line-height: 1.9rem;
+            margin:0;
+            padding:0.6rem;
+        }
+    }
+
+    .ase-step-one {
+        h2:before {
+            content:'STEP 1';
+        }
+    }
+    .ase-step-two {
+        h2:before {
+            content:'STEP 2';
+        }
+    }
+    .ase-step-three {
+        h2:before {
+            content:'STEP 3';
+        }
+    }
+}
