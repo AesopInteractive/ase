@@ -122,7 +122,7 @@ get_header();?>
 				<div class="col-md-6 ase-review-col">
 					<img src="<?php echo ASE_URL.'/assets/img/gooding.jpeg';?>">
 					<blockquote class="ase-review-quote">
-						<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen ina  long time.</p>
+						<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen in a long time.</p>
 					  	<footer>
 					  		<cite><strong>Sarah Gooding</strong>, WP Tavern</cite>
 					  		<a href="http://wptavern.com/aesop-story-engine-an-open-source-wordpress-plugin-for-storytelling">An Open Source WordPress Plugin for Storytelling</a>
@@ -154,6 +154,16 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
+					<img src="<?php echo ASE_URL.'/assets/img/weller.jpeg';?>">
+					<blockquote class="ase-review-quote">
+					  	<p>The beauty of this approach is that it will provide massive value at the free level and at the same time open up all kinds of new possibilities for ALL theme developers interested in servicing this niche.</p>
+					  	<footer>
+					  		<cite><strong>Nathan Weller</strong>, for Elegant Themes</cite>
+					  		<a href="https://www.elegantthemes.com/blog/editorial/storytelling-an-emerging-niche-in-wordpress">Storytelling: An Emerging Niche In The WordPress Market</a>
+					  	</footer>
+					</blockquote>
+				</div>
+				<div class="col-md-6 ase-review-col">
 					<img src="<?php echo ASE_URL.'/assets/img/collis.png';?>">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop's storytelling engine is a huge win for fans of dedicated, distraction-free reading experiences. It's a win for the web.</p>
@@ -161,16 +171,7 @@ get_header();?>
 					  		<cite><strong>Collis Ta'eed</strong>, CEO - Envato</cite>
 					  	</footer>
 					</blockquote>
-				</div>
-				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/krogsgard.jpeg';?>">
-					<blockquote class="ase-review-quote">
-					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
-					  	<footer>
-					  		<cite><strong>Brian Krogsgard</strong></cite>
-					  		<a href="http://www.poststat.us/aesop-medium-esque-story-engine-wordpress/">Aesop, a Medium-esque “story engine” for WordPress</a>
-					  	</footer>
-					</blockquote>
+
 				</div>
 			</div>
 		</div>
