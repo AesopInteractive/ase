@@ -111,7 +111,7 @@ get_header();?>
 			<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/forrester.jpeg';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/forrester.jpeg';?>" alt="mark forrester woothemes">
 					<blockquote class="ase-review-quote">
 					  	<p>At WooThemes we love to back innovation upon WordPress, especially when that innovation unobtrusively extends the content publishing experience and a theme’s capabilities - solving problems for theme developers and end users. Well done Aesop.</p>
 					  	<footer>
@@ -120,7 +120,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/gooding.jpeg';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/gooding.jpeg';?>" alt="sarah gooding wp tavern">
 					<blockquote class="ase-review-quote">
 						<p>The Aesop Story Engine is one of the most beautiful tools for WordPress that I've seen in a long time.</p>
 					  	<footer>
@@ -132,7 +132,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/knowles.png';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/knowles.png';?>" alt="chris knowles wpmu">
 					<blockquote class="ase-review-quote">
 					  	<p>The ASE potentially takes WordPress’ content capabilities to a new level of maturity and sophistication. More than that though, it represents everything that WordPress stands for: democratizing publishing.</p>
 					  	<footer>
@@ -142,7 +142,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/krogsgard.jpeg';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/krogsgard.jpeg';?>" alt="brian krogsgard post status">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop reduces the barrier for smaller journalism organizations to create these stories; and there are many such organizations that don’t have full time developers on staff to build custom story designs.</p>
 					  	<footer>
@@ -154,7 +154,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/weller.jpeg';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/weller.jpeg';?>" alt="nathan weller elegant themes">
 					<blockquote class="ase-review-quote">
 					  	<p>The beauty of this approach is that it will provide massive value at the free level and at the same time open up all kinds of new possibilities for ALL theme developers interested in servicing this niche.</p>
 					  	<footer>
@@ -164,7 +164,7 @@ get_header();?>
 					</blockquote>
 				</div>
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/collis.png';?>">
+					<img src="<?php echo ASE_URL.'/assets/img/collis.png';?>" alt="collis ta'eed envato">
 					<blockquote class="ase-review-quote">
 					  	<p>Aesop's storytelling engine is a huge win for fans of dedicated, distraction-free reading experiences. It's a win for the web.</p>
 					  	<footer>
@@ -182,16 +182,16 @@ get_header();?>
 			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
+					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-quick-start.png';?>" alt="resources quick start"></a>
 					<div class="ase-resource">
 						<h3>Quick Start Guide</h3>
 						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.</p>
 
 					</div>
-					<a class="btn btn-primary" href="/quick-start-guide">Get going</a>
+					<a class="btn btn-primary" href="/quick-start-guide">Get started</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/themes"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-themes.png';?>"></a>
+					<a href="/library/category/themes"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-themes.png';?>" alt="aesop resources themes"></a>
 					<div class="ase-resource">
 						<h3>Aesop Themes</h3>
 						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
@@ -199,17 +199,17 @@ get_header();?>
 					<a class="btn btn-primary" href="/library/category/themes">See all themes</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/add-ons"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-add-ons.png';?>"></a>
+					<a href="/library/category/add-ons"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-add-ons.png';?>" alt="aesop resources add-ons"></a>
 					<div class="ase-resource">
 						<h3>Add-ons</h3>
 						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
 					</div>
-					<a class="btn btn-primary" href="/library/category/add-ons">See all add-ons</a>
+					<a class="btn btn-primary" href="/library/category/add-ons">View add-ons</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/documentation"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
+					<a href="/documentation"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-docs.png';?>" alt="aesop resource documentation"></a>
 					<div class="ase-resource">
 						<h3>Documentation</h3>
 						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
@@ -217,20 +217,20 @@ get_header();?>
 					<a class="btn btn-primary" href="/documentation">Read the docs</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
+					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>" alt="aesop resource developer documentation"></a>
 					<div class="ase-resource">
 						<h3>Developer Portal</h3>
 						<p>Interested in building themes and add-ons for Aesop? This place is just for you.</p>
 					</div>
-					<a class="btn btn-primary" href="/developers">Write code</a>
+					<a class="btn btn-primary" href="/developers">Write some code</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/blog"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
+					<a href="/blog"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-blog.png';?>" alt="aesop resource blog"></a>
 					<div class="ase-resource">
 						<h3>The Latest</h3>
 						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.</p>
 					</div>
-					<a class="btn btn-primary" href="/blog">Check it out</a>
+					<a class="btn btn-primary" href="/blog">Read the latest</a>
 				</div>
 			</div>
 		</div>

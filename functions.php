@@ -88,7 +88,7 @@ class aseFunctions{
 					    insertLocation: 'appendTo',
 					    showTopLink: false,
 					    showHeadline: false,
-					    scrollOffset: 240
+					    scrollOffset: 140
 					});
 					
 					jQuery('.aesop-timeline-stop').each(function(){
