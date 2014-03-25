@@ -15,6 +15,10 @@
 .ase-product-img-link{
     margin-bottom:1rem;
     display: block;
+
+    img {
+        width:100%;
+    }
 }
 .ase-product-inner {
     .ase-white-speckle-box;
@@ -23,4 +27,57 @@
     .edd_download_purchase_form {
         margin-top:1rem;
     }
+}
+
+.ase-product {
+    position: relative;
+    &.add-ons {
+
+    }
+    &.themes {
+
+    }
+}
+
+.ase-ribbon-wrap {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+
+.ribbon-themes,
+.ribbon-add-ons {
+  font: bold 13px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  .rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -29px;
+  top: 15px;
+  width: 118px;
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+.ribbon-add-ons {
+  .ase-orange-back;
+}
+.ribbon-themes {
+  .ase-blue-back;
+}
+
+.ribbon-add-ons:before,
+.ribbon-themes:before {
+  left: 0;
+}
+
+.ribbon-add-ons:before,
+.ribbon-themes:after {
+  right: 0;
 }

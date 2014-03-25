@@ -1,5 +1,22 @@
 <?php
 
+
+
+function ase_taxo_class() {
+
+    $custom_terms = get_the_terms(0, 'download_category');
+
+    $out = ' ';
+    if ($custom_terms) {
+      foreach ($custom_terms as $custom_term) {
+        $out .= sprintf(' %s ',$custom_term->slug);
+      }
+    }
+
+    return $out;
+
+}
+
 /**
  	* Print HTML with meta information for the current post-date/time and author.
  	*

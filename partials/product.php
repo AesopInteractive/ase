@@ -1,5 +1,10 @@
-<div class="ase-product col-sm-6">
+<?php
+
+$taxclass = trim(ase_taxo_class());
+    ?>
+<div <?php post_class('ase-product col-sm-6 npl' );?>>
 	<div class="ase-product-outer">
+		<div class="ase-ribbon-wrap"><div class="ribbon-<?php echo $taxclass;?>"><?php echo strtoupper($taxclass);?> </div></div>
 		<a class="ase-product-img-link" href="<?php the_permalink();?>">
 			<?php echo the_post_thumbnail('ase-product-img',array('class' => 'ase-img'));?>
 		</a>
