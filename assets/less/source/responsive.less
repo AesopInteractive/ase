@@ -30,7 +30,7 @@
 }
 
 @media(max-width:480px){
-    body {
+    .ase {
         &.archive,
         &.blog {
             #main-content {
@@ -46,9 +46,6 @@
             font-size: 3rem;
         }
 
-        .wp-post-image {
-            max-width:64px;
-        }
         .ase-entry-top {
             height:auto;
             .transition(height .35s linear);
@@ -58,28 +55,6 @@
                 padding:2rem 1rem;
             }
         }
-        time,
-        .ase-archive-post-author {
-            line-height: 1.85rem;
-        }
-        .ase-archive-post {
-            .ase-entry-title {
-                font-size:1.72rem;
-                margin:0.2rem 0 0.5rem;
-            }
-            .ase-archive-post-inner {
-                padding-left:1rem;
-            }
-            img {
-                padding:0.2rem;
-            }
-        }
-    }
-}
-
-@media(max-width:320px){
-
-    .ase {
 
         &.page-template-front-page-php{
             padding-top:400px !important;
