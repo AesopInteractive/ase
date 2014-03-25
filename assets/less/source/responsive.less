@@ -23,6 +23,7 @@
                 }
             }
         }
+
     }
 
 
@@ -71,6 +72,157 @@
             }
             img {
                 padding:0.2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:320px){
+
+    .ase {
+
+        &.page-template-front-page-php{
+            padding-top:400px !important;
+        }
+        font-size: @font-size-base - 2;
+        //title
+        .ase-site-title {
+            display: none;
+        }
+        .ase-sticky-nav,
+        .ase-site-header {
+            .ase-site-logo {
+                max-width:120px;
+            }
+        }
+        .ase-sticky-nav .ase-sticky-nav-menu {
+            max-width:120px;
+            margin:0 auto;
+            padding:0;
+        }
+        .ase-site-header {
+            padding:0 1rem;
+            height:auto !important;
+            .ase-sub-title {
+                font-size: 2rem;
+                line-height: 2.2rem;
+                margin-bottom: 2.5rem;
+                margin-top: 2rem;
+            }
+        }
+        //nav 
+        .ase-secondary-nav,
+        .ase-primary-nav .scroll-nav {
+            float:none;
+            text-align: center;
+            width:100%;
+
+            li {
+                float:none;
+                display: block;
+                border-right:none;
+                border-bottom:3px solid white;
+
+                &:first-child {
+                    border-left:none;
+                }
+
+                a {
+                    padding:1rem;
+                }
+            }
+
+           .scroll-nav__wrapper {
+                float:none;
+           }
+        }
+
+        // welcome
+        .ase-welcome-blurb {
+            font-size: 1.6rem;
+            line-height: 2.25rem;
+            margin-bottom: 2rem;
+        }
+
+        //image caption
+        .aesop-image-component .aesop-component-align-center .aesop-image-component-caption {
+            width:96%;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+        }
+
+        // comp coloumns
+        .ase-comp-col {
+            margin-bottom:2rem;
+        }
+        .ase-components {
+            .row {
+                margin-bottom: 0;
+            }
+
+            .btn {
+                margin-top:1rem;
+            }
+        }
+
+        .btn-ase-big-action {
+            padding:0.6rem;
+            margin:1.5rem auto;
+            &:before {
+                content:none;
+            }
+
+            span {
+                line-height: 1;
+                padding-left: 0;
+            }
+            .ase-dl-btn-top {
+                font-size:1.45rem;
+            }
+            .ase-dl-btn-bottom {
+                font-size:1.15rem;
+            }
+        }
+
+        //review
+        .ase-reviews .row {
+            margin-bottom: 2rem;
+        }
+        .ase-review-col {
+            margin-bottom: 1.6rem;
+            img {
+                float:none;
+                display: block;
+                margin:0 auto 2rem;
+                text-align: center;
+            }
+        }
+
+        //newsletter
+        .ase-newsletter {
+            #mad_mimi_signup_form {
+                #webform_submit_button {
+                    position:static;
+                    width:100%;
+                    display:block;
+                    margin:1rem auto;
+                }
+            }
+        }
+
+        //footer 
+        .ase-site-footer {
+            padding:1rem 0;
+            p,ul {
+                text-align: left;
+                position: static;
+                display: block;
+                float:none;
+                width:100%;
+                margin-bottom:0.5rem;
+            }
+            ul {
+                text-align: center;
             }
         }
     }
