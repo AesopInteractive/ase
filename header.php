@@ -48,6 +48,12 @@
 				<h2 class="ase-site-title">Write stories instead of code</h2>
 				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any WordPress theme.</p>
 				<?php get_template_part('partials/red-btn');?>
+				<ul class="unstyled ase-social-links">
+					<li class="ase-nav-social"><a href="http://twitter.com/aesopinteractiv"><i class="asecon asecon-twitter-square"></i></a></li>
+					<li class="ase-nav-social"><a href="http://facebook.com/aesopinteractive"><i class="asecon asecon-facebook-square"></i></a></li>
+					<li class="ase-nav-social"><a href="https://plus.google.com/109310140952932599358/"><i class="asecon asecon-google-plus-square"></i></a></li>
+					<li class="ase-nav-social"><a href="http://www.pinterest.com/aesopinteractiv/"><i class="asecon asecon-pinterest-square"></i></a></li>
+				</ul>
 				<p class="ase-site-sub-title-more">Looking for a demo? Our site is proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
 			<?php } elseif ('download' == get_post_type()) {?>
 				<h2 class="ase-page-title">Library</h2>

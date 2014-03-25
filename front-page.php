@@ -16,10 +16,10 @@ get_header();?>
 		</div>
 	</div>
 
-	<div class="ase-section ase-components">
+	<div id="ase-features" class="ase-section ase-components">
 		<div class="ase-content clearfix">
 
-			<h2 class="zmt ase-components-title">Thirteen Unique Story Components</h2>
+			<h2 class="ase-components-title">Thirteen Unique Story Components</h2>
 
 			<div class="row">
 				<div class="col-md-4">
@@ -106,7 +106,7 @@ get_header();?>
 		</div>
 	</div>
 
-	<div class="ase-section ase-reviews">
+	<div id="ase-reviews" class="ase-section ase-reviews">
 		<div class="ase-content">
 			<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
 			<div class="row">
@@ -176,7 +176,7 @@ get_header();?>
 		</div>
 	</div>
 
-	<div class="ase-section ase-resources">
+	<div id="ase-resources" class="ase-section ase-resources">
 		<div class="ase-content">
 			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 			<div class="row">

@@ -13,6 +13,28 @@
     height:@ase-header-height / 2;
 }
 
+.ase-social-links {
+    text-align: center;
+    display: block;
+    margin-bottom:0.6rem;
+    li {
+        display: inline-block;
+        margin-right:0.6rem;
+
+        &:last-child {
+            margin-right:0;
+        }
+
+        a {
+            color:white;
+
+            &:hover {
+                .ase-orange;
+            }
+        }
+    }
+}
+
 .ase-sticky-nav {
    .opacity(0);
    position: absolute;
@@ -79,32 +101,32 @@
                 display: block;
                 margin-right:0;
                 float: none;
+                border-right:none;
                 a {
                     padding:0;
                 }
 
-                &.ase-nav-social {
-                    display: inline-block;
+                &:last-child {
                     border-bottom:none;
-                    margin-right:6px;
-
-                    &:last-of-type {
-                        margin-right:0;
-                    }
                 }
             }
         }
 
         .menu-menu-1-container {
-            padding-bottom:80px;
+            padding-bottom:95px;
             li {
                 display: block;
                 margin-right:0;
+                border-right:none;
                 float: none;
                 border-bottom: 1px solid #a1a099;
                 a {
                      .ase-sticky-nav-a;
                     padding:0;
+                }
+
+                &:last-child {
+                    border-bottom:none;
                 }
             }
         }
@@ -121,7 +143,7 @@
     }
 
     .scroll-nav {
-        padding-bottom:80px;
+        padding-bottom:95px;
     }
 }
 
@@ -184,7 +206,7 @@
     .ase-site-title {
         background: url(../img/title.png) no-repeat top center;
         height: 280px;
-        margin: 0 auto 3rem;
+        margin: 0 auto 2.4rem;
         text-align: left;
         text-indent: -9999px;
         display: inline-block;
@@ -237,7 +259,7 @@
     .nav-li;
 
     .scroll-nav {
-        width:50%;
+        width:49%;
         float:left;
         list-style: none;
         padding:0;
@@ -251,7 +273,7 @@
         }
     }
     .menu-menu-1-container{
-        width:50%;
+        width:49%;
         float:left;
 
         .ase-nav-menu {
@@ -263,18 +285,14 @@
 .ase-secondary-nav {
     float:right;
     text-align: left;
-    width:50%;
+    width:51%;
 
     .nav-li;
 
     li {
-        border:none;
 
-        &:nth-child(2),
-        &:first-child,
-        &:last-child {
+        &:first-child{
             border-left:none;
-            border-right:3px solid white;
         }
 
         &.ase-nav-social a{

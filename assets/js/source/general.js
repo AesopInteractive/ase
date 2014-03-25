@@ -32,11 +32,9 @@ jQuery(document).ready(function(){
 });
 
 jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondary-nav">\
+									<li><a href="/library">Library</a></li>\
+									<li><a href="/documentation">Docs</a></li>\
 									<li><a href="/blog">Blog</a></li>\
 									<li><a href="/contact">Contact</a></li>\
-									<li class="ase-nav-social"><a href="http://twitter.com/aesopinteractiv"><i class="asecon asecon-twitter"></i></a></li>\
-									<li class="ase-nav-social"><a href="http://facebook.com/aesopinteractive"><i class="asecon asecon-facebook"></i></a></li>\
-									<li class="ase-nav-social"><a href="https://plus.google.com/109310140952932599358/"><i class="asecon asecon-google-plus-square"></i></a></li>\
-									<li class="ase-nav-social"><a href="http://www.pinterest.com/aesopinteractiv/"><i class="asecon asecon-pinterest-square"></i></a></li>\
 									</nav>
 									');
