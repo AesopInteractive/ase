@@ -182,7 +182,7 @@ get_header();?>
 			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/quick-start-guide"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
 					<div class="ase-resource">
 						<h3>Quick Start Guide</h3>
 						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.</p>
@@ -191,7 +191,7 @@ get_header();?>
 					<a class="btn btn-primary" href="/quick-start-guide">Get going</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/themes"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/library/category/themes"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-themes.png';?>"></a>
 					<div class="ase-resource">
 						<h3>Aesop Themes</h3>
 						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
@@ -199,7 +199,7 @@ get_header();?>
 					<a class="btn btn-primary" href="/library/category/themes">See all themes</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/add-ons"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/library/category/add-ons"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-add-ons.png';?>"></a>
 					<div class="ase-resource">
 						<h3>Add-ons</h3>
 						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
@@ -209,7 +209,7 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/documentation"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/documentation"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
 					<div class="ase-resource">
 						<h3>Documentation</h3>
 						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
@@ -217,7 +217,7 @@ get_header();?>
 					<a class="btn btn-primary" href="/documentation">Read the docs</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/developers"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
 					<div class="ase-resource">
 						<h3>Developer Portal</h3>
 						<p>Interested in building themes and add-ons for Aesop? This place is just for you.</p>
@@ -225,7 +225,7 @@ get_header();?>
 					<a class="btn btn-primary" href="/developers">Write code</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/blog"><img class="ase-img" src="http://placehold.it/300x150"></a>
+					<a href="/blog"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>"></a>
 					<div class="ase-resource">
 						<h3>The Latest</h3>
 						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.</p>
