@@ -27,15 +27,12 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<ul class="ase-step-list unstyled">
 				<li>
 					<p>Login to your WordPress administration area, and go to Themes-->Appearence.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
 				</li>
 				<li>
 					<p>At the top of the page, select the "Install Themes" tab.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
 				</li>
 				<li>
 					<p>Once you are here, select "Upload," then "Choose File" to locate yourtheme.zip on your computer, and install.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
 				</li>
 			</ul>
 
@@ -46,15 +43,13 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<ul class="ase-step-list unstyled">
 				<li>
 					<p>Login to your WordPress administration area, and go to Plugins-->Add New.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
 				</li>
 				<li>
 					<p>At the top of the page, select the "Upload" tab.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
 				</li>
 				<li>
 					<p>Once you are here, select "Upload," then "Choose File" to locate yourplugin.zip on your computer, and install.</p>
-					<img class="ase-step-img" src="http://placehold.it/300x150">
+
 				</li>
 			</ul>
 
