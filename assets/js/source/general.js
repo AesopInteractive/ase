@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
 
 	//helper vars
 	adminBar 		= jQuery('#wpadminbar').outerHeight(),
-	header   		= jQuery('.ase-site-header').height(),
+	header   		= jQuery('#header .ase-content').height(),
 	nav 	 		= jQuery('.ase-primary-nav').outerHeight(),
 	indexPost   	= jQuery('.blog .ase-index-post'),
 	title 			= jQuery('.ase-index-post-inner'),
@@ -23,6 +23,7 @@ jQuery(document).ready(function(){
 	  jQuery("html, body").animate({ scrollTop: 0 }, "slow");
 	  return false;
 	});
+
 
 	// set blog cover to size of winder
 	jQuery(indexPost).css({'height':(jQuery(window).height())+'px'});

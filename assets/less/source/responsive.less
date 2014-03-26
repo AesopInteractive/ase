@@ -1,10 +1,6 @@
-@media (max-width:@ase-width) {
+@media (max-width:1000px) {
 
-    body {
-        // single post header
-        .ase-entry-top {
-
-        }
+    .ase {
 
         // content
         .ase-comments-wrap,
@@ -24,20 +20,6 @@
             }
         }
 
-    }
-
-
-}
-
-@media(max-width:480px){
-    .ase {
-        &.archive,
-        &.blog {
-            #main-content {
-                padding-left:10px;
-                padding-right:10px;
-            }
-        }
         &.page .ase-site-header, 
         &.blog .ase-site-header {
             margin-bottom: 3rem;
@@ -56,9 +38,8 @@
             }
         }
 
-        &.page-template-front-page-php{
-            padding-top:400px !important;
-        }
+
+        padding-top:323px !important;
         font-size: @font-size-base - 2;
         //title
         .ase-site-title {
@@ -86,7 +67,12 @@
             }
         }
         //nav 
+        .ase-secondary-nav {
+            clear:both;
+        }
+        .ase-nav-menu,
         .ase-secondary-nav,
+        .ase-primary-nav .menu-menu-1-container,
         .ase-primary-nav .scroll-nav {
             float:none;
             text-align: center;
@@ -117,6 +103,22 @@
             font-size: 1.6rem;
             line-height: 2.25rem;
             margin-bottom: 2rem;
+        }
+
+        // prouducst
+        .ase-product {
+            padding-right:0;
+        }
+        .ase-product-loop {
+            padding-bottom:0;
+        }
+        .ase-library-main,
+        .ase-library-sb {
+            padding-right:0;
+            padding-left:0;
+            .ase-comments-wrap {
+                margin-top:1rem;
+            }
         }
 
         //image caption
@@ -189,7 +191,7 @@
         .ase-site-footer {
             padding:1rem 0;
             p,ul {
-                text-align: left;
+                text-align: center;
                 position: static;
                 display: block;
                 float:none;
@@ -199,6 +201,45 @@
             ul {
                 text-align: center;
             }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .ase {
+        #main-content {
+            padding-top:1rem;
+            padding-bottom:1rem;
+        }
+        .ase-docs {
+            .ase-docs-left,
+            .ase-docs-right {
+                float:none;
+                width:100%;
+                padding-left:0;
+                padding-right:0;
+            }
+            .aesop-timeline .scroll-nav.fixed {
+                position: static !important;
+            }
+        }
+        .ase-dev-docs-welcome {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            .col-md-4 {
+                padding-left:0;
+                padding-right:0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .ase {
+        &.page-template-front-page-php{
+            padding-top:400px !important;
         }
     }
 }
