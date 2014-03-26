@@ -130,7 +130,7 @@ class aseFunctions{
 					      	name: '<?php echo the_title();?>',
 					      	link: '<?php the_permalink();?>',
 					      	caption: "",
-					      	description: '<?php echo the_excerpt();?>',
+					      	description: '<?php echo get_the_excerpt();?>',
 					      	method: "feed",
 					      	picture: '<?php echo $img[0];?>'
 					    });
