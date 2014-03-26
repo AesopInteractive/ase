@@ -24,22 +24,22 @@ get_header();
 				<a class="btn btn-primary" href="/developers">Developer Docs <span style="position:relative;top:2px;left:3px;">&rarr;</span></a>
 			</div>
 			<div class="ase-docs-right">
-				<?php echo do_shortcode('[aesop_timeline_stop num="Installing Aesop"]');?>
+				<?php echo do_shortcode('[aesop_timeline_stop num="Getting Started"]');?>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et turpis est. Cras id quam non neque elementum eleifend et sed metus. Cras vestibulum, turpis id semper aliquam, mi ligula cursus purus, ac mattis neque justo eget leo. Nunc suscipit scelerisque ligula, eu faucibus ipsum euismod ut.</p>
+				<p>Within these docs you'll find detailed descriptions as far as what each option does within each of the story components. But first, let's start by installing Aesop Story Engine and adding our first story component!</p>
 
 				<ul class="ase-step-list unstyled">
 					<li>
-						<p>Vivamus luctus tellus sed commodo tincidunt. Aliquam tincidunt nisl malesuada neque placerat lobortis. Pellentesque tortor lorem, auctor in purus quis, elementum consectetur enim.</p>
-						<img class="ase-step-img" src="http://placehold.it/300x150">
+						<p>Head to the plugins tab within your WordPress administration area. Click on "add new". Once here, search for Aesop Story Engine, and press "search." Install Aesop Story Engine, and you're set! Hint: you can also install through FTP if you know that that is.</p>
+						<a class="aesop-lb-link aesop-lightbox" rel="lightbox" href="/wp-content/themes/ase/assets/img/install-aesop.png">
+							<img class="ase-step-img" src="/wp-content/themes/ase/assets/img/install-aesop.png">
+						</a>
 					</li>
 					<li>
-						<p>Vivamus luctus tellus sed commodo tincidunt. Aliquam tincidunt nisl malesuada neque placerat lobortis. Pellentesque tortor lorem, auctor in purus quis, elementum consectetur enim.</p>
-						<img class="ase-step-img" src="http://placehold.it/300x150">
-					</li>
-					<li>
-						<p>Vivamus luctus tellus sed commodo tincidunt. Aliquam tincidunt nisl malesuada neque placerat lobortis. Pellentesque tortor lorem, auctor in purus quis, elementum consectetur enim.</p>
-						<img class="ase-step-img" src="http://placehold.it/300x150">
+						<p>Go to any post, and locate the "Add Component" button. It sits right above the post editor. Once you toggle this, you'll be able to select the component, adjust any options, and insert it anywhere within your story. Galleries are managed with the "Galleries" tab within WordPress.</p>
+						<a class="aesop-lb-link aesop-lightbox" rel="lightbox" href="/wp-content/themes/ase/assets/img/add-component.png">
+							<img class="ase-step-img" src="/wp-content/themes/ase/assets/img/add-component.png">
+						</a>
 					</li>
 				</ul>
 
@@ -116,7 +116,7 @@ get_header();
 					</dl>
 				</div>
 
-				<img src="http://placehold.it/800x400">
+				<img src="<?php echo ASE_URL.'/assets/img/docs-quote-layout.png';?>" class="ase-img" alt="aesop quote offset how to">
 				<p class="ase-doc-note"><span class="label label-primary">tip</span> The Parallax, Offset, and Direction properties are all used with the Parallax option. Refer to the illustration above for a visual guide on how the offset is applied.</p>
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Image" title="Image Component"]');?>
@@ -307,6 +307,9 @@ get_header();
 
 				</div>
 
+				<img src="<?php echo ASE_URL.'/assets/img/docs-quote-layout.png';?>" class="ase-img" alt="aesop quote offset how to">
+				<p class="ase-doc-note"><span class="label label-primary">tip</span> The Offset, and Direction properties are all used with the Parallax option. Refer to the illustration above for a visual guide on how the offsets are applied.</p>
+
 				<?php echo do_shortcode('[aesop_timeline_stop num="Audio" title="Audio Component"]');?>
 
 				<p>Draws an audio player with the ability to have it automatically start once the audio player comes into view.</p>
@@ -376,7 +379,6 @@ get_header();
 					</dl>
 				</div>
 
-				<hr />
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Timeline" title="Timeline Component"]');?>
 
