@@ -43,6 +43,8 @@ get_header();
 					</li>
 				</ul>
 
+				<p class="ase-doc-note"><span class="label label-primary">tip</span> <a href="/wp-content/themes/ase/assets/downloads/story-engine-xml.zip">Download</a> the playground demo content, and import under Tools-->Import to instantly create the content that the <a href="http://playground.aesopstories.com">demo</a> has.</p>
+
 				<?php echo do_shortcode('[aesop_timeline_stop num="Gallery" title="Gallery Component"]');?>
 				<p>Galleries are created and managed under the "Galleries" tab located on the left side within WordPress admin, and uses normal WordPress galleries. This means you can add and remove images, and even add captions. The gallery component creates a gallery of images, available in multiple formats, and are inserted into a story with a shortcode. Each story can have unlimited galleries.</p>
 
