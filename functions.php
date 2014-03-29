@@ -129,7 +129,7 @@ class aseFunctions{
 					    FB.ui({
 					      	name: '<?php echo the_title();?>',
 					      	link: '<?php the_permalink();?>',
-					      	caption: "",
+					      	caption: '<?php echo get_the_excerpt();?>',
 					      	description: '<?php echo get_the_excerpt();?>',
 					      	method: "feed",
 					      	picture: '<?php echo $img[0];?>'
