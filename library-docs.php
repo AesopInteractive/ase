@@ -196,6 +196,23 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<p>There are only two options available, and that is to automatically start the carousel when the page loads, in addition to specifying how many characters are shown at once.</p>
 
 			<p>After setting up your first carousel, copy and paste the included shortcode on a page or post where you want the carousel to be shown.</p>
+
+			<h5>Carousel Options</h5>
+			<div class="ase-doc-atts">
+				<dl class="dl-horizontal">
+				<dt>Timing</dt>
+				<dd>Set this to something like 1000 to have the carousel automatically rotate every 1 second.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Visible Items</dt>
+				<dd>Enter a number such as 4 or 7. This will determine how many items will be shown at once.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Enable Pager</dt>
+				<dd>Enable or disable the pager that appears below the carousel.</dd>
+				</dl>
+			</div>
+
 		</div><!-- end docs right-->
 
 	</div>
