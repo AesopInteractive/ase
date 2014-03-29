@@ -127,7 +127,7 @@ class aseFunctions{
 				  		e.preventDefault();
 
 					    FB.ui({
-					      	name: '<?php echo the_title();?>',
+					      	name: '<?php echo esc_attr(get_the_title());?>',
 					      	link: '<?php the_permalink();?>',
 					      	caption: '<?php echo get_the_excerpt();?>',
 					      	description: '<?php echo get_the_excerpt();?>',
