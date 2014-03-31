@@ -372,7 +372,7 @@ get_header();
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Map" title="Map Component"]');?>
 
-				<p>Draws a fullwidth map component with custom location markers. The location markers are added with post meta inside the story screen, to the right of the story. Only one map is allowed per story at this time.</p>
+				<p>Draws a fullwidth map component with custom location markers.Only one map is allowed per story at this time.</p>
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
@@ -381,6 +381,35 @@ get_header();
 					</dl>
 				</div>
 
+				<h3>Map Markers</h3>
+				<p>The maps component is pretty versatile when it comes to adding markers, and even custom map tiles (ASE 1.0.3). The location markers are added with post meta inside the story screen, to the right of the story. Locations are entered with Latitude and Longitude coordinates.</p>
+
+				<h3>Map Tiles (1.0.3)</h3>
+				<p>Maps utilize Open Maps. These maps work with "map tiles" that come together like a puzzle to provide the image of the roads, lakes, etc. We provide a free map tile account, however, it's important to know that this is limited to 10k views a month.</p>
+				<p>For this reason, it's <strong>highly</strong> recommended to create your own free account with <a href="http://mapbox.com">Mapbox</a>, and provide your own map id. It's super simple, and here's how you do it</p>
+
+				<ul class="ase-step-list unstyled">
+					<li>
+						<p>Head to <a href="http://mapbox.com">http://mapbox.com</a> and create a free account. Should you exceed their 10k map tile view limit, you can upgrade for a nominal fee.</p>
+						<a class="aesop-lb-link aesop-lightbox" rel="lightbox" href="/wp-content/themes/ase/assets/img/map-step-1.png">
+							<img class="ase-step-img" src="/wp-content/themes/ase/assets/img/map-step-1.png">
+						</a>
+					</li>
+					<li>
+						<p>Once you have created an account, locate the default map that has been created for you, and click the clipboard icon to copy to your clipboard.</p>
+						<a class="aesop-lb-link aesop-lightbox" rel="lightbox" href="/wp-content/themes/ase/assets/img/map-step-2.png">
+							<img class="ase-step-img" src="/wp-content/themes/ase/assets/img/map-step-2.png">
+						</a>
+					</li>
+					<li>
+						<p>Now go to your site, and head to Appearence-->Customize. Paste the ID under Aesop Story Engine tab in the Mapbox Map ID location. Your map should now be using your tiles. </p>
+						<a class="aesop-lb-link aesop-lightbox" rel="lightbox" href="/wp-content/themes/ase/assets/img/map-step-3.png">
+							<img class="ase-step-img" src="/wp-content/themes/ase/assets/img/map-step-3.png">
+						</a>
+					</li>
+				</ul>
+
+				<p class="ase-doc-note"><span class="label label-primary">note</span> New map features such as custom tiles are available in ASE 1.0.3 and up.</p>
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Timeline" title="Timeline Component"]');?>
 
