@@ -69,7 +69,7 @@
 
 	                $author_id = get_queried_object()->post_author;
     				$name = get_the_author_meta('display_name', $author_id);
-
+    				if(!is_bbpress())
 	                printf('<p class="ase-sub-title">By <strong>%s</strong> on %s</p>',$name, get_the_date());
 
 			} else { ?>

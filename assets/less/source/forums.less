@@ -1,7 +1,7 @@
 @ase-forum-bg-color:   white;
 @ase-forum-border: gray;
 
-#bbpress-forums {
+.bbpress #bbpress-forums {
     font-size:@font-size-base;
 
     // First some general resets and things
@@ -10,6 +10,16 @@
     }
     div.bbp-search-form {
         margin-bottom:10px;
+
+        #bbp_search {
+            height:37px;
+            position: relative;
+            right:-4px;
+        }
+        #bbp_search_submit {
+            position: relative;
+            top:-2px;
+        }
     }
     #wp-bbp_reply_content-editor-container {
         border:1px solid @ase-forum-border;
@@ -35,8 +45,13 @@
     ul.bbp-replies,
     ul.bbp-search-results {
         font-size: @font-size-base - 2;
+        border:1px solid gray;
     }
-
+    .bbp-header,
+    .forum-titles li{
+        font-family:@ase-trend-slab;
+        letter-spacing: -1.25px;
+    }
     .bbp-replies {
         background: @ase-forum-bg-color;
         border:1px solid @ase-forum-border;
@@ -91,9 +106,68 @@
     .bbp-admin-links a{
         font-size:@font-size-xsmall;
     }
+    #bbp_topic_submit,
     #bbp_reply_submit {
         .btn;
         .btn-primary;
+    }
+
+    #favorite-toggle {
+        position: relative;
+        right:12px;
+    }
+
+    #subscription-toggle {
+        float:right;
+        font-size: @font-size-small;
+        position: relative;
+        padding-left:1.8rem;
+
+        &:before {
+            position: relative;
+            content:'\f09e';
+            font-family: FontAwesome;
+            left:0;
+            .ase-orange;
+        }
+    }
+    .bbp-topic-description a,
+    .bbp-topic-meta a,
+    .bbp-forum-description a {
+        display: inline-block;
+
+        .avatar {
+            margin-bottom: -4px;
+            border:none;
+            padding:0;
+            border-radius:50%;
+        }
+    }
+    .bbp-template-notice {
+        .ase-orange-back;
+        &.info {
+            .ase-blue-back;
+            color:#f6f6f6;
+
+            a{
+                color:#f6f6f6;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    #wp-bbp_topic_content-editor-container {
+        border:1px solid #ccc;
+
+        textarea {
+            font-size: @font-size-small;
+        }
+    }
+    .avatar {
+        border-radius:50%;
     }
 }
 
