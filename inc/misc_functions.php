@@ -1,6 +1,16 @@
 <?php
 
+function ase_get_social_excerpt(){
+	return get_the_excerpt() ? sprintf('%s', get_the_excerpt()) : sprintf('%s', get_bloginfo('description'));
+}
 
+function ase_get_social_backup_img($name = '',$prop = '', $vendor = ''){
+
+	$default = get_option('aesop_social_'.$vendor.'_default_img');
+
+	$imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full');
+	return has_post_thumbnail() ? sprintf('<meta %s="%s:image" content="%s">', $name, $prop,$imgsrc[0]) : sprintf('<meta %s="%s:image" content="%s">',$name, $prop, $default);
+}
 
 function ase_taxo_class() {
 
