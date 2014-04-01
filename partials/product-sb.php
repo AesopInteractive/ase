@@ -9,6 +9,9 @@
 	if(is_active_sidebar('library_sb')) { dynamic_sidebar('library_sb'); }
 
 	if(is_single()){
+		
+		if(is_active_sidebar('single_product_sb')) { dynamic_sidebar('single_product_sb'); }
+
 		?>
 		<a class="btn btn-primary ase-product-doc-link" href="/product-documentation/"><i class="asecon asecon-info-circle"></i>&nbsp; Documentation</a>
 		<a class="btn btn-primary ase-product-doc-link" href="/forum/theme-support/genji/"><i class="asecon asecon-ambulance"></i>&nbsp; Support</a>
