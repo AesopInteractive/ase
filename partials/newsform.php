@@ -4,7 +4,6 @@
        </div>
        <div>
           <input type="submit" class="submit" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending…" data-invalid-text="← You forgot to enter your email!" data-choose-list="↑ Choose a list">
-</input>
        </div>
     </form>
 <script type="text/javascript">
