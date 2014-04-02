@@ -44,19 +44,6 @@
 <body <?php body_class(); ?>>
 	<?php do_action('aesop_inside_body_top');?>
 
-	<div class="ase-sticky-nav">
-		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
-		<?php if (is_front_page()) {?>
-			<div class="ase-sticky-nav-menu aesop-timeline collapse"></div>
-			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
-		<?php } else { ?>
-			<nav class="ase-sticky-nav-menu collapse">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-sticky-menu unstyled' ) ); ?>
-			</nav>
-			<a class="ase-sticky-toggle-menu" data-toggle="collapse" data-target=".ase-sticky-nav-menu">Menu</a>
-		<?php } ?>
-	</div>
-
 	<?php if(!is_home()){ ?>
 	<header id="header" class="ase-site-header">
 

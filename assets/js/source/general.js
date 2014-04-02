@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 
 	// when the top of the nav hits the top of the screen do sticky
 	jQuery('#main-content').waypoint(function() {
-	   jQuery('.ase-sticky-nav').toggleClass('visible');
+	   jQuery('.ase-primary-nav, .ase-sticky-site-logo').toggleClass('visible');
 	});
 
 	jQuery("a[href='#top']").click(function() {
@@ -36,6 +36,5 @@ jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondar
 									<li><a href="/library">Library</a></li>\
 									<li><a href="/documentation">Docs</a></li>\
 									<li><a href="/blog">Blog</a></li>\
-									<li><a href="/contact">Contact</a></li>\
 									</nav>
 									');
