@@ -146,7 +146,7 @@ class aseFunctions{
 				}
 
 				jQuery(document).ready(function(){
-					jQuery(".ase-twitter-share").attr('href', "https://twitter.com/intent/tweet?text=<?php echo esc_attr(get_the_title());?>&nbsp;<?php the_permalink();?>&url=<?php the_permalink();?>");
+					jQuery(".ase-twitter-share").attr('href', "https://twitter.com/intent/tweet?text=<?php echo esc_attr(get_the_title());?>&nbsp;<?php the_permalink();?>&nbsp;via&nbsp;@aesopinteractive&url=<?php the_permalink();?>");
 				});
 
 			</script>
