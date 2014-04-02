@@ -136,7 +136,7 @@ class aseFunctions{
 					    FB.ui({
 					      	name: '<?php echo esc_attr(get_the_title());?>',
 					      	link: '<?php the_permalink();?>',
-					      	caption: '<?php echo get_the_excerpt();?>',
+					      	caption: '',
 					      	description: '',
 					      	method: "feed",
 					      	picture: '<?php echo $img[0];?>'
