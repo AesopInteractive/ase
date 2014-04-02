@@ -18,7 +18,7 @@
 	<meta name="p:domain_verify" content="eab589912490f786548fbc933e13b516"/>
 	<!-- FB Open Graph -->
 	<meta property="fb:app_id" content="492973480802758">
-	<meta property="og:url" content="<?php echo get_bloginfo('wpurl');?>">
+	<meta property="og:url" content="<?php echo get_permalink();?>">
 	<meta property="og:title" content="<?php echo get_bloginfo('name');?>">
 	<meta property="og:site_name" content="<?php echo get_bloginfo('name');?>">
 	<meta property="og:description" content="<?php echo ase_get_social_excerpt();?>">
@@ -30,7 +30,7 @@
 	<meta name="twitter:site" content="@aesopinteractiv">
 	<meta name="twitter:title" content="<?php echo get_bloginfo('name');?>">
 	<meta name="twitter:description" content="<?php echo ase_get_social_excerpt();?>">
-	<meta name="twitter:domain" content="<?php echo get_bloginfo('wpurl');?>">
+	<meta name="twitter:domain" content="<?php echo get_permalink();?>">
 	<?php echo ase_get_social_backup_img('name','twitter', 'twitter');?>
 
 
