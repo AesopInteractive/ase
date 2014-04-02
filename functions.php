@@ -6,7 +6,7 @@ class aseFunctions{
 	public function __construct(){
 
 		// Set some constants
-		define('ASE_VERSION', '0.7');
+		define('ASE_VERSION', '0.8');
 		define('ASE_DIR', get_template_directory());
 		define('ASE_URL', get_template_directory_uri());
 
