@@ -1,7 +1,19 @@
+.os-ios {
+
+}
+
 @media (max-width:1000px) {
 
     .ase {
-
+        padding-top: 0 !important;
+        font-size: @font-size-base - 2;
+        .ase-account-login {
+            position: absolute;
+        }
+        .ase-site-header,
+        .ase-primary-nav.visible {
+            position: static !important;
+        }
         // content
         .ase-comments-wrap,
         .ase-entry-content p,
@@ -39,8 +51,6 @@
         }
 
 
-        padding-top:323px !important;
-        font-size: @font-size-base - 2;
         //title
         .ase-site-title {
             display: none;
@@ -232,14 +242,6 @@
                 padding-right:0;
                 margin-bottom: 1rem;
             }
-        }
-    }
-}
-
-@media(max-width: 480px){
-    .ase {
-        &.page-template-front-page-php{
-            padding-top:400px !important;
         }
     }
 }

@@ -16,7 +16,7 @@ jQuery(document).ready(function(){
 
 	// when the top of the nav hits the top of the screen do sticky
 	jQuery('#main-content').waypoint(function() {
-	   jQuery('.ase-primary-nav, .ase-sticky-site-logo').toggleClass('visible');
+	   jQuery('.ase-primary-nav, .ase-sticky-site-logo, .ase-account-login').toggleClass('visible');
 	});
 
 	jQuery("a[href='#top']").click(function() {

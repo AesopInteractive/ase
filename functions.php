@@ -5,6 +5,9 @@ class aseFunctions{
 
 	public function __construct(){
 
+		// LOCAL ONLY
+		//define('ASE_DEV', true);
+
 		// Set some constants
 		define('ASE_VERSION', '0.8');
 		define('ASE_DIR', get_template_directory());

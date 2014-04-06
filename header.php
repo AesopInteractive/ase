@@ -42,6 +42,22 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+	<?php
+
+	if ( defined('ASE_DEV')) {
+		$acctlink  = sprintf('%s', get_permalink(56));
+	} else {
+		$acctlink  = sprintf('%s', get_permalink(61));
+	}
+
+		if (is_user_logged_in()){
+			printf('<a href="%s" class="btn btn-action ase-account-login"><i class="asecon asecon-cog"></i> Account</a>',$acctlink);
+		} else {
+			printf('<a href="#ase-login" data-toggle="modal" class="btn btn-action ase-account-login"><i class="asecon asecon-key"></i> %s</a>%s',__('Login','ase'),ase_login_modal());
+		}
+	?>
+
 	<?php do_action('aesop_inside_body_top');?>
 
 	<?php if(!is_home()){ ?>
@@ -119,7 +135,7 @@
 
 	<?php if (is_front_page()) {?>
 		<div class="ase-primary-nav aesop-timeline"></div>
-	<?php } elseif (!is_home()) { ?>
+	<?php } else { ?>
 		<nav class="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>

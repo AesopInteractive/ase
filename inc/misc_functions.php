@@ -1,5 +1,73 @@
 <?php
 
+function ase_login_modal(){
+
+	ob_start();
+	do_action( 'ase_before_login_modal' );
+	?>
+	<div class="modal fade login-modal" id="ase-login" tabindex="-1" role="dialog">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-body">
+		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		          	<?php ase_login_form(); ?>
+		        </div>
+		      </div>
+		    </div>
+	  	</div>
+	<?php
+	do_action( 'ase_after_login_modal' );
+	return ob_get_clean();
+}
+
+
+// taken from EDD core and modified
+function ase_login_form(){
+
+  	global $edd_options, $post;
+
+    if ( empty( $redirect ) ) {
+        $redirect = edd_get_current_page_url();
+    }
+
+    if ( ! is_user_logged_in() ) {
+
+        // Show any error messages after form submission
+        if(function_exists('edd_print_errors')){
+        	edd_print_errors(); 
+        }
+        ?>
+        <form id="edd_login_form" class="edd_form" action="" method="post " autocomplete="off">
+            <fieldset>
+                <span><legend><?php _e( 'Login', 'ase' ); ?></legend></span>
+                <?php do_action( 'edd_login_fields_before' ); ?>
+                <p class="ase-login-user">
+                    <input name="edd_user_login" autocomplete="off" id="edd_user_login" placeholder="username" class="required" type="text" title="<?php _e( 'Username', 'ase' ); ?>"/>
+                </p>
+                <p class="ase-login-pass">
+                    <input name="edd_user_pass" autocomplete="off" id="edd_user_pass" placeholder="password" required class="password required" type="password"/>
+                </p>
+                <p class="edd-lost-password">
+                    <a itemprop="url" href="<?php echo wp_lostpassword_url(); ?>" title="<?php _e( 'Lost Password', 'ase' ); ?>">
+                        <?php _e( 'Lost Password?', 'ase' ); ?>
+                    </a>
+                </p>
+                <p>
+                    <input type="hidden" name="edd_redirect" value="<?php echo $redirect; ?>"/>
+                    <input type="hidden" name="edd_login_nonce" value="<?php echo wp_create_nonce( 'edd-login-nonce' ); ?>"/>
+                    <input type="hidden" name="edd_action" value="user_login"/>
+                    <input id="edd_login_submit" type="submit" class="edd_submit" value="<?php _e( 'Login', 'ase' ); ?>"/>
+                </p>
+                <?php do_action( 'edd_login_fields_after' ); ?>
+            </fieldset>
+        </form>
+    <?php
+
+    } else {
+            echo '<p class="edd-logged-in">' . _e( 'You are already logged in', 'ase' ) . '</p>';
+    }
+}
+
 function ase_get_social_excerpt(){
 	return get_the_excerpt() ? sprintf('%s', get_the_excerpt()) : sprintf('%s', get_bloginfo('description'));
 }
