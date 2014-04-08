@@ -165,7 +165,7 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools.</p>
 
-			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Aesop Social" title="Aesop Social Add-on"]');?>
+			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Social" title="Aesop Social Add-on"]');?>
 			<p>The Aesop Social plugin will take care of adding Facebook Open Graph meta tags, Twitter meta cards, and will also save your social link profiles, in addition Google Authorship, and Google Analytics integrations. You can take these settings with you from Aesop theme to Aesop theme.</p>
 
 			<p>All settings are entered with the Theme Customizer. While logged in, head to Appearence-->Customize, and click the Aesop Social tab.</p>
@@ -212,6 +212,44 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<dd>Enable or disable the pager that appears below the carousel.</dd>
 				</dl>
 			</div>
+
+			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Story Front" title="Aesop Story Front"]');?>
+			<p>The Aesop Story Front add-on, will allow you to choose a specific story as your sites landing page. In other words, you can choose a story to appear on the front of your site, so when someone visits your site, they see your chosen story.</p>
+
+			<p>Setup is a snap, and is covered in just a few steps below.</p>
+
+			<p class="ase-doc-note"><span class="label label-warning">warning</span>This add-on is currently <strong>only</strong> compatible with <a href="/library/jorgen">Jorgen</a>.</p>
+
+			<ul class="ase-step-list unstyled">
+				<li>
+					<img src="<?php echo ASE_URL.'/assets/img/asf-step-1.png';?>">
+					<p>Create a page in WordPress. The name doesn't matter in this application, unless you are not setting the story as the front of your site.</p>
+				</li>
+				<li>
+					<img src="<?php echo ASE_URL.'/assets/img/asf-step-2.png';?>">
+					<p>Open the Customizer panel under Appearence-->Customize, and locate the "Aesop Story Front" tab. Using the dropdown, select the story that you want to appear.</p>
+				</li>
+				<li>
+					<img src="<?php echo ASE_URL.'/assets/img/asf-step-3.png';?>">
+					<p>Now, using the next dropdown, select the page that you created in Step 1. This page will display the story you chose above.</p>
+				</li>
+				<li>
+					<img src="<?php echo ASE_URL.'/assets/img/asf-step-4.png';?>">
+					<p>While still in the Theme Customizer, and under "Static Front Page", choose the page that you created in step one. </p>
+				</li>
+			</ul>
+
+			<p>Visit the front of your site, and it shoudl now display the story that you have chosen, with the page you setup set as the front page of your site.</p>
+
+			<h3>Story Cover</h3>
+			<p>The story cover feature in Jorgen is fully compatible. After you've setup your story and page, you'll change the story cover options <strong>on that same page</strong>.</p>
+
+			<h3>Template Override (advanced)</h3>
+			<p>You can modify the template being used to display the single story. Simply copy the file asf.php from the plugin, and paste it into a child theme created for Jorgen. ASF will now use your template instead of the plugins template.</p>
+
+			<p class="ase-doc-note"><span class="label label-info">note</span>For styling purposes within a theme, the selected story front page will have a class of <code>.aesop-story-front</code> applied to the body.</p>
+
+			<p class="ase-doc-note"><span class="label label-warning">warning</span>This add-on is currently <strong>only</strong> compatible with <a href="/library/jorgen">Jorgen</a>.</p>
 
 		</div><!-- end docs right-->
 
