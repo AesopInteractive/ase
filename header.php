@@ -60,7 +60,11 @@
 
 	<?php do_action('aesop_inside_body_top');?>
 
-	<?php if(!is_home()){ ?>
+	<?php if (!is_front_page()){ ?>
+		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
+	<?php }
+
+	if(!is_home()){ ?>
 	<header id="header" class="ase-site-header">
 
 		<div class="aesop-content">

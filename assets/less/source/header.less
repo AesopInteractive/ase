@@ -1,4 +1,21 @@
 //header
+.admin-bar .ase-site-logo-tiny.visible {
+    top:36px;
+}
+.ase-site-logo-tiny {
+    position: absolute;
+    left:-10000px;
+
+    &.visible {
+        position: fixed;
+        z-index:10;
+        left:2px;
+        top:2px;
+        max-width:37px;
+        .box-shadow(0 0 6px rgba(0,0,0,0.6));
+    }
+}
+
 .page-template-front-page-php {
 
     padding-top:@ase-header-height - 32; //height of header
