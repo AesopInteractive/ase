@@ -28,6 +28,18 @@ class aseFunctions{
 		add_filter('widget_text', 'do_shortcode');
 		add_filter('edd_download_supports', array($this,'modify_edd_product_supports'));
 
+		add_action('pre_get_posts', 		array($this, 'exclude_donation'));
+
+	}
+
+	function exclude_donation($query) {
+
+		if ( ! is_admin() && $query->is_main_query() ) {
+		    if ( is_post_type_archive( 'download' ) ) {
+		
+		      $query->set('post__not_in', array(500) );
+		    }
+		}
 	}
 
 	public function setup() {
@@ -68,6 +80,15 @@ class aseFunctions{
 		register_sidebars(1, array(
 			'name' => 'Single Product Sidebar',
 			'id' => 'single_product_sb',
+	      	'before_title' => '<h3 class="widget_title">',
+	      	'after_title' => '</h3>',
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>'
+	    ));
+
+		register_sidebars(1, array(
+			'name' => 'BBPress Sidebar',
+			'id' => 'bbpress',
 	      	'before_title' => '<h3 class="widget_title">',
 	      	'after_title' => '</h3>',
 			'before_widget' => '<div class="widget">',
