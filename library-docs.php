@@ -181,6 +181,22 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<p><strong>Facebook Profile or Page URL - </strong>Provide your Facebook page or profile URL, as some Aesop themes will utilize this.</p>
 			<p><strong>Google+ Profile URL - </strong>This is helpful for validing your website when setting up a Google+ Profile.</p>
 
+			<h3>Displaying Icons</h3>
+			<p>Because we take a "universal" approach to building themes and add-ons, Aesop Social can be used within any of our themes to display social icons. It's up to the theme to determine where to display theme. With Aesop Social, your settings remain in one place, so you can take them with you to the next Aesop theme.</p>
+
+			<p>If you're a developer, there are a few hooks and filters available for you to utilize.</p>
+
+			<code>do_action('ase_addon_social_links');</code>
+			<p>Show the icons in any theme by placing the snippet above wherever you'd like the icons to appear. This is typically done within a theme template file.</p>
+
+			<code>aesop_social_message</code>
+			<p>This filter allows you to change the default "Find us" message.</p>
+
+			<code>aesop_social_link_list</code>
+			<p>This action allows you to add more links to the end of the list.</p>
+
+			<p class="ase-doc-note"><span class="label label-warning">note</span>The new hooks and filters are only available in Aesop Social 1.0.2 and up.</p>
+
 
 			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Lazy Loader" title="Aesop Lazy Loader"]');?>
 			<p>The Aesop Lazy Loader add-on will convieniently optimize the loading of the images within your site. It's important to note that this plugin doesn't have any options, and just works "automatically" with all Aesop Story Engine components.</p>
