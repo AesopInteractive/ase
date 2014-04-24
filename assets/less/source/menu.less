@@ -1,0 +1,60 @@
+.ase-menu-toggle {
+    visibility: hidden;
+    position: absolute;
+    top:10px;
+    left:10px;
+    z-index: 140;
+    color:white;
+    border:none;
+    box-shadow: none;
+    .opacity(0.65);
+
+    &:before {
+        content:'\f0ca';
+        font-family: FontAwesome;
+        margin-right:0.5rem;
+        font-size:15px;
+        position: relative;
+        top:-1px;
+    }
+
+    &:hover {
+        .opacity(1);
+        color:white;
+    }
+}
+
+.menu-open.ase {
+
+    .translate3d( @floating-menu-width, 0, 0 );
+    .transition(.5s all);
+
+    .ase-primary-nav {
+        display: block;
+        padding:0;
+        width:@floating-menu-width;
+        position: fixed;
+        left:-@floating-menu-width;
+        top:0;
+        bottom:0;
+        .opacity(1);
+        .box-shadow(inset 8px 0 8px -8px rgba(0,0,0,1.0));
+
+        &.visible {
+            .opacity(1);
+        }
+         .scroll-nav {
+            display: none;
+        }
+    }
+}
+
+// admin bar fixes
+.admin-bar {
+    .ase-menu-toggle{
+        top:20px + @adminbar;
+    }
+    &.menu-open {
+        .translate3d( @floating-menu-width, -@adminbar, 0 );
+    }
+}

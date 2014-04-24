@@ -43,6 +43,8 @@
 
 <body <?php body_class(); ?>>
 
+	<a class="btn btn-action ase-menu-toggle" href="#">Menu</a>
+
 	<?php
 
 	if ( defined('ASE_DEV')) {

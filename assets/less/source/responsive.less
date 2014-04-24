@@ -14,8 +14,7 @@
             position: absolute !important;
             left:-10000px !important;
         }
-        .ase-site-header,
-        .ase-primary-nav.visible {
+        .ase-site-header{
             position: static !important;
         }
         // content
@@ -39,6 +38,12 @@
         &.page .ase-site-header, 
         &.blog .ase-site-header {
             margin-bottom: 3rem;
+        }
+
+        &.blog {
+            #main-content {
+                padding-top:0;
+            }
         }
         .ase-site-header .ase-site-title {
             font-size: 3rem;
@@ -70,6 +75,8 @@
             margin:0 auto;
             padding:0;
         }
+
+
         .ase-site-header {
             padding:0 1rem;
             height:auto !important;
@@ -80,6 +87,7 @@
                 margin-top: 2rem;
             }
         }
+    
         //nav 
         .ase-secondary-nav {
             clear:both;
@@ -110,6 +118,19 @@
            .scroll-nav__wrapper {
                 float:none;
            }
+        }
+ 
+        .ase-menu-toggle {
+            visibility: visible;
+        }
+
+        .ase-primary-nav {
+            position: absolute;
+            //.opacity(0);
+
+            &.visible {
+                .opacity(0);
+            }
         }
 
         // welcome

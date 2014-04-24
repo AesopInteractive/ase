@@ -12,7 +12,9 @@ jQuery(document).ready(function(){
 	winHeight 		= jQuery(window).outerHeight(),
 	coverHeight     = jQuery('.ase-index-post').outerHeight(),
 	winWidth 		= jQuery(window).width(),
-	titleMarginTop 	= (winHeight / 2) - (titleHeight / 2);
+	titleMarginTop 	= (winHeight / 2) - (titleHeight / 2),
+	body 				= jQuery('body'),
+	menuToggle			= jQuery('.ase-menu-toggle');
 
 	// when the top of the nav hits the top of the screen do sticky
 	jQuery('#main-content').waypoint(function() {
@@ -38,3 +40,13 @@ jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondar
 									<li><a href="/blog">Blog</a></li>\
 									</nav>
 									');
+
+// menu toggle
+jQuery('.ase-menu-toggle').click(function(e){
+	e.preventDefault()
+	jQuery(body).toggleClass('menu-open');
+
+});
+jQuery('main').click(function(){
+	jQuery(body).removeClass('menu-open');
+});
