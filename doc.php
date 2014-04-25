@@ -365,10 +365,24 @@ get_header();
 						<dd>for self hosted videos, should the controls be visible - <code>on</code> or <code>off</code> | default is <code>off</code></dd>
 					</dl>
 					<dl class="dl-horizontal">
+						<dt>viewstart</dt>
+						<dd>for self hosted videos, automatically start the video playing once scrolled into view - <code>on</code> or <code>off</code> | default is <code>off</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
 						<dt>caption</dt>
 						<dd>optional caption for this video</dd>
 					</dl>
+					<dl class="dl-horizontal">
+						<dt>vidwidth</dt>
+						<dd>set to preserve aspect ratio of the video</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>vidheight</dt>
+						<dd>set to preserve aspect ratio of the video</dd>
+					</dl>
 				</div>
+
+				<p class="ase-doc-note"><span class="label label-primary">note</span> vidwidth and vidheight can be obtained by getting the width and height values from your embed. Because all videos are different, these will be different based on your video. These hidden attributes are also not located in the automatic generator.</p>
 
 				<?php echo do_shortcode('[aesop_timeline_stop num="Map" title="Map Component"]');?>
 
@@ -456,12 +470,24 @@ get_header();
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
-					<dt>collection</dt>
-					<dd>id of the collection</dd>
+						<dt>collection</dt>
+						<dd>id of the collection</dd>
 					</dl>
 					<dl class="dl-horizontal">
-					<dt>title</dt>
-					<dd>display an optional title for this collection</dd>
+						<dt>title</dt>
+						<dd>display an optional title for this collection</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>columns</dt>
+						<dd>how many columns of results shoudl there be - default is 2</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>limit</dt>
+						<dd>limit the number of posts shown - default is -1, or all posts</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>splash</dt>
+						<dd>enable splash mode, which pulls in the specific categories on your site, that in turn link to stories in that category</dd>
 					</dl>
 				</div>
 

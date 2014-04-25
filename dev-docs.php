@@ -13,7 +13,7 @@ get_header();
 		<div class="col-md-4">
 			<div class="ase-dev-doc-block">
 				<h3>Hooks & Filters</h3>
-				<p>ASE is loaded with hooks, filters, and more. All are documented in great detail below.<a class="ase-resource-arr" href="#scrollNav-1">&rarr;</a></p>
+				<p>ASE is loaded with hooks, filters, and more. All are documented in great detail below.<a class="ase-resource-arr" href="#scrollNav-4">&rarr;</a></p>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -25,7 +25,7 @@ get_header();
 		<div class="col-md-4">
 			<div class="ase-dev-doc-block">
 				<h3>ASE on Github</h3>
-				<p>Code is hosted on Github, where you can create bug reports, and pull requests.<a class="ase-resource-arr" href="/documentation">&rarr;</a></p>
+				<p>Code is hosted on Github, where you can create bug reports, and pull requests.<a class="ase-resource-arr" href="https://github.com/bearded-avenger/aesop-core">&rarr;</a></p>
 			</div>
 		</div>
 	</div>
