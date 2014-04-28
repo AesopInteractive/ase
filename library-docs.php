@@ -267,6 +267,40 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 			<p class="ase-doc-note"><span class="label label-warning">warning</span>This add-on is currently <strong>only</strong> compatible with <a href="/library/jorgen">Jorgen</a>.</p>
 
+			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Story Highlights" title="Aesop Story Highlights"]');?>
+			<p>Add a "cliff notes" style summary to individual stories with an easy to use admin interface.</p>
+
+			<ul class="ase-step-list unstyled">
+				<li>
+					<p>Create a post within WordPress.</p>
+				</li>
+				<li>
+					<p>Using the Story Highlights meta panel, add individual highlights with the "Add New" button.</p>
+				</li>
+				<li>
+					<p>Highlights will be displayed in the appropriate place that the theme decides.</p>
+				</li>
+			</ul>
+
+			<p>Aesop Story Highlights is compatible with all Aesop themes. All themes will display the highlights in a different fashion, so refer to each themes demo for demo of this, or reach out with a pre-sales question.</p>
+
+			<h3>Shortcode</h3>
+			<p>Optionally display highlights wherever you want them to be displayed.</p>
+			<code>[aesop_story_highlights]</code>
+
+			<h3>Filters</h3>
+			
+			<code>aesop_story_highlights_title</code>
+			<p>Filters the name of the module. Default is Story Highlights. Heres an example on how to change the title.</p>
+			<code>
+				add_filter('aesop_story_highlights_title','mychangetitle');<br />
+				function mychangetitle(){<br />
+					&nbsp;&nbsp;return 'New title';<br />
+				}
+			</code>
+
+			<h3>Override Shortcode</h3>
+			<p>The main shortcode function can be overridden by copy and pasting into a child themes functions.php file.</p>
 		</div><!-- end docs right-->
 
 	</div>
