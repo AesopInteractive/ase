@@ -33,7 +33,6 @@
 	<meta name="twitter:domain" content="<?php echo get_permalink();?>">
 	<?php echo ase_get_social_backup_img('name','twitter', 'twitter');?>
 
-
 	<meta property="og:locale" content="en_us">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/source/html5.js"></script>
