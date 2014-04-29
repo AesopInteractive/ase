@@ -187,13 +187,20 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			<p>If you're a developer, there are a few hooks and filters available for you to utilize.</p>
 
 			<code>do_action('ase_addon_social_links');</code>
-			<p>Show the icons in any theme by placing the snippet above wherever you'd like the icons to appear. This is typically done within a theme template file.</p>
+			<p>Show the icons in any theme by placing the snippet above wherever you'd like the icons to appear. This is typically done within a theme template file. Note, this is NOT necessary for themes built by Aesopinteractive L.L.C.</p>
 
 			<code>aesop_social_message</code>
 			<p>This filter allows you to change the default "Find us" message.</p>
 
 			<code>aesop_social_link_list</code>
-			<p>This action allows you to add more links to the end of the list.</p>
+			<p>This action allows you to add more links to the end of the list. Here's an example.</p>
+
+			<code>
+				add_action("aesop_social_link_list","myaddlinks");<br />
+				function myaddlinks(){<br />
+					&nbsp;&nbsp;return "&lt;a href=""&gt;New Link&lt;/a&gt;";<br />
+				}
+			</code>
 
 			<p class="ase-doc-note"><span class="label label-warning">note</span>The new hooks and filters are only available in Aesop Social 1.0.2 and up.</p>
 

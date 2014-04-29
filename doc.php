@@ -22,6 +22,7 @@ get_header();
 				<h3 class="ase-docs-left-title">Docs</h3>
 				<div class="aesop-timeline"></div>
 				<a class="btn btn-primary" href="/developers">Developer Docs <span style="position:relative;top:2px;left:3px;">&rarr;</span></a>
+				<a class="btn btn-primary" href="/product-documentation">Product Docs <span style="position:relative;left:3px;">&rarr;</span></a>
 			</div>
 			<div class="ase-docs-right">
 				<?php echo do_shortcode('[aesop_timeline_stop num="Getting Started"]');?>
