@@ -10,6 +10,7 @@
 				<ul class="ase-footer-links">
 					<li><a href="/jobs">Jobs |</a></li>
 					<li><a href="/contact">Contact |</a></li>
+					<li><a href="/feedback">Feedback |</a></li>
 					<li><a href="#top">Back to Top</a></li>
 				</ul>
 			</div>
