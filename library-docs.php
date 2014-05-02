@@ -109,7 +109,16 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<dt>Width</dt>
 				<dd>Change the width of the text content within the story.</dd>
 				</dl>
+				<dl class="dl-horizontal">
+				<dt>Enable Front Page Header</dt>
+				<dd>Creates a top bar that shows site title, and includes menu toggle to open menu.</dd>
+				</dl>
 			</div>
+
+			<h3>Front Page Header</h3>
+			<p>In Jorgen 1.0.4 you can now enable a header bar that will appear at the top of the blog listings page. This bar holds the site title, as well as a menu toggle that, when clicked, will reveal an off-canvas WordPress menu. This is the same menu that shows on single pages, and, single pages also have the menu icon to toggle the menu as well.</p>
+
+			<p>If Aesop Social add-on is activated, social links will be placed inside of this added header.</p>
 
 			<h3>Story Cover</h3>
 
