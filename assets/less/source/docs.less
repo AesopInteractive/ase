@@ -1,6 +1,3 @@
-
-// end docs 2.0
-
 .ase-docs {
 
     .ase-docs-left,
@@ -9,81 +6,6 @@
     }
     .ase-docs-left {
         width:25%;
-        background:white;
-        .ase-white-texture;
-        .ase-spiffy-box;
-
-        .ase-docs-menu {
-            list-style: none;
-            padding:0.6rem;
-            width:100%;
-            text-align: left;
-            margin:0;
-            padding:0;
-
-            li {
-                display: block;
-                margin:0 0 2rem 0;
-                position: relative;
-                line-height: 1;
-
-               &.ase-docs-title-elem{
-                    margin:0;
-                    padding:0.6rem;
-                    font-size:2rem;
-                    .ase-blue-back;
-                    color:white;
-                    .ase-speckle;
-                    z-index: 1;
-                }
-
-                a {
-                    font-size:@font-size-small;
-                    line-height: @font-size-xsmall;
-                    font-family: @font-family-sans-serif;
-                    color:inherit;
-                    margin:0.35rem 0;
-                    padding:0.2rem 0 0.2rem 0.1rem;
-                    display: block;
-                    text-transform: uppercase;
-
-                    &:hover {
-                        color:@link-color;
-                        text-decoration: none;
-                    }
-
-                }
-
-                &:first-child a {
-                    margin-top:0;
-                }
-                &:last-child a {
-                    margin-bottom: 0;
-                }
-
-                &.active a {
-                    font-weight: bold;
-                }
-            }
-            ul {
-                padding:1.4rem 1rem 0;
-                margin:0 0 3rem 0;
-
-                li {
-                    margin-bottom:0;
-                    background:none;
-
-                    &.ase-docs-title-elem a {
-                        bakground:none;
-                    }
-                }
-
-                a {
-                    background:none;
-                    font-size: @font-size-xsmall;
-                }
-            }
-        }
     }
     .ase-docs-right {
         width:75%;
@@ -119,6 +41,103 @@
 
     .ase-dev-doc-block {
         .ase-white-speckle-box;
+    }
+}
+
+.ase-docs-left {
+
+    .btn {
+        width:100%;
+        display: block;
+        margin-top:1rem;
+    }
+
+    .ase-docs-left-title {
+        margin:0;
+        padding:0.6rem;
+        font-size:2rem;
+        .ase-blue-back;
+        color:white;
+        .ase-speckle;
+        z-index: 1;
+    }
+    .aesop-timeline {
+
+        .scroll-nav{
+            background:white;
+            .ase-white-texture;
+            .ase-spiffy-box;
+
+            &.fixed {
+                position: fixed;
+                overflow: hidden;
+                width:254px;
+                top:90px;
+            }
+        }
+
+        .scroll-nav__list {
+            list-style: none;
+            padding:0.6rem;
+            width:100%;
+            text-align: left;
+            margin:0;
+
+            li {
+                display: block;
+                margin:0;
+                position: relative;
+                line-height: 1;
+
+                a {
+                    font-size:@font-size-xsmall;
+                    line-height: @font-size-xsmall;
+                    font-family: @font-family-sans-serif;
+                    color:inherit;
+                    margin:0.35rem 0;
+                    padding:0.2rem 0 0.2rem 0.1rem;
+                    display: block;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color:@link-color;
+                        text-decoration: none;
+                    }
+
+                }
+
+                &:first-child a {
+                    margin-top:0;
+                }
+                &:last-child a {
+                    margin-bottom: 0;
+                }
+
+                &.active a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.ase-docs-right {
+    .aesop-timeline-stop {
+        margin:7rem auto 2rem;
+    }
+
+    .scroll-nav__section {
+        margin-top:5rem;
+        padding-bottom:5rem;
+        border-bottom:1px solid @baseContrast;
+
+        &:first-child {
+            margin-top:0;
+
+            .aesop-timeline-stop {
+                margin-top:0;
+            }
+        }
     }
 }
 
