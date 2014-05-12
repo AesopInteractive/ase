@@ -99,7 +99,10 @@
     				if(!is_bbpress())
 	                printf('<p class="ase-sub-title">By <strong>%s</strong> on %s</p>',$name, get_the_date());
 
-			} else { ?>
+	        } elseif ('ase_docs' == get_post_type()) { ?>
+	        	<h2 class="ase-page-title">Documentation</h2>
+				<p class="ase-sub-title"><span class="ase-bold">Docs for Aesop Story Engine</span>, including all themes and add-ons.</p>
+			<?php } else { ?>
 				<h2 class="ase-page-title"><?php the_title();?></h2>
 				<?php
 

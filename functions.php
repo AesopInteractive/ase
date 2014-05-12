@@ -94,6 +94,15 @@ class aseFunctions{
 			'before_widget' => '<div class="widget">',
 			'after_widget' => '</div>'
 	    ));
+
+		register_sidebars(1, array(
+			'name' => 'Docs Sidebar',
+			'id' => 'docs_sb',
+	      	'before_title' => '<h3 class="widget_title">',
+	      	'after_title' => '</h3>',
+			'before_widget' => '<div class="doc-widget">',
+			'after_widget' => '</div>'
+	    ));
 	}
 
 	function modify_edd_product_supports($supports) {
