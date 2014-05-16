@@ -323,8 +323,12 @@ get_header();
 						<dd>path to the mp3</dd>
 					</dl>
 					<dl class="dl-horizontal">
-						<dt>viewstart</dt>
+						<dt>viewstart="on"</dt>
 						<dd>automatically start the audio once in view | default is <code>off</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>viewend="on"</dt>
+						<dd>end the audio once out of view | default is <code>off</code></dd>
 					</dl>
 				</div>
 
@@ -368,6 +372,10 @@ get_header();
 					<dl class="dl-horizontal">
 						<dt>viewstart</dt>
 						<dd>for self hosted videos, automatically start the video playing once scrolled into view - <code>on</code> or <code>off</code> | default is <code>off</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>viewend="on"</dt>
+						<dd>end the video once out of view | default is <code>off</code></dd>
 					</dl>
 					<dl class="dl-horizontal">
 						<dt>caption</dt>
