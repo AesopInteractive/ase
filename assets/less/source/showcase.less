@@ -48,11 +48,44 @@
 }
 .showcase-modal {
     .modal-dialog {
-        margin-top:200px;
+        margin-top:100px;
     }
 }
 
 .showcase-row {
     .clearfix();
     margin-bottom:2rem;
+}
+
+.showcase-modal {
+    .gform_wrapper {
+        margin:0;
+
+        .gfield {
+            margin-bottom:1rem;
+
+            &:last-child {
+                margin-bottom:0;
+            }
+        }
+    }
+    .ginput_complex{
+        input {
+            .btn;
+            .btn-primary;
+            padding-top:11px;
+            padding-bottom:11px;
+            line-height: 0;
+            font-size:1.4rem;
+        }
+    }
+    .gform_wrapper .gform_footer {
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+    .gfield_description {
+        font-size: 1.4rem;
+        font-style:italic;
+        color:fadeout(@text-color,25);
+    }
 }
