@@ -30,6 +30,8 @@ class aseFunctions{
 
 		add_action('pre_get_posts', 		array($this, 'exclude_donation'));
 
+		add_action( 'p2p_init', array($this,'connection_types') );
+
 	}
 
 	function exclude_donation($query) {
@@ -40,6 +42,14 @@ class aseFunctions{
 		      $query->set('post__not_in', array(500) );
 		    }
 		}
+	}
+
+	function connection_types(){
+	    p2p_register_connection_type( array(
+	        'name' => 'posts_to_posts',
+	        'from' => 'post',
+	        'to' => 'post'
+	    ) );
 	}
 
 	public function setup() {
