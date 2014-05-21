@@ -65,7 +65,9 @@
 		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
 	<?php }
 
-	if(!is_home()){ ?>
+	if ( ! 'ase_stories' == get_post_type() ):
+
+	if( !is_home() ){ ?>
 	<header id="header" class="ase-site-header">
 
 		<div class="aesop-content">
@@ -143,5 +145,7 @@
 		<nav class="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>
+
+	<?php endif; ?>
 
 	<main id="main-content" class="main-content clearfix">
