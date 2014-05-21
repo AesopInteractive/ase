@@ -10,7 +10,7 @@ get_header();?>
 
 	<div class="ase-section ase-features">
 		<div class="ase-content clearfix">
-			<?php echo do_shortcode('[aesop_timeline_stop num="Features" title="Aesop Story Engine Features"]');?>
+			<h2 class="aesop-timeline-stop">Aesop Story Engine Features</h2>
 			<p class="ase-italic ase-welcome-blurb"><span class="ase-bold">Choose from thirteen unique story components</span>, then arrange them in any order and customize them to weave your narrative--right in the WordPress post or page editor. Need big, eye-catching images? Handled. How about a few columns of content with images and captions? An image gallery? How about an audio podcast? They're all no problem. Full-width videos? Piece of cake. Even timelines and story collections are built in.</p>
 			<?php echo do_shortcode('[aesop_image img="/wp-content/themes/ase/assets/img/aesop-ui.png" caption="Create rich, interactive stories with our easy-to-use plugin interface right in the WordPress editor!" align="center" captionposition="left" lightbox="off" imgwidth="100%" alt="aesop story engine"]');?>
 		</div>
@@ -108,7 +108,7 @@ get_header();?>
 
 	<div id="ase-reviews" class="ase-section ase-reviews">
 		<div class="ase-content">
-			<?php echo do_shortcode('[aesop_timeline_stop num="Reviews"]');?>
+			<h2 class="aesop-timeline-stop">Reviews</h2>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
 					<img src="<?php echo ASE_URL.'/assets/img/forrester.jpeg';?>" alt="mark forrester woothemes">
@@ -179,7 +179,7 @@ get_header();?>
 
 	<div id="ase-resources" class="ase-section ase-resources">
 		<div class="ase-content">
-			<?php echo do_shortcode('[aesop_timeline_stop num="Resources"]');?>
+			<h2 class="aesop-timeline-stop">Resources</h2>
 			<div class="row">
 				<div class="col-md-4">
 					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-quick-start.png';?>" alt="resources quick start"></a>
