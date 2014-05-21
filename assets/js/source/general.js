@@ -36,7 +36,7 @@ jQuery(document).ready(function(){
 });
 
 jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondary-nav">\
-									<li><a href="/library">Library</a></li>\
+									<li><a href="/library">Add-ons</a></li>\
 									<li><a href="/documentation">Docs</a></li>\
 									<li><a href="/blog">Blog</a></li>\
 									</nav>
