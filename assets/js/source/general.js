@@ -35,13 +35,6 @@ jQuery(document).ready(function(){
 	jQuery(title).css({'margin-top':titleMarginTop});
 });
 
-jQuery('.ase-primary-nav,.ase-sticky-nav-menu').append('<nav class="ase-secondary-nav">\
-									<li><a href="/library">Add-ons</a></li>\
-									<li><a href="/documentation">Docs</a></li>\
-									<li><a href="/blog">Blog</a></li>\
-									</nav>
-									');
-
 // menu toggle
 jQuery('.ase-menu-toggle').click(function(e){
 	e.preventDefault()
