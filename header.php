@@ -65,7 +65,8 @@
 		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
 	<?php }
 
-	if ( ! 'ase_stories' == get_post_type() ):
+	// no header on single stories
+	if ( ! ('ase_stories' == get_post_type() && is_single()) ):
 
 	if( !is_home() ){ ?>
 	<header id="header" class="ase-site-header">
