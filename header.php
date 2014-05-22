@@ -66,7 +66,7 @@
 	<?php }
 
 	// no header on single stories
-	if ( ! ('ase_stories' == get_post_type() && is_single()) ):
+	if ( ! ('aesop_stories' == get_post_type() && is_single()) ):
 
 	if( !is_home() ){ ?>
 	<header id="header" class="ase-site-header">
