@@ -42,6 +42,10 @@
 
 <body <?php body_class(); ?>>
 
+	<?php
+	// no header on single stories
+	if ( ! ('aesop_stories' == get_post_type() && is_single()) ): ?>
+
 	<a class="btn btn-action ase-menu-toggle" href="#">Menu</a>
 
 	<?php
@@ -64,9 +68,6 @@
 	<?php if (!is_front_page()){ ?>
 		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
 	<?php }
-
-	// no header on single stories
-	if ( ! ('aesop_stories' == get_post_type() && is_single()) ):
 
 	if( !is_home() ){ ?>
 	<header id="header" class="ase-site-header">
