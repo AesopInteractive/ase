@@ -152,7 +152,7 @@ class aseFunctions{
 	}
 	function fb_init(){
 
-		if( is_single() && 'download' !== get_post_type() && 'aesop_stories' !== get_post_type() ){
+		if( is_single() && 'download' !== get_post_type()){
 			$img 		= wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID() ), 'large' );
 			?>
 			<script>
