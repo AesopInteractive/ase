@@ -1,4 +1,16 @@
 <?php
+function ase_check_user_role( $role, $user_id = null ) {
+
+    if ( is_numeric( $user_id ) )
+	$user = get_userdata( $user_id );
+    else
+        $user = wp_get_current_user();
+
+    if ( empty( $user ) )
+	return false;
+
+    return in_array( $role, (array) $user->roles );
+}
 
 function ase_login_modal(){
 
@@ -34,7 +46,7 @@ function ase_login_form(){
 
         // Show any error messages after form submission
         if(function_exists('edd_print_errors')){
-        	edd_print_errors(); 
+        	edd_print_errors();
         }
         ?>
         <form id="edd_login_form" class="edd_form" action="" method="post " autocomplete="off">
@@ -167,7 +179,7 @@ if (!function_exists('ase_post_author')):
 
         	<?php if (true == $extended) { ?>
 
-    
+
         		<?php echo $author;?>
         		<p class="ase-author-details"><?php echo $author_desc; ?></p>
             	<?php if( $author_out_link != '' ) {
