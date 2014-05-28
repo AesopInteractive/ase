@@ -1,7 +1,7 @@
 
 
 	</main>
-
+	<?php if ( ! ('aesop_stories' == get_post_type() && is_single()) ): ?>
 		<?php get_template_part('partials/newslettersignup');?>
 		<footer id="colophon" class="ase-site-footer" role="contentinfo">
 
@@ -17,7 +17,7 @@
 			</div>
 
 		</footer>
-
+	<?php endif; ?>
 
 		<div><?php wp_footer(); ?></div>
 
