@@ -44,3 +44,4 @@ jQuery('.ase-menu-toggle').click(function(e){
 jQuery('main').click(function(){
 	jQuery(body).removeClass('menu-open');
 });
+jQuery('#edd_purchase_214 label').append('<span class="control-indicator"></span>');

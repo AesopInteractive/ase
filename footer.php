@@ -2,7 +2,15 @@
 
 	</main>
 	<?php if ( ! ('aesop_stories' == get_post_type() && is_single()) ): ?>
-		<?php get_template_part('partials/newslettersignup');?>
+
+		<?php
+
+		if (!is_page_template('template-library-card.php')) {
+
+			get_template_part('partials/newslettersignup');
+		}
+
+		?>
 		<footer id="colophon" class="ase-site-footer" role="contentinfo">
 
 			<div class="ase-content">

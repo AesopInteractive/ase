@@ -54,6 +54,8 @@
 
 .ase-primary-nav{
 
+    .transition(opacity .25s ease-in-out);
+
     &.visible {
         position: fixed;
         .opacity(1.0);
@@ -62,7 +64,7 @@
         top:0;
         z-index: 9;
         border-top:none;
-
+        .transition(opacity .25s ease-in-out);
         a {
             padding:1rem 2rem;
         }
@@ -72,7 +74,9 @@
         }
     }
 }
-
+.ase-primary-nav.visible ~ .main-content {
+    margin-top:60px;
+}
 .admin-bar {
     .ase-primary-nav.visible {
         top:32px;
