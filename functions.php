@@ -38,8 +38,8 @@ class aseFunctions{
 
 		if ( ! is_admin() && $query->is_main_query() ) {
 		    if ( is_post_type_archive( 'download' ) ) {
-		
-		      $query->set('post__not_in', array(500) );
+				// donation and library card products
+		      	$query->set('post__not_in', array(500,1743) );
 		    }
 		}
 	}
