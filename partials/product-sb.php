@@ -10,11 +10,14 @@
 
 	if(is_single()){
 
+		global $post;
+    	$slug = $post->post_name;
+
 		if(is_active_sidebar('single_product_sb')) { dynamic_sidebar('single_product_sb'); }
 
 		?>
 		<a class="btn btn-primary ase-product-doc-link" href="/product-documentation/"><i class="asecon asecon-info-circle"></i>&nbsp; Documentation</a>
-		<a class="btn btn-primary ase-product-doc-link" href="/forums"><i class="asecon asecon-ambulance"></i>&nbsp; Support</a>
+		<a class="btn btn-primary ase-product-doc-link" href="/forum/product-support/<?php echo $slug;?>"><i class="asecon asecon-ambulance"></i>&nbsp; Support</a>
 		<?php
 	}?>
 </div>
