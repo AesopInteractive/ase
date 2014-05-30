@@ -1,5 +1,23 @@
 <?php
 
+function ase_custom_register($wp_customize){
+	if ( ! class_exists( 'ASE_WP_Customize_Textarea_Control' ) ) {
+	    class ASE_WP_Customize_Textarea_Control extends WP_Customize_Control {
+	    	public $type = 'textarea';
+
+	    	public function render_content() {
+	    		?>
+	    		<label>
+	    			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+	    			<textarea style="width: 100%;" rows="1" <?php $this->link(); ?>><?php echo esc_attr( $this->value() ); ?></textarea>
+	    		</label>
+	    		<?php
+	    	}
+	    }
+	}
+}
+add_action( 'customize_register', 'ase_custom_register' );
+
 class aseCustomizer {
 
 	// add new options to new section
@@ -7,46 +25,22 @@ class aseCustomizer {
 
 		// APPEARENCE
 		$wp_customize->add_section( 'aesop_appearence', array(
-			'title' => __( 'Aesop Options', 'aesop' ),
+			'title' => __( 'ASE Options', 'aesop' ),
 			'priority' => 100,
 			'description'	=> __('Secondary Color affects the "Load More Stories" button, and fixed post nav on single stories. Home Page Text color affects only the text on the index, or posts page.', 'aesop')
 		) );
 
-		// BG Color
-		$wp_customize->add_setting( 'ase_background_color', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage',
-			'default'	=> '#FFFFFF',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ase_background_color', array(
-			'label' => 'Background',
-			'section' => 'aesop_appearence',
-			'settings' => 'ase_background_color'
-		) ) );
-
-		// Index Text COlor
-		$wp_customize->add_setting( 'ase_text_color', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage',
-			'default'	=> '#494949',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ase_text_color', array(
-			'label' => 'Text',
-			'section' => 'aesop_appearence',
-			'settings' => 'ase_text_color'
-		) ) );
-
-		// Link COlor
-		$wp_customize->add_setting( 'ase_link_color', array(
-			'type' => 'theme_mod',
-			'transport' => 'postMessage',
-			'default'	=> '#428bca',
-		) );
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'ase_link_color', array(
-			'label' => 'Link',
-			'section' => 'aesop_appearence',
-			'settings' => 'ase_link_color'
-		) ) );
+		// library card ID
+		$wp_customize->add_setting( 'ase_librarycard_id', array(
+            'default'    =>  '',
+            'type'       => 'theme_mod',
+            'transport'  => 'postMessage'
+        ) );
+        $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_librarycard_id', array(
+            'label'    	=> __( 'Library Card ID', 'genji' ),
+            'section'  	=> 'aesop_appearence',
+            'settings' 	=> 'ase_librarycard_id',
+        ) ) );
 
 		// Checkout Page
 		$wp_customize->add_setting( 'ase_checkout_page', array(
