@@ -81,7 +81,20 @@ function ase_login_form(){
 }
 
 function ase_get_social_excerpt(){
-	return get_the_excerpt() ? sprintf('%s', get_the_excerpt()) : sprintf('%s', get_bloginfo('description'));
+
+	$page_excerpt = get_post_meta(get_the_ID(), 'ase_page_excerpt', true);
+
+
+	if ( get_the_excerpt() ){
+		$out = sprintf('%s', get_the_excerpt());
+	} elseif( $page_excerpt ) {
+		$out = sprintf('%s',$page_excerpt);
+	} else {
+
+		$out = sprintf('%s', get_bloginfo('description'));
+	}
+
+	return $out;
 }
 
 function ase_get_social_backup_img($name = '',$prop = '', $vendor = ''){
