@@ -33,6 +33,7 @@ jQuery(document).ready(function(){
 
 	// set the margin top of the title, to half of the height of the window minus half the height of the title
 	jQuery(title).css({'margin-top':titleMarginTop});
+
 });
 
 // menu toggle
@@ -45,3 +46,7 @@ jQuery('main').click(function(){
 	jQuery(body).removeClass('menu-open');
 });
 jQuery('#edd_purchase_214 label').append('<span class="control-indicator"></span>');
+
+jQuery(window).ready(function(){
+	jQuery('.ase-pretty-form input').after('<span class="control-indicator"></span>');
+})
