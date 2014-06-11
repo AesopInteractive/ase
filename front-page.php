@@ -132,12 +132,11 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-6 ase-review-col">
-					<img src="<?php echo ASE_URL.'/assets/img/knowles.png';?>" alt="chris knowles wpmu">
+					<img src="<?php echo ASE_URL.'/assets/img/bryant.jpg';?>" alt="heather bryant rebel compass">
 					<blockquote class="ase-review-quote">
-					  	<p>The ASE potentially takes WordPress’ content capabilities to a new level of maturity and sophistication. More than that though, it represents everything that WordPress stands for: democratizing publishing.</p>
+					  	<p>Aesop is an amazing opportunity for storytellers to bring their words to life with the elegant presentation and design that used to be out of reach for anyone who didn't have a room of developer's and designers at their beck and call.</p>
 					  	<footer>
-					  		<cite><strong>Chris Knowles</strong>, WPMU</cite>
-					  		<a href="http://premium.wpmudev.org/blog/aesop-story-engine-the-next-big-thing-in-wordpress/">Aesop Story Engine: The Next Big Thing For WordPress?</a>
+					  		<cite><strong>Heather Bryant</strong>, Rebel Compass</cite>
 					  	</footer>
 					</blockquote>
 				</div>
