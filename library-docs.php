@@ -174,6 +174,80 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools.</p>
 
+			<?php echo do_shortcode('[aesop_timeline_stop num="Theme | Andersen" title="Andersen"]');?>
+
+			<p>All themes include an "owners-manual." This is included within your theme download, and contains additional information specific to your theme. Please refer to your products owners-manual for detailed instructions.</p>
+
+			<h3>Options Overview</h3>
+			<div class="ase-doc-atts">
+				<dl class="dl-horizontal">
+				<dt>Background</dt>
+				<dd>Controls the background color of the site.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Text</dt>
+				<dd>This controls the overall text colors.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Link</dt>
+				<dd>This controls the overall color of the themes links.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Footer Text</dt>
+				<dd>Change the sites footer text. Some HTML is O.K..</dd>
+				</dl>
+			</div>
+
+			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools.</p>
+
+			<hr />
+
+			<?php echo do_shortcode('[aesop_timeline_stop num="Theme | Kerouac" title="Kerouac"]');?>
+
+			<p>All themes include an "owners-manual." This is included within your theme download, and contains additional information specific to your theme. Please refer to your products owners-manual for detailed instructions.</p>
+
+			<h3>Options Overview</h3>
+			<div class="ase-doc-atts">
+				<dl class="dl-horizontal">
+				<dt>Site Logo</dt>
+				<dd>Upload an optional logo to be displayed in place of the site title..</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Background</dt>
+				<dd>Controls the background color of the site.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Text</dt>
+				<dd>This controls the overall text colors.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Link</dt>
+				<dd>This controls the overall color of the themes links.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Accent Color One</dt>
+				<dd>Controls the blue accent color.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Accent Color Two</dt>
+				<dd>Controls the red accent color.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Accent Color Three</dt>
+				<dd>Controls the orange accent color.</dd>
+				</dl>
+				<dl class="dl-horizontal">
+				<dt>Footer Text</dt>
+				<dd>Change the sites footer text. Some HTML is O.K..</dd>
+				</dl>
+			</div>
+
+			<p class="ase-doc-note"><span class="label label-primary">tip</span> If you'd like to replicate the demo content, <a href="<?php echo ASE_URL.'/inc/xml/kerouac-demo-content.zip';?>">download and unzip</a> this XML file, and import file into Tools--Import within WordPress admin.</p>
+
+			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools.</p>
+
+			<hr />
+
 			<?php echo do_shortcode('[aesop_timeline_stop num="Plugin | Social" title="Aesop Social Add-on"]');?>
 			<p>The Aesop Social plugin will take care of adding Facebook Open Graph meta tags, Twitter meta cards, and will also save your social link profiles, in addition Google Authorship, and Google Analytics integrations. You can take these settings with you from Aesop theme to Aesop theme.</p>
 
