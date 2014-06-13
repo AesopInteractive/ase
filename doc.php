@@ -193,6 +193,10 @@ get_header();
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
+					<dt>height</dt>
+					<dd>optional height - default is auto</dd>
+					</dl>
+					<dl class="dl-horizontal">
 					<dt>width</dt>
 					<dd>master width of the component</dd>
 					</dl>
@@ -203,6 +207,10 @@ get_header();
 					<dl class="dl-horizontal">
 					<dt>position</dt>
 					<dd>left, center, or right - position of one column of text</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>innerposition</dt>
+					<dd>determines floating text position - example - 20px, 20px, auto, auto (see below)</dd>
 					</dl>
 					<dl class="dl-horizontal">
 					<dt>img</dt>
@@ -217,6 +225,18 @@ get_header();
 					<dd>position of the background image, if using img repeat</dd>
 					</dl>
 					<dl class="dl-horizontal">
+					<dt>floatermedia</dt>
+					<dd>path to the floater item (could be an image)</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floaterdirection</dt>
+					<dd>up or down - when you scroll, should the floater travel up, or down (parallax)</dd>
+					</dl>
+					<dl class="dl-horizontal">
+					<dt>floateroffset</dt>
+					<dd>distance offset. enter whole integers like 400 or -400</dd>
+					</dl>
+					<dl class="dl-horizontal">
 					<dt>color</dt>
 					<dd>color of the text. helpful when using colored or image background</dd>
 					</dl>
@@ -225,6 +245,8 @@ get_header();
 					<dd>color of the background</dd>
 					</dl>
 				</div>
+
+				<img src="<?php echo ASE_URL.'/assets/img/content-component-innerposition.png';?>" class="ase-img aligncenter" alt="content component inner position">
 
 				<p class="ase-doc-note"><span class="label label-primary">tip</span> Some components allow you to pass the word "content" as an option for the width. This will only work if the theme is built to support this feature. Click <a href="">here</a> if you're a developer and interested on how to make this happen.</p>
 
@@ -319,6 +341,10 @@ get_header();
 
 				<div class="ase-doc-atts">
 					<dl class="dl-horizontal">
+						<dt>title</dt>
+						<dd>optional title</dd>
+					</dl>
+					<dl class="dl-horizontal">
 						<dt>src</dt>
 						<dd>path to the mp3</dd>
 					</dl>
@@ -329,6 +355,14 @@ get_header();
 					<dl class="dl-horizontal">
 						<dt>viewend="on"</dt>
 						<dd>end the audio once out of view | default is <code>off</code></dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>loop="on"</dt>
+						<dd>automatically loop the audio</dd>
+					</dl>
+					<dl class="dl-horizontal">
+						<dt>hidden="on"</dt>
+						<dd>hides the audio player</dd>
 					</dl>
 				</div>
 
