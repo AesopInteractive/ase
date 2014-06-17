@@ -1,5 +1,8 @@
 .ase-docs {
 
+    .ase-white-back;
+    .clearfix;
+
     .ase-docs-left,
     .ase-docs-right {
         float:left;
@@ -13,132 +16,18 @@
     }
 
 }
-.ase-product-doc-link {
-    display: block;
-    width:100%;
-    margin-bottom:1.5rem;
-    text-align: left;
-
-    i{
-        .ase-orange;
-    }
-}
-
-.ase-dev-docs-welcome {
-    margin-top:3rem;
-    margin-bottom:8rem;
-    padding-bottom:8rem;
-    border-bottom:1px solid @baseContrast;
-
-    .col-md-4 {
-        &:first-of-type {
-            padding-left:0;
-        }
-        &:last-of-type {
-            padding-right:0;
-        }
-    }
-
-    .ase-dev-doc-block {
-        .ase-white-speckle-box;
-    }
-}
 
 .ase-docs-left {
 
-    .btn {
-        width:100%;
-        display: block;
-        margin-top:1rem;
-    }
+   border-right:1px solid @baseContrast;
 
-    .ase-docs-left-title {
-        margin:0;
-        padding:0.6rem;
-        font-size:2rem;
-        .ase-blue-back;
-        color:white;
-        .ase-speckle;
-        z-index: 1;
-    }
-    .aesop-timeline {
+   ul {
+        .unstyled;
+   }
 
-        .scroll-nav{
-            background:white;
-            .ase-white-texture;
-            .ase-spiffy-box;
-
-            &.fixed {
-                position: fixed;
-                overflow: hidden;
-                width:254px;
-                top:90px;
-            }
-        }
-
-        .scroll-nav__list {
-            list-style: none;
-            padding:0.6rem;
-            width:100%;
-            text-align: left;
-            margin:0;
-
-            li {
-                display: block;
-                margin:0;
-                position: relative;
-                line-height: 1;
-
-                a {
-                    font-size:@font-size-xsmall;
-                    line-height: @font-size-xsmall;
-                    font-family: @font-family-sans-serif;
-                    color:inherit;
-                    margin:0.35rem 0;
-                    padding:0.2rem 0 0.2rem 0.1rem;
-                    display: block;
-                    text-transform: uppercase;
-
-                    &:hover {
-                        color:@link-color;
-                        text-decoration: none;
-                    }
-
-                }
-
-                &:first-child a {
-                    margin-top:0;
-                }
-                &:last-child a {
-                    margin-bottom: 0;
-                }
-
-                &.active a {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
 }
-
 .ase-docs-right {
-    .aesop-timeline-stop {
-        margin:7rem auto 2rem;
-    }
 
-    .scroll-nav__section {
-        margin-top:5rem;
-        padding-bottom:5rem;
-        border-bottom:1px solid @baseContrast;
-
-        &:first-child {
-            margin-top:0;
-
-            .aesop-timeline-stop {
-                margin-top:0;
-            }
-        }
-    }
 }
 
 .ase-step-list {
