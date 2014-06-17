@@ -6,13 +6,13 @@
     .ase-docs-left,
     .ase-docs-right {
         float:left;
+        padding:2rem;
     }
     .ase-docs-left {
         width:25%;
     }
     .ase-docs-right {
         width:75%;
-        padding-left:3%;
     }
 
 }
@@ -21,8 +21,60 @@
 
    border-right:1px solid @baseContrast;
 
+   h6 {
+        margin-bottom:0.25rem;
+   }
+
    ul {
         .unstyled;
+        margin-bottom:4rem;
+
+        li {
+            font-size:@font-size-small - 2;
+            line-height:1.8;
+            padding-left:1.2rem;
+
+            a {
+                color:fadeout(@text-color,15);
+
+                &:hover {
+                    color:@link-color;
+                }
+            }
+
+            &:before {
+                font-family:'Dashicons';
+                position: relative;
+                left:-7px;
+                top:2px;
+                color:@brand-warning;
+                font-size:@font-size-small - 4;
+            }
+            // image
+            &.imagecomponent:before { content: "\f128"; } 
+            // character
+            &.charactercomponent:before { content: "\f338"; } 
+            // qupte
+            &.quotecomponent:before { content: "\f122"; } 
+            // content
+            &.contentcomponent:before { content: "\f207"; } 
+            // chapter head
+            &.chaptercomponent:before { content: "\f330"; } 
+            // parallax
+            &.parallaxcomponent:before { content: "\f168"; } 
+            // audio
+            &.audiocomponent:before { content: "\f127"; } 
+            // video
+            &.videocomponent:before { content: "\f128"; } 
+            // map
+            &.mapscomponent:before { content: "\f319"; } 
+            // video
+            &.timelinestopcomponent:before { content: "\f469"; } 
+            // document
+            &.documentcomponent:before { content: "\f123"; } 
+            // collection
+            &.collectioncomponent:before { content: "\f175"; } 
+        }
    }
 
 }
