@@ -94,6 +94,8 @@
 				<p class="ase-sub-title"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power <br />  of themes and add-ons built specifically for Aesop Story Engine.</p>
 			<?php } elseif ('ase_showcase' == get_post_type()){?>
 				<h2 class="ase-page-title">Showcase</h2>
+			<?php } elseif ('ase_docs' == get_post_type()){?>
+				<h2 class="ase-page-title">Aesop Help Center</h2>
 			<?php } elseif ( is_page_template('template-library-card.php') ) { ?>
 
 			<?php } elseif (is_home()) {?>
