@@ -172,7 +172,7 @@ if(have_posts()) : while(have_posts()) : the_post(); ?>
 			</div>
 			<p class="ase-doc-note"><span class="label label-primary">tip</span> If you'd like to replicate the demo content, import this XML file into Tools--Import within WordPress admin.</p>
 
-			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools.</p>
+			<p class="ase-doc-note"><span class="label label-warning">note</span>Developers, refer to the owners-manual in the theme download for documentation on how to set up a child theme, as well as how to utilize the included dev tools, and included filters.</p>
 
 			<?php echo do_shortcode('[aesop_timeline_stop num="Theme | Andersen" title="Andersen"]');?>
 
