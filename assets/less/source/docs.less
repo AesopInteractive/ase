@@ -25,7 +25,16 @@
 
     p {
         font-size: 1.7rem;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 1rem;
+        padding:2px 4px;
+
+        &:nth-child(even) {
+            background:@body-bg;
+        }
+        &:last-child {
+            margin-bottom:3rem;
+        }
     }
 
 }
