@@ -53,10 +53,13 @@
         .unstyled;
         margin-bottom:4rem;
 
+        &:first-of-type li{
+            padding-left:1.2rem;
+        }
+
         li {
             font-size:@font-size-small - 2;
             line-height:1.8;
-            padding-left:1.2rem;
 
             a {
                 color:fadeout(@text-color,15);
@@ -93,11 +96,13 @@
             // map
             &.mapscomponent:before { content: "\f319"; } 
             // video
-            &.timelinestopcomponent:before { content: "\f469"; } 
+            &.timelinecomponent:before { content: "\f469"; } 
             // document
             &.documentcomponent:before { content: "\f123"; } 
             // collection
-            &.collectioncomponent:before { content: "\f175"; } 
+            &.collectioncomponent:before { content: "\f175"; }
+             // gallery
+            &.gallerycomponent:before { content: "\f232"; } 
         }
    }
 
