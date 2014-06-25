@@ -40,14 +40,32 @@
 
 //breadcrumbs
 .ase-docs-breadcrumbs {
-    font-size:@font-size-small;
-    margin-bottom:1rem;
+    color:@gray;
+    font-size:@font-size-small - 2;
+    margin-bottom:1.4rem;
+    border-bottom:1px solid @baseContrast;
+    padding-bottom:1rem;
 
     a {
         color:inherit;
+        position:relative;
+        padding-left:2rem;
+
+        &:first-child{
+            &:before {
+                content:'\f015';
+                font-family: FontAwesome;
+                position:absolute;
+                left:0;
+            }
+        }
 
         &:hover {
             color:@link-color;
+
+            &:before {
+                color:@link-color;
+            }
         }
     }
 
