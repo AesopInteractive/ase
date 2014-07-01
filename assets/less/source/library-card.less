@@ -1,11 +1,21 @@
 .page-template-template-library-card-php {
     padding-top:250px;
     #main-content {
-        padding-top:3rem;
+        padding-top:0;
         padding-bottom:0;
     }
     .ase-site-header {
         height:250px;
+    }
+
+    .ase-outer-wrap {
+        background-color: @brand-primary;
+        .ase-light-texture;
+        padding:6rem 0;
+
+        .lead {
+            color:white;
+        }
     }
 }
 
@@ -138,5 +148,98 @@
     text-align: center;
     margin:3rem auto 0;
     text-shadow:0 1px 1px rgba(255,255,255,0.5);
+}
+
+// the library card
+.ase-library-card {
+    background:@body-bg;
+    border:4px solid #121212;
+    max-width:550px;
+
+    .box-shadow(0 0 8px -2px rgba(0,0,0,0.75));
+
+    &.center {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .ase-library-card-top {
+        padding:1rem;
+        border-bottom:4px solid #121212;
+
+        .clearfix();
+
+        h2 {
+            margin: 41px 11px 0 0;
+            text-align: right;
+        }
+
+        img {
+            float:left;
+            max-width:150px;
+        }
+    }
+
+    .ase-library-card-bottom,
+    .ase-library-card-middle {
+        padding:2rem;
+    }
+
+    .ase-library-card-middle {
+        .clearfix();
+        padding-bottom:0;
+        img {
+            float:left;
+            margin-right:10px;
+        }
+        h6 {
+            display: inline-block;
+            background:white;
+            margin:0;
+            line-height:1;
+            font-size:2.4rem;
+            padding:0.2rem 0.4rem;
+            color:@gray;
+        }
+    }
+
+    .ase-library-card-bottom {
+        .clearfix();
+
+        .ase-library-card-bottom-left,
+        .ase-library-card-bottom-right {
+            float:left;
+        }
+        .ase-library-card-bottom-left {
+            width:40%;
+
+            img {
+                max-width:200px;
+            }
+        }
+        .ase-library-card-bottom-right {
+            width:60%;
+            text-align:right;
+
+            span {
+                font-weight:800;
+                text-transform: uppercase;
+                margin-right:2px;
+            }
+            p {
+                margin:44px 0 0;
+                line-height: 1;
+            }
+
+            a {
+                color:@gray;
+
+                &:hover {
+                    color:@link-color;
+                }
+            }
+        }
+
+    }
 }
 
