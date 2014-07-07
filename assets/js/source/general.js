@@ -45,7 +45,7 @@ jQuery('.ase-menu-toggle').click(function(e){
 jQuery('main').click(function(){
 	jQuery(body).removeClass('menu-open');
 });
-jQuery('#edd_purchase_214 label').append('<span class="control-indicator"></span>');
+jQuery('#edd_purchase_214 label, .ase-card-signup label').append('<span class="control-indicator"></span>');
 
 jQuery(window).ready(function(){
 	jQuery('.ase-pretty-form input').after('<span class="control-indicator"></span>');

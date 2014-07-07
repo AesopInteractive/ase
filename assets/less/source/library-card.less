@@ -18,6 +18,27 @@
             color:white;
         }
     }
+
+    .ase-stacked-title {
+        margin-bottom:1rem;
+    }
+
+    .ase-stacked-title ~ p {
+        max-width:700px;
+        margin:0 auto 2rem;
+        text-align:center;
+        color:lighten(@text-color, 10%);
+    }
+
+    .ase-signup {
+        margin-bottom:3rem;
+    }
+
+    #signup {
+        .ase-stacked-title h1{
+            margin-top:1rem;
+        }
+    }
 }
 
 .ase-library-card-wrap {
@@ -30,6 +51,8 @@
             padding-left:2.4rem;
             cursor: pointer;
             font-weight:300;
+            line-height: 1.75;
+            margin-bottom:0;
             .transition(all .15s linear);
 
             &:hover {
@@ -77,11 +100,6 @@
             background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQsMUMyLjMsMSwxLDIuMywxLDRzMS4zLDMsMywzczMtMS4zLDMtM1M1LjcsMSw0LDF6Ii8+DQo8L3N2Zz4NCg==);
         }
 
-        input[type="radio"]:checked ~ .edd_price_option_name,
-        input[type="radio"]:checked ~ .edd_price_option_price {
-            font-weight:700;
-        }
-
         .edd-submit {
             .btn-red;
         }
@@ -95,6 +113,14 @@
             li {
                 text-shadow:0 1px 1px rgba(255,255,255,0.5);
                 position: relative;
+                background:none;
+                border:none;
+                padding:0;
+                font-size: @font-size-small;
+
+                &:nth-child(even) {
+                    background:none;
+                }
             }
         }
    }
@@ -108,6 +134,87 @@
             }
         }
    }
+}
+
+.ase-library-card-pricing {
+    max-width:800px;
+    margin:3rem auto 2rem;
+    .clearfix();
+
+    li {
+        padding:0.6rem;
+        width:48%;
+        float:left;
+        background: white;
+       .ase-white-texture;
+        border:1px solid gray;
+        text-align:center;
+        .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+
+        &:first-child {
+           margin-right:4%;
+        }
+
+        ul {
+            list-style: none;
+            padding:0;
+            margin:0;
+            li {
+                border:none;
+                border-bottom:1px solid #ddd;
+                box-shadow: none;
+                background:none;
+                display:block;
+                width:100%;
+                float:none;
+
+                &:nth-child(even){
+                    background:darken(white,3);
+                }
+
+                &:last-child {
+                    border-bottom:none;
+                }
+            }
+        }
+
+        .pricing-top {
+            padding:2rem;
+            border-bottom:1px solid #ddd;
+
+            .ase-card-plan-name {
+                margin:0;
+
+            }
+            .ase-card-plan-price {
+                font-size: 4rem;
+                font-weight: 600;
+                letter-spacing: -1px;
+
+                .denom {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    position: relative;
+                    top:-13px;
+                    right:2px;
+                }
+            }
+            .ase-card-plan-sub {
+                font-size: @font-size-xsmall;
+            }
+        }
+        .pricing-bottom {
+            border-top: 1px solid #ddd;
+            padding: 0 1rem;
+            box-shadow: inset 0 0 1px #fff; 
+        }
+    }
+
+    .ase-card-signup {
+        border:none;
+        margin:1rem auto;
+    }
+
 }
 
 .library-card-feature-list {
