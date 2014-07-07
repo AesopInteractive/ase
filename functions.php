@@ -39,7 +39,10 @@ class aseFunctions{
 		if ( ! is_admin() && $query->is_main_query() ) {
 		    if ( is_post_type_archive( 'download' ) ) {
 				// donation and library card products
-		      	$query->set('post__not_in', array(500,1743) );
+
+		    	$ids = get_theme_mod('ase_excluded_items');
+				$idclean = array_map('intval', explode(',', $ids));
+		      	$query->set('post__not_in', $idclean );
 		    }
 		}
 	}

@@ -42,6 +42,18 @@ class aseCustomizer {
             'settings' 	=> 'ase_librarycard_id',
         ) ) );
 
+		// library card ID
+		$wp_customize->add_setting( 'ase_excluded_items', array(
+            'default'    =>  '',
+            'type'       => 'theme_mod',
+            'transport'  => 'postMessage'
+        ) );
+        $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_excluded_items', array(
+            'label'    	=> __( 'Comma Separated Excluded IDs', 'genji' ),
+            'section'  	=> 'aesop_appearence',
+            'settings' 	=> 'ase_excluded_items',
+        ) ) );
+
 		// Checkout Page
 		$wp_customize->add_setting( 'ase_checkout_page', array(
 			'type' => 'theme_mod'
