@@ -35,5 +35,21 @@
 
 	</div>
 
+	<div class="ase-content ase-third-party">
+		<h3>Third Party Themes</h3>
+		<p>Hand-crafted themes by third party theme shops; get on board with Aesop.</p>
+		<div class="row">
+			<div class="col-sm-4">
+				col
+			</div>
+			<div class="col-sm-4">
+				col
+			</div>
+			<div class="col-sm-4">
+				col
+			</div>
+		</div>
+	</div>
+
 
 <?php get_footer();
