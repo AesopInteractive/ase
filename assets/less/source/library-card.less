@@ -137,22 +137,26 @@
 }
 
 .ase-library-card-pricing {
-    max-width:800px;
+    max-width:@ase-width;
     margin:3rem auto 2rem;
     .clearfix();
 
     li {
         padding:0.6rem;
-        width:48%;
+        width:31.999%;
         float:left;
         background: white;
        .ase-white-texture;
         border:1px solid gray;
         text-align:center;
         .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+        margin:0 1%;
 
         &:first-child {
-           margin-right:4%;
+            margin-left:0;
+        }
+        &:last-child {
+            margin-right:0;
         }
 
         ul {
