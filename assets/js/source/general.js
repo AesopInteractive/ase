@@ -49,4 +49,18 @@ jQuery('#edd_purchase_214 label, .ase-card-signup label').append('<span class="c
 
 jQuery(window).ready(function(){
 	jQuery('.ase-pretty-form input').after('<span class="control-indicator"></span>');
-})
+});
+
+// smooth scrollTop$(function() {
+  jQuery('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html,body').animate({
+          scrollTop: target.offset().top
+        }, 400);
+        return false;
+      }
+    }
+});
