@@ -149,10 +149,11 @@
 	</header>
 	<?php } ?>
 
-
+		<?php if ( ! is_page_template('template-library-card.php') ) { ?>
 		<nav class="ase-primary-nav">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary','menu_class' => 'ase-nav-menu unstyled' ) ); ?>
 		</nav>
+		<?php } ?>
 
 	<?php endif; ?>
 
