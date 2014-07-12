@@ -52,7 +52,7 @@ jQuery(window).ready(function(){
 });
 
 // smooth scrollTop$(function() {
-  jQuery('a[href*=#]:not([href=#])').click(function() {
+  jQuery('.ase-smooth-scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = jQuery(this.hash);
       target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
