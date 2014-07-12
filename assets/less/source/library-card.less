@@ -231,21 +231,30 @@
         min-height: 1px;
         padding:15px;
 
-        h3 {
-            margin-top:0;
-
-            i {
-                color:@brand-warning;
-                padding-right:4px;
-            }
-        }
-
     }
     .ase-library-card-img {
         margin-bottom:1.2rem;
     }
     .ase-library-card-text {
         .ase-white-speckle-box;
+
+        h3 {
+            margin:0;
+            height:43px;
+            padding: 1rem .5rem .4rem 6rem;
+
+            i {
+                position: absolute;
+                font-size:2rem;
+                left:0;
+                top:0;
+                border-right:1px solid gray;
+                height:43px;
+                width:50px;
+                padding:1.15rem 1.25rem .2rem;
+                .ase-orange;
+            }
+        }
         p {
             font-size:1.65rem;
             line-height: 1.9rem;
@@ -378,8 +387,51 @@
 
     }
 
-    .library-card-plan-standard {
-        
-    }
 }
 
+    .library-card-plan-standard {
+        position: relative;
+
+        .ase-popular {
+          width: 85px;
+          height: 88px;
+          overflow: hidden;
+          position: absolute;
+          top: -3px;
+          right: -3px;
+        }
+
+        .ase-popular-tag {
+            font: bold 15px Sans-Serif;
+            color: white;
+            text-align: center;
+            text-shadow: rgba(0,0,0,0.5) 0px 1px 0px;
+            .rotate(45deg);
+            position: relative;
+            padding: 7px 0;
+            left: -5px;
+            top: 15px;
+            width: 120px;
+            background:@brand-primary;
+            .box-shadow( 0px 0px 3px rgba(0,0,0,0.3) );
+        }
+
+        .ase-popular-tag:before,
+        .ase-popular-tag:after {
+            content: "";
+            border-top:   3px solid darken(@brand-primary,40);
+            border-left:  3px solid transparent;
+            border-right: 3px solid transparent;
+            position:absolute;
+            bottom: -3px;
+        }
+
+        .ase-popular-tag{
+            &:before {
+                left: 0;
+            }
+            &:after {
+                right: 0;
+            }
+        }
+    }

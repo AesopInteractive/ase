@@ -64,3 +64,6 @@ jQuery(window).ready(function(){
       }
     }
 });
+
+jQuery('.library-card-plan-standard').append('<div class="ase-popular"><div class="ase-popular-tag">popular</div></div>
+</div>​');
