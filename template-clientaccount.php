@@ -11,6 +11,8 @@ get_header();?>
 		$id = get_theme_mod('ase_librarycard_id');
 
 			if ( is_user_logged_in() ) {
+
+				$card_holder = ase_user_has_library_card( get_current_user_id(), $id );
 				?>
 				<div class="ase-tabs">
 					<ul class="nav nav-tabs">
@@ -23,9 +25,10 @@ get_header();?>
 			           		<li><a href="#commissions" data-toggle="tab"><i class="asecon asecon-user"></i>&nbsp; <?php _e('Commissions','ase');?></a></li>
 			           	<?php } ?>
 
-			           	<?php if ( function_exists('edd_has_user_purchased') && edd_has_user_purchased( get_current_user_id(), array($id) ) ) {?>
+			           	<?php if ( $card_holder ) {?>
 			           		<li><a href="#cardholder" data-toggle="tab"><i class="asecon asecon-user"></i>&nbsp; <?php _e('Library Card','ase');?></a></li>
 			           	<?php } ?>
+
 			        </ul>
 			        <div class="tab-content">
 			            <div class="tab-pane active fade in" id="purchases"><?php echo do_shortcode('[purchase_history]');?></div>
@@ -40,7 +43,7 @@ get_header();?>
 			           		</div>
 			           	<?php } ?>
 
-			           	<?php if ( function_exists('edd_has_user_purchased') && edd_has_user_purchased( get_current_user_id(), array($id) ) ) {?>
+			           	<?php if ( $card_holder ) {?>
 			           		<div class="tab-pane fade" id="cardholder">Libary Card Holder</div>
 			           	<?php } ?>
 			        </div>
