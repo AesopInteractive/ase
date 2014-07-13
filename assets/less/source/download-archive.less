@@ -1,3 +1,7 @@
+.post-type-archive-download #main-content{
+    padding-bottom:0;
+}
+
 .ase-library-welcome {
     h2 {
         .ase-red;
@@ -79,4 +83,68 @@
 .ribbon-add-ons:before,
 .ribbon-themes:after {
   right: 0;
+}
+
+// third party themes area
+.ase-third-party {
+    padding:3rem 0;
+    text-align: center;
+    background: darken(@body-bg,5);
+
+    img,
+    a {
+        .transition(all .15s ease-in-out);
+    }
+
+    .ase-product-img-link {
+        position: relative;
+        background: white;
+
+        i {
+            position: absolute;
+            left:50%;
+            top:110px;
+            .opacity(0);
+            .ase-blue;
+        }
+
+        span {
+            .opacity(0);
+            position: absolute;
+            display: block;
+            top:120px;
+            width:100%;
+            font-size: @font-size-small;
+            text-transform: uppercase;
+            letter-spacing:0.05em;
+            .ase-orange;
+            font-weight: bold;
+            text-shadow:0 1px 1px rgba(0,0,0,0.1);
+        }
+
+        &:hover {
+
+            img {
+                .opacity(0.2);
+            }
+
+            span,
+            i {
+                .opacity(1);
+            }
+        }
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+    p {
+        color:fadeout(@text-color,25);
+        margin:0 auto 3rem;
+    }
+    .btn {
+        text-align: center;
+        display: inline-block;
+        margin:1rem auto;
+    }
 }
