@@ -148,3 +148,26 @@
         margin:1rem auto;
     }
 }
+
+.ase-pagination {
+    span,a {
+        display: inline-block;
+        background:white;
+        border:1px solid gray;
+        color:fadeout(@text-color, 20);
+        padding:0.2rem 0.8rem;
+        font-size: @font-size-xsmall;
+        margin:0 2px;
+
+        &:hover,
+        &.current {
+            background:fadeout(white,50);
+            .ase-blue;
+            text-decoration: none;
+        }
+
+        &:active {
+            background:white;
+        }
+    }
+}

@@ -26,7 +26,7 @@
 				echo $i ? '</div>' : '';
 
 			?>
-			<div class="ase-pagination clearfix">
+			<div class="ase-pagination row">
 				<?php echo ase_get_pagination(); ?>
 			</div>
 		</div>
