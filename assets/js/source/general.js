@@ -45,8 +45,24 @@ jQuery('.ase-menu-toggle').click(function(e){
 jQuery('main').click(function(){
 	jQuery(body).removeClass('menu-open');
 });
-jQuery('#edd_purchase_214 label').append('<span class="control-indicator"></span>');
+jQuery('#edd_purchase_214 label, .ase-card-signup label').append('<span class="control-indicator"></span>');
 
 jQuery(window).ready(function(){
 	jQuery('.ase-pretty-form input').after('<span class="control-indicator"></span>');
-})
+});
+
+// smooth scrollTop$(function() {
+  jQuery('.ase-smooth-scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = jQuery(this.hash);
+      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        jQuery('html,body').animate({
+          scrollTop: target.offset().top
+        }, 400);
+        return false;
+      }
+    }
+});
+
+jQuery('.library-card-plan-standard').append('<div class="ase-popular"><div class="ase-popular-tag">popular</div></div></div>');

@@ -1,4 +1,20 @@
 <?php
+
+// check if user has a library card and its active
+function ase_user_has_library_card( $user_id = 0, $download_id = 0 ) {
+
+	global $user_ID;
+
+	if ( empty( $user_id ) || !function_exists('edd_has_user_purchased') )
+		return false;
+
+	if ( edd_has_user_purchased( $user_id, $download_id ) && EDD_Recurring_Customer::is_customer_active( $user_id ) )
+		return true;
+	else
+		return false;
+
+}
+
 function ase_check_user_role( $role, $user_id = null ) {
 
     if ( is_numeric( $user_id ) )
