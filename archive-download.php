@@ -41,9 +41,9 @@
 		<div class="ase-content clearfix">
 			<div class="col-sm-4">
 				<div class="ase-product-outer">
-					<a class="ase-product-img-link" href="https://upthemes.com/?ref=27" title="Visit Worldview at http://upthemes.com">
+					<a class="ase-product-img-link" href="https://upthemes.com/themes/worldview/?ref=27" title="Visit Worldview at http://upthemes.com/">
 						<i class="asecon asecon-external-link"></i>
-						<img width="360" height="220" src="<?php echo ASE_URL.'/assets/img/worldview.png';?>" class="ase-img wp-post-image" alt="01_preview1">
+						<img width="360" height="220" src="<?php echo ASE_URL.'/assets/img/worldview.png';?>" class="ase-img wp-post-image" alt="worldview aesop">
 					</a>
 					<p>Worldview - <em>UpThemes</em></p>
 				</div>
