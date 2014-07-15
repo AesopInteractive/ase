@@ -208,12 +208,12 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/documentation"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-docs.png';?>" alt="aesop resource documentation"></a>
+					<a href="/help"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-docs.png';?>" alt="aesop resource documentation"></a>
 					<div class="ase-resource">
-						<h3>Documentation</h3>
-						<p>Get Aesop Story Engine up and running in any theme with these quick video tutorials.</p>
+						<h3>Help Center</h3>
+						<p>Get Aesop Story Engine up and running in any theme with the Aesop Story Engine Help Center.</p>
 					</div>
-					<a class="btn btn-primary" href="/documentation">Read the docs</a>
+					<a class="btn btn-primary" href="/help">Read the docs</a>
 				</div>
 				<div class="col-md-4">
 					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>" alt="aesop resource developer documentation"></a>
