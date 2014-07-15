@@ -34,6 +34,11 @@ jQuery(document).ready(function(){
 	// set the margin top of the title, to half of the height of the window minus half the height of the title
 	jQuery(title).css({'margin-top':titleMarginTop});
 
+	// add a toggle button before changelog widget
+	jQuery('.single-download .edd_sl_changelog_widget').addClass('collapse').before('<a href="#edd_sl_changelog_widget" class="ase-changelog-toggle" data-toggle="collapse" data-target=".edd_sl_changelog_widget">open changelog</a>');
+	jQuery('.ase-changelog-toggle').click(function(e){
+		e.preventDefault();
+	});
 });
 
 // menu toggle
