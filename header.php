@@ -89,9 +89,11 @@
 					<li class="ase-nav-social"><a href="http://www.pinterest.com/aesopinteractiv/"><i class="asecon asecon-pinterest-square"></i></a></li>
 				</ul>
 				<p class="ase-site-sub-title-more">Check out the <a href="http://playground.aesopstories.com">demo</a>. Our site is also proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
-			<?php } elseif ('download' == get_post_type()) {?>
+			<?php } elseif (is_post_type_archive('download')) {?>
 				<h2 class="ase-page-title">Library</h2>
 				<p class="ase-sub-title"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power <br />  of themes and add-ons built specifically for Aesop Story Engine.</p>
+			<?php } elseif ('download' == get_post_type() && is_single()) {?>
+
 			<?php } elseif ('ase_showcase' == get_post_type()){?>
 				<h2 class="ase-page-title">Showcase</h2>
 			<?php } elseif ('ase_docs' == get_post_type()){?>

@@ -1,5 +1,12 @@
 <?php
 
+// remove buy button after all downlaods
+function ase_remove_dl_link(){
+	remove_action( 'edd_after_download_content', 'edd_append_purchase_link' );
+}
+add_action('init', 'ase_remove_dl_link');
+
+
 // check if user has a library card and its active
 function ase_user_has_library_card( $user_id = 0, $download_id = 0 ) {
 
