@@ -42,8 +42,6 @@
 
 <body <?php body_class(); ?>>
 
-	<a class="btn btn-primary ase-survey-hey" href="/survey"><i class="asecon asecon-bullhorn"></i> Win an iPad</a>
-
 	<?php
 	// no header on single stories
 	if ( ! ('aesop_stories' == get_post_type() && is_single()) ): ?>

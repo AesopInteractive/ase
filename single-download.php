@@ -14,15 +14,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 
 	<div class="ase-library-item-meta">
 
-		<div class="ase-stacked-title">
-			<?php the_title('<h1 class="ase-product-title">', '</h1>' );?>
-			<h2 class="tac">A theme for storytellers.</h2>
-		</div>
-
-		<div class="ase-library-btn-group" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-			<a href="" class="btn btn-primary">Test Drive</a>
-			<?php echo edd_get_purchase_link($post->ID, 'Buy Now', 'button', 'blue');?>
-		</div>
+		<?php get_template_part('partials/item-meta');?>
 	</div>
 
 	<div class="ase-library-main">
@@ -79,14 +71,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 	<?php } ?>
 
 	<div class="ase-library-item-bottom">
-		<div class="ase-stacked-title">
-			<?php the_title('<h1 class="ase-product-title">', '</h1>' );?>
-			<h2 class="tac">A theme for storytellers.</h2>
-		</div>
-		<div class="ase-library-btn-group" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-			<a href="" class="btn btn-primary">Test Drive</a>
-			<?php echo edd_get_purchase_link($post->ID, 'Buy Now', 'button', 'blue');?>
-		</div>
+		<?php get_template_part('partials/item-meta');?>
 	</div>
 
 
