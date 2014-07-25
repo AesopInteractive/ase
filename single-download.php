@@ -60,11 +60,13 @@ if(have_posts()) : while(have_posts()) : the_post();
 			<?php echo wpautop($changelog);?>
 		</div>
 
-		<?php echo the_content();?>
+		<div class="ase-item-entry">
+			<?php echo the_content();?>
 
-		<?php if ( comments_open() || get_comments_number() ) {
-			comments_template('/product-comments.php');
-		}?>
+			<?php if ( comments_open() || get_comments_number() ) {
+				comments_template('/product-comments.php');
+			}?>
+		</div>
 
 	</div>
 
