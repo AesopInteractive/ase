@@ -43,15 +43,15 @@
     right:0;
     width:100%;
     bottom:0;
-    background:fadeout(@brand-primary,7);
+    background-color:fadeout(#000,10);
+    .ase-speckle;
     border-top:1px solid fadeout(white,80);
     color:white;
     padding: 2rem 0;
     z-index: 14;
 
     div {
-        max-width:900px;
-        margin:0 auto;
+        .ase-content;
     }
 
     .edd-cart-item {
@@ -66,6 +66,15 @@
         border-radius:2px;
         font-size: 0.9em;
         text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+            background: @brand-success;
+        }
+
+        &:active {
+            background: fadeout(@brand-success,10);
+        }
 
     }
 
