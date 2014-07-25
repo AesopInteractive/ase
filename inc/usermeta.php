@@ -89,13 +89,18 @@ class aseUserMeta {
 
 
 		$meta_boxes[] = array(
-			'title' => __('Item Designed By', 'aesop-core'),
+			'title' => __('Item Details', 'aesop-core'),
 			'pages' => array('download'),
 			'context' => 'side',
 			'fields' => array(
 				array(
 					'id' 			=> 'ase_designed_by',
 					'name' 			=> __('Item Designed by (html anchor link)', 'aesop-core'),
+					'type' 			=> 'text'
+				),
+				array(
+					'id' 			=> 'ase_item_demo',
+					'name' 			=> __('Item Demo Link', 'aesop-core'),
 					'type' 			=> 'text'
 				)
 			)
