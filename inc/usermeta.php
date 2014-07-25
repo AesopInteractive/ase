@@ -58,8 +58,49 @@ class aseUserMeta {
 			)
 		);
 
-		return $meta_boxes;
+		$meta_boxes[] = array(
+			'title' => __('Item Supports', 'aesop-core'),
+			'pages' => array('download'),
+			'fields' => array(
+				array(
+					'id' 			=> 'ase_item_supports',
+					'name' 			=> __('Item Supports', 'aesop-core'),
+					'type' 			=> 'group',
+					'repeatable'     => true,
+					'repeatable_max' => 8,
+					'sortable'		=> true,
+					'fields' 		=> array(
+						array(
+							'id' 	=> 'item',
+							'name' 	=> __('Plugin Name', 'aesop-core'),
+							'type' 	=> 'text',
+							'cols'	=> 6
+						),
+						array(
+							'id' 	=> 'link',
+							'name' 	=> __('Plugin Link', 'aesop-core'),
+							'type' 	=> 'text',
+							'cols'	=> 6
+						)
+					)
+				)
+			)
+		);
 
+
+		$meta_boxes[] = array(
+			'title' => __('Item Designed By', 'aesop-core'),
+			'pages' => array('download'),
+			'context' => 'side',
+			'fields' => array(
+				array(
+					'id' 			=> 'ase_designed_by',
+					'name' 			=> __('Item Designed by (html anchor link)', 'aesop-core'),
+					'type' 			=> 'text'
+				)
+			)
+		);
+		return $meta_boxes;
 	}
 }
 new aseUserMeta;

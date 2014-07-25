@@ -9,6 +9,8 @@ if(have_posts()) : while(have_posts()) : the_post();
 	$changelog 		=   get_post_meta( get_the_ID(), '_edd_sl_changelog', true );
 	$slenabled   	= 	get_post_meta( get_the_ID(), '_edd_sl_enabled', true );
 	$slversion   	= 	get_post_meta( get_the_ID(), '_edd_sl_version', true );
+	$supported      =   get_post_meta( get_the_ID(), 'ase_item_supports', false);
+	$designed       =   get_post_meta( get_the_ID(), 'ase_designed_by', true);
 
 	?>
 
@@ -22,18 +24,37 @@ if(have_posts()) : while(have_posts()) : the_post();
 		<ul class="ase-library-item-info">
 			<?php if ( $slenabled ){ ?>
 			<li>
-				<b>Version</b>
-				<span><?php echo $slversion;?></span>
+				<b><?php echo $slversion;?></b>
+				<a class="changelog-toggle" data-toggle="collapse" data-target="#library-item-changelog">Open Changelog</a>
+			</li>
+			<?php } ?>
+			<?php if ( $designed ){ ?>
+			<li>
+				<b>Designer</b>
+				<?php echo $designed;?>
 			</li>
 			<?php } ?>
 			<li>
 				<b>Support</b>
 				<a href="/forum/product-support/<?php echo $slug;?>">Forum Link</a>
 			</li>
+			<?php if ( $supported ){ ?>
 			<li>
-				<b>Changelog</b>
-				<a class="changelog-toggle" data-toggle="collapse" data-target="#library-item-changelog">Open Changelog</a>
+				<b>Plugins Supported</b>
+				<?php
+				foreach($supported as $supports) {
+
+					$count ++;
+
+					echo '<a href="'.$supports['link'].'">'.$supports['item'].'</a>';
+
+					if ( $count != count($supported) ){
+						echo ' , ';
+					}
+				}
+				?>
 			</li>
+			<?php } ?>
 		</ul>
 		<div id="library-item-changelog" class="collapse">
 			<?php echo wpautop($changelog);?>
