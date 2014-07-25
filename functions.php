@@ -69,6 +69,8 @@ class aseFunctions{
 			'search-form', 'comment-form', 'comment-list',
 		) );
 
+		add_post_type_support( 'download', 'subtitles' );
+
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
 			'primary'   => __( 'Top primary menu', 'ase' )
