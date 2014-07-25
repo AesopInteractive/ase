@@ -36,3 +36,42 @@
         }
     }
 }
+
+.ase-cart-block {
+    position: fixed;
+    left:0;
+    right:0;
+    width:100%;
+    bottom:0;
+    background:fadeout(@brand-primary,7);
+    border-top:1px solid fadeout(white,80);
+    color:white;
+    padding: 2rem 0;
+    z-index: 14;
+
+    div {
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    .edd-cart-item {
+        display:none;
+    }
+
+    .ase-cart-checkout {
+        color:white;
+        background: fadeout(@brand-success,10);
+        padding:0.2rem 0.8rem 0.3rem;
+        text-shadow:-1px 0 1px rgba(0,0,0,0.1);
+        border-radius:2px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+
+    }
+
+    p {
+        float: right;
+        margin:0;
+        display: inline-block;
+    }
+}

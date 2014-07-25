@@ -5,12 +5,31 @@
 
 		<?php
 
+		$checkout = get_theme_mod('ase_checkout_page', false);
+
 		if (!is_page_template('template-library-card.php')) {
 
 			get_template_part('partials/newslettersignup');
 		}
 
-		?>
+		if ( !$checkout ):
+			if ( edd_get_cart_quantity() > 0) { 
+
+				$items = edd_get_cart_quantity() > 1 ? 'items' : 'item';
+			?>
+			<div id="ase-cart-block" class="ase-cart-block">
+				<div>
+					<a class="ase-cart-checkout" href="<?php echo edd_get_checkout_uri(); ?>">Checkout</a>
+		        	<p><span class="edd-cart-quantity"><?php echo edd_get_cart_quantity().'</span> '.$items; ?> - <span class="cart_item edd_subtotal">
+	<span class="subtotal">
+		<?php echo edd_currency_filter( edd_format_amount( edd_get_cart_subtotal() ) ); ?>
+	</span>
+</span></p>
+		        </div>
+			</div>
+			<?php } ?>
+		<?php endif; ?>
+
 		<footer id="colophon" class="ase-site-footer" role="contentinfo">
 
 			<div class="ase-content">
@@ -25,6 +44,7 @@
 			</div>
 
 		</footer>
+
 	<?php endif; ?>
 
 		<div><?php wp_footer(); ?></div>
