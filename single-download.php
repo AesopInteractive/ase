@@ -24,7 +24,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 		<ul class="ase-library-item-info">
 			<?php if ( $slenabled ){ ?>
 			<li>
-				<b><?php echo $slversion;?></b>
+				<b>Version <?php echo $slversion;?></b>
 				<a class="changelog-toggle" data-toggle="collapse" data-target="#library-item-changelog">Open Changelog</a>
 			</li>
 			<?php } ?>
