@@ -22,7 +22,7 @@
 	<p class="ase-comments-toggle ase-product-comments-toggle" data-target="#ase-comments" data-toggle="collapse"><i class="asecon asecon-info-circle"></i>&nbsp;&nbsp;Pre-Sales Questions <?php comments_number( ' ', '<span>( 1 )</span>', '<span>( % )</span>' ); ?></p>
 	<div id="ase-comments" class="collapse">
 		<ol class="commentlist">
-		  <?php wp_list_comments(); ?>
+		  <?php wp_list_comments(array('avatar_size' => 50)); ?>
 		</ol>
 		 <div class="navigation">
 		  <?php paginate_comments_links(); ?>
