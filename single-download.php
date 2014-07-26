@@ -42,15 +42,14 @@ if(have_posts()) : while(have_posts()) : the_post();
 			<li>
 				<b>Plugins Supported</b>
 				<?php
-				foreach($supported as $supports) {
+				$count = count($supported);
+				for($i = 0; $i < $count; $i++) {
 
-					$count ++;
+					echo '<a href="'.$supported[$i]['link'].'">'.$supported[$i]['item'].'</a>';
 
-					echo '<a href="'.$supports['link'].'">'.$supports['item'].'</a>';
-
-					if ( $count != count($supported) ){
-						echo ' , ';
-					}
+					if ($i < ($count - 1)) {
+					      echo ' , ';
+					  }
 				}
 				?>
 			</li>
