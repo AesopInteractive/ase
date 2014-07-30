@@ -12,7 +12,7 @@
 			get_template_part('partials/newslettersignup');
 		}
 
-		if ( !$checkout ):
+		if ( $checkout ):
 			if ( edd_get_cart_quantity() > 0) { 
 
 				$items = edd_get_cart_quantity() > 1 ? 'items' : 'item';
