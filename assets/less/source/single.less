@@ -1,3 +1,182 @@
+// single download
+.single-download {
+    padding-top:250px;
+
+    #main-content {
+        padding:0;
+    }
+
+    .ase-newsletter {
+        display: none;
+    }
+
+    .ase-header-show, .ase-site-header {
+        height:250px;
+    }
+
+    .ase-comments-wrap {
+        max-width:@ase-width;
+    }
+
+    .ase-stacked-title {
+        text-align: center;
+        margin:1rem auto 3rem;
+        h1 {
+            margin:0;
+        }
+    }
+    .entry-subtitle {
+        color:@brand-danger;
+        font-family: TrendSansOne,Helvetica,Arial,sans-serif;
+        line-height: 1.1;
+        font-weight: 400;
+        letter-spacing: -2.8px;
+        margin: 0;
+        font-size: 26px;
+    }
+}
+
+// single product
+.ase-library-main {
+    .ase-product-title:first-of-type {
+        margin-top:0;
+    }
+    max-width:900px;
+    margin:0 auto 7rem;
+}
+
+.ase-library-item-meta {
+    background: @brand-warning;
+    .ase-light-texture;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    margin-bottom: 9rem;
+    text-align: center;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 47%;
+        bottom: -30px;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid @brand-warning;
+        z-index: 1;
+    }
+
+
+}
+
+#library-item-changelog {
+    font-size: @font-size-small;
+}
+
+.ase-library-item-info {
+    border-top:1px solid @baseContrast;
+    border-bottom:1px solid @baseContrast;
+    margin:0 auto 2rem;
+    padding:0.6rem;
+    list-style: none;
+    .clearfix;
+
+    li {
+        float: left;
+        color:fadeout(@text-color,20);
+        border-right: 1px solid @baseContrast;
+        padding: 0.2rem 3rem;
+        font-size: @font-size-small;
+
+        a {
+            color:fadeout(@text-color,20);
+            text-decoration: underline;
+
+            &:hover {
+                color:@link-color;
+            }
+        }
+
+        &:first-child {
+            padding-left:0;
+        }
+
+        b,span {
+            display: block;
+        }
+    }
+
+    .changelog-toggle:hover {
+        cursor: pointer;
+    }
+}
+.ase-library-btn-group {
+    .clearfix;
+    max-width:600px;
+    margin:0 auto;
+
+    a {
+        display: inline-block;
+        width:46%;
+        float:left;
+        margin:0 2%;
+    }
+}
+.ase-library-item-features {
+    background: @brand-primary;
+    .ase-light-texture;
+    position: relative;
+    padding:4rem 1rem;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: TrendSlabOne,Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+        margin-bottom: .4rem;
+        color:white;
+        text-shadow: 0 1px 3px rgba(20,13,1,.5);
+    }
+
+    .ase-item-features {
+        max-width:900px;
+        margin:0 auto;
+        padding:0;
+        list-style:none;
+        .clearfix;
+
+        li {
+            float:left;
+            width:50%;
+            padding:1rem;
+            text-shadow: 0 1px 3px rgba(20,13,1,.5);
+            margin-bottom: 1rem;
+
+            h5 {
+                text-transform: uppercase;
+                font-family: TrendSlabOne,Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+                margin-bottom: .4rem;
+                color:white;
+            }
+
+            p {
+                font-size: 1.8rem;
+                line-height: 2rem;
+                color:white;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
+
+.ase-library-item-bottom {
+    position: relative;
+    padding:6rem 1rem;
+    text-align: center;
+}
+
+// post
 .ase-single-post {
     margin-top:3rem;
     h1,h2,h3,h4,h5,h6,ul, ol, p {
@@ -7,13 +186,7 @@
     }
 }
 
-// single product
-.ase-library-main {
-    .ase-product-title:first-of-type {
-        margin-top:0;
-    }
-}
-
+// contact
 .ase-contact-social {
     a {
         display: inline-block;

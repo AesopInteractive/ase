@@ -6,7 +6,7 @@ ol.commentlist li { }
 ol.commentlist li.alt { }
 ol.commentlist li.bypostauthor {}
 ol.commentlist li.byuser {}
-ol.commentlist li.comment { padding:15px;margin-bottom:20px;}
+ol.commentlist li.comment { margin:20px auto;}
 ol.commentlist li div.comment-author {font-size:@font-size-xsmall;}
 ol.commentlist li div.vcard { }
 ol.commentlist li div.vcard cite.fn { display: block; }
@@ -22,7 +22,7 @@ ol.commentlist li p { margin:0 0 0.5rem; }
 ol.commentlist li ul { list-style:square; margin:0 0 1em 2em; }
 ol.commentlist li div.reply {  }
 ol.commentlist li div.reply a { font-weight:bold;}
-ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; .avatar {max-width:50px;}}
+ol.commentlist li ul.children { list-style:none; margin:1em 0 0; text-indent:0; }
 ol.commentlist li ul.children li {}
 ol.commentlist li ul.children li.alt {}
 ol.commentlist li ul.children li.bypostauthor {}
@@ -36,7 +36,7 @@ ol.commentlist li ul.children li.depth-5 {}
 ol.commentlist li ul.children li.odd {}
 ol.commentlist li.even {  }
 ol.commentlist li.odd { }
-ol.commentlist li.parent { border-bottom:1px solid @baseContrast; }
+ol.commentlist li.parent { }
 ol.commentlist li.pingback { border-bottom:1px solid @baseContrast; padding:1em; }
 ol.commentlist li.thread-alt { }
 ol.commentlist li.thread-even {}
@@ -88,6 +88,105 @@ ol.commentlist li.comment .comment-body{
         &.ase-product-comments-toggle {
         }
     }
+
+// threaded comments
+ol.commentlist {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-indent:0;
+    font-size:@font-size-small;
+    font-family: @font-family-sans-serif;
+
+    li {
+        margin-bottom: 1.4rem;
+
+        &:first-child {
+            border-top:none;
+        }
+
+        ul {
+            list-style:square;
+            margin:0 0 1em 2em;
+        }
+
+        .comment-body {
+            background:white;
+            .ase-white-texture;
+            padding:1.6rem;
+            border-top:1px solid @baseContrast;
+            border-bottom:1px solid @baseContrast;
+        }
+
+        .children {
+            list-style:none;
+            margin:1em 0 0;
+            text-indent:0;
+        }
+
+        .comment-author {
+            font-size: @font-size-xsmall;
+        }
+
+        // post author comment
+        &.comment-author-admin .comment-body {
+            border-left: 2px solid @link-color;
+        }
+
+        .vcard {
+            .clearfix();
+
+            .fn {
+                display: block;
+
+                a {
+                    color: #000;
+                    text-transform: uppercase;
+                }
+            }
+
+            .avatar {
+                float:left;
+                margin-right:1rem;
+                border-radius:50%;
+            }
+        }
+
+        .comment-metadata {
+            line-height: 1;
+            margin-top:-30px;
+            font-size:0.9em;
+
+            a {
+                color:@brand-warning;
+
+                &:hover {
+                    color:@link-color;
+                }
+            }
+        }
+
+        .reply {
+            line-height:1;
+            a{
+                line-height: 1;
+                font-weight:700;
+                font-size:@font-size-xsmall;
+
+                &:hover {
+                    color:@link-color;
+                }
+            }
+        }
+    }
+
+    .comment-content {
+         margin:1rem 0;
+         clear: left;
+    }
+}
+
+ol.commentlist li div.vcard span.says {display: none;}
 }
 
 // product comments

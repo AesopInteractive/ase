@@ -165,6 +165,32 @@
             }
         }
 
+        // single
+        .ase-library-main {
+            .ase-item-entry,
+            .ase-library-item-info {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        .ase-library-item-meta {
+            margin-bottom: 5rem;
+        }
+
+        &.single-download {
+            .ase-comments-wrap {
+                padding-left: 0;
+                padding-right: 0;
+                max-width:100%;
+            }
+            .ase-library-main {
+                margin-bottom: 5rem;
+            }
+            .ase-library-item-bottom {
+                padding:3rem 1rem;
+            }
+        }
+
         //image caption
         .aesop-image-component .aesop-component-align-center .aesop-image-component-caption {
             width:96%;
@@ -283,6 +309,54 @@
         }
         .ase-site-header .ase-sub-title {
             font-size:2.4rem;
+        }
+
+        //single
+        .ase-library-item-meta {
+            padding:2rem 1rem;
+            margin-bottom: 2rem;
+            a {
+                display: block;
+                float:none;
+                width:100%;
+                margin:0;
+
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            &:after {
+                content:none;
+            }
+        }
+        .ase-library-item-bottom {
+            a {
+                display: block;
+                float:none;
+                width:100%;
+                margin:0;
+
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .ase-library-btn-group {
+            max-width: 100%;
+        }
+        .ase-library-item-info {
+            position: absolute;
+            left:-10000px
+        }
+        .ase-library-item-features {
+            padding:2rem 1rem;
+            li {
+                width:100%;
+                display: block;
+                float:none;
+                margin:0 auto 1rem;
+            }
         }
     }
 }

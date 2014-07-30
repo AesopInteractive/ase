@@ -1,4 +1,4 @@
-<div class="col-md-3 ase-library-sb">
+<div class="col-md-3 ase-library-sb npr">
 	<?php
 
 	if(is_active_sidebar('library_sb')) { dynamic_sidebar('library_sb'); }
