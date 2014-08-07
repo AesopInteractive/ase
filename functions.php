@@ -27,6 +27,7 @@ class aseFunctions{
 		add_filter('body_class', 			array($this,'body_class'));
 		add_filter('widget_text', 'do_shortcode');
 		add_filter('edd_download_supports', array($this,'modify_edd_product_supports'));
+		add_action('aesop_inside_body_top', array($this,'aesop_inside_body_top'));
 
 		add_action('pre_get_posts', 		array($this, 'exclude_donation'));
 
@@ -152,9 +153,16 @@ class aseFunctions{
 	}
 	function body_class($classes){
 
+		$message = get_theme_mod('ase_hey_bar');
+
 		$classes[] = 'ase';
+
+		if ( $message && !is_page('checkout') ) {
+			$classes[] = 'ase-hey-message';
+		}
 		return $classes;
 	}
+
 	function fb_init(){
 
 		if( is_single() && 'download' !== get_post_type()){
@@ -190,6 +198,19 @@ class aseFunctions{
 				});
 
 			</script>
+		<?php }
+	}
+
+	function aesop_inside_body_top(){
+
+		$message = get_theme_mod('ase_hey_bar');
+
+		if ( $message && !is_page('checkout') ) { ?>
+			<div class="ase-hey-bar">
+				<div class="ase-hey-bar-inner">
+					<?php echo $message;?>
+				</div>
+			</div>
 		<?php }
 	}
 }

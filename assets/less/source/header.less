@@ -52,6 +52,12 @@
     }
 }
 
+.admin-bar {
+    .ase-hey-bar {
+        top:32px;
+    }
+}
+
 .ase-primary-nav{
 
     .transition(opacity .25s ease-in-out);
@@ -325,4 +331,40 @@
         .opacity(.75);
     }
 
+}
+
+
+.ase-hey-message {
+    &.page-template-front-page-php {
+         padding-top:@ase-header-height - 32 + @ase-hey-bar-height; //height of header
+    }
+    &.admin-bar .ase-site-header{
+        top:32px + @ase-hey-bar-height;
+    }
+}
+.ase-hey-bar {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:@ase-hey-bar-height;
+    background:@brand-warning;
+    z-index: 9;
+    .box-shadow(0 0 16px -2px rgba(0,0,0,0.5));
+
+    .ase-hey-bar-inner {
+        padding:0.75rem 1rem 0.75rem 3.8rem;
+        color:#222;
+        font-size: @font-size-small;
+        text-shadow:0 1px 1px rgba(255,255,255,0.5);
+
+        &:before {
+            content: '\f0a1';
+            font-family: FontAwesome;
+            position: absolute;
+            left:10px;
+            top:9px;
+            color:@brand-primary;
+        }
+    }
 }

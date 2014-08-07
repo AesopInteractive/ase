@@ -65,6 +65,17 @@ class aseCustomizer {
 			'type' => 'dropdown-pages'
 		) );
 
+		$wp_customize->add_setting( 'ase_hey_bar', array(
+            'default'    =>  '',
+            'type'       => 'theme_mod',
+            'transport'  => 'postMessage'
+        ) );
+        $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_hey_bar', array(
+            'label'    	=> __( 'Global Message', 'genji' ),
+            'section'  	=> 'aesop_appearence',
+            'settings' 	=> 'ase_hey_bar',
+        ) ) );
+
 		$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 	}
