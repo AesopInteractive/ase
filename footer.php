@@ -7,11 +7,6 @@
 
 		$checkout = get_theme_mod('ase_checkout_page', false);
 
-		if (!is_page_template('template-library-card.php')) {
-
-			get_template_part('partials/newslettersignup');
-		}
-
 		if ( !is_page( $checkout ) ):
 			if ( edd_get_cart_quantity() > 0) { 
 
@@ -33,14 +28,7 @@
 		<footer id="colophon" class="ase-site-footer" role="contentinfo">
 
 			<div class="ase-content">
-				<p class="ase-copyright">&copy;2014 Aesopinteractive L.L.C.</p>
-				<p class="ase-footer-cred">Proudly built with WordPress and the Aesop Story Engine</p>
-				<ul class="ase-footer-links">
-					<li><a href="/jobs">Jobs |</a></li>
-					<li><a href="/contact">Contact |</a></li>
-					<li><a href="/feedback">Feedback |</a></li>
-					<li><a href="#top">Back to Top</a></li>
-				</ul>
+				<?php if(is_active_sidebar('footer')) { dynamic_sidebar('footer'); } ?>
 			</div>
 
 		</footer>

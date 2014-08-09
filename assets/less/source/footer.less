@@ -2,9 +2,11 @@
 .ase-site-footer {
     .ase-black-back;
     color:white;
-    border-top:7px solid white;
-    padding:2rem 0;
+    border-top:7px solid @brand-primary;
+    padding:5rem 0;
     .clearfix;
+    position: relative;
+
     p {
         font-size: @font-size-xsmall;
         margin:0;
@@ -33,6 +35,66 @@
                 color:white;
                 font-size: @font-size-xsmall;
             }
+        }
+    }
+
+    .footer-widget {
+        color:white;
+        font-size: @font-size-small;
+
+        h3 {
+            font-size: 1.2em;
+        }
+        ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        a {
+            color:white;
+
+            &:hover {
+                color:@brand-warning;
+            }
+        }
+
+        .widget_title {
+            color:white;
+            margin:0 auto 2rem;
+        }
+
+        .menu li {
+            width:50%;
+            float: left;
+        }
+    }
+
+    .ase-latest-widget {
+        p {
+            line-height:16px;
+            margin:0.75rem auto 1rem;
+        }
+
+        a {
+            font-size: 16px;
+            position: relative;
+            color:@brand-warning;
+
+            &:after {
+                content:'\f105';
+                font-family: FontAwesome;
+                position: absolute;
+                right:-1.5rem;
+                top:1px;
+
+            }
+        }
+
+        img{
+            max-width: 275px;
+            margin-top:0.75rem;
+            margin-bottom:1rem;
+            display:block;
         }
     }
 }

@@ -77,6 +77,9 @@ class aseFunctions{
 			'primary'   => __( 'Top primary menu', 'ase' )
 		) );
 
+		register_nav_menus( array(
+			'footer'   => __( 'footer menu', 'ase' )
+		) );
 		//edd
 		define('EDD_SLUG', 'library');
 
@@ -109,6 +112,16 @@ class aseFunctions{
 	      	'before_title' => '<h3 class="widget_title">',
 	      	'after_title' => '</h3>',
 			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>'
+	    ));
+
+
+		register_sidebars(1, array(
+			'name' => 'Footer Sidebar',
+			'id' => 'footer',
+	      	'before_title' => '<h3 class="widget_title">',
+	      	'after_title' => '</h3>',
+			'before_widget' => '<div class="col-md-4 footer-widget">',
 			'after_widget' => '</div>'
 	    ));
 	}
