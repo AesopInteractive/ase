@@ -9,7 +9,7 @@ class aseFunctions{
 		//define('ASE_DEV', true);
 
 		// Set some constants
-		define('ASE_VERSION', '1.5');
+		define('ASE_VERSION', '1.6');
 		define('ASE_DIR', get_template_directory());
 		define('ASE_URL', get_template_directory_uri());
 
