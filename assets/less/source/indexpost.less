@@ -16,12 +16,14 @@
     width:100%;
     position: relative;
     text-shadow: 3px 2px 4px rgba(0,0,0,.3);
+    color:white;
 
 
     .blog &, .archive & {
         .ase-entry-title {
             color:white;
             font-size:2em;
+            margin-top:16px;
         }
     }
 
@@ -31,6 +33,7 @@
         position: relative;
         z-index: 1;
         padding: 60px 0;
+        color:white;
         div {
             .aesop-content;
         }
@@ -41,6 +44,11 @@
 
         .ase-index-entry-category {
             display:block;
+
+        }
+        .ase-entry-category {
+            text-transform: uppercase;
+            font-size:1.6rem;
         }
     }
 
@@ -86,24 +94,4 @@
     .opacity(0.4);
     .transition(opacity .15s ease-in-out);
     z-index: 0;
-}
-
-.ase-load-more-posts {
-    margin:0;
-
-    a {
-        display:block;
-        width:100%;
-        //padding:1.3rem @default-padding;
-        background:@brand-primary;
-        text-align: center;
-       // .ase-small-bold;
-        color:white;
-
-        &:hover {
-            background: darken(@brand-primary,7);
-            text-decoration: none;
-            color:white;
-        }
-    }
 }
