@@ -14,7 +14,11 @@
 
 
 		endwhile;
-
+		?>
+			<div class="ase-pagination clearfix">
+				<?php echo ase_get_pagination(); ?>
+			</div>
+			<?php
 	else :
 		// If no content, include the "No posts found" template.
 		get_template_part( 'content', 'none' );
