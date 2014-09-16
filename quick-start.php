@@ -23,7 +23,7 @@ get_header();
 		<div class="ase-content clearfix">
 			<div class="ase-step-inner">
 				<h2>Enable Theme Support</h2>
-				<p>If your theme does not natively support Aesop Story Engine, add the code snippet below using Code Snippets plugin to enable Extended Style Support. This will load one CSS file for any of the items that you include in the snippet below.</p>
+				<p>If your theme does not natively support Aesop Story Engine, add the code snippet below to your functions.php file, or add using <a href="https://wordpress.org/plugins/code-snippets/">Code Snippets</a> plugin to enable Extended Style Support. This will load one CSS file for any of the items that you include in the snippet below.</p>
 				<code>add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );</code>
 			</div>
 			<?php echo do_shortcode('[aesop_image img="/wp-content/themes/ase/assets/img/theme-support-screenshot.png" align="center" captionposition="left" lightbox="off" imgwidth="100%"]');?>
