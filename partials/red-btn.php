@@ -1,4 +1,4 @@
-<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-red btn-ase-big-action">
-	<span class="ase-dl-btn-top">Download Aesop Story Engine</span>
-	<span class="ase-dl-btn-bottom">and start telling stories with wordpress</span>
-</a>
+<div class="ase-big-action">
+	<a href="http://wordpress.org/plugins/aesop-story-engine/" class="btn btn-primary dl-aesop" target="_blank"><span>Download Aesop Story Engine</span></a>
+	<a href="/library" class="btn btn-red see-library"><span>Browse Themes & Addons</span></a>
+</div>

@@ -105,6 +105,7 @@
 }
 
 // image component
+.aesop-video-component,
 .aesop-image-component {
     img{
         border:7px solid white;
@@ -144,6 +145,27 @@
             .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
             .ase-italic;
         }
+    }
+
+    iframe {
+        border:3px solid white;
+        .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+    }
+    .aesop-video-component-caption {
+        text-align: center;
+        background:#e5975a;
+        font-weight:bold;
+        font-family:@ase-source-sans;
+        font-size:1.8rem;
+        color:white;
+        padding:1rem 2rem;
+        border:3px solid white;
+        margin-top:-3px;
+        width:90% !important;
+        margin-left:auto;
+        margin-right:auto;
+        .box-shadow(0 0 6px -1px rgba(0,0,0,0.5));
+        .ase-italic;
     }
 }
 

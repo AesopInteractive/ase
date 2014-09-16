@@ -169,60 +169,70 @@ input[type="button"] {
 .btn-ase-big-action:active {
     .ase-speckle;
 }
-.btn-ase-big-action {
-    margin:3rem auto 3rem;
+.ase-big-action {
+    margin:1em auto;
     display:block;
-    max-width:660px;
-    padding:1.15rem 1.6rem;
     position: relative;
-    .ase-speckle;
-    .box-shadow(0px 3px 4px rgba(20, 13, 1, .15));
+    width:100%;
+    text-align: center;
+    .clearfix();
 
-    &:before {
-        content:'\f0ed';
-        font-family: FontAwesome;
-        position: absolute;
-        left: 0;
-        top:0;
-        height:69px;
-        font-size:3rem;
-        padding:1.4rem 2rem;
-        border-right:3px solid white;
-        text-shadow: 0 1px 3px rgba(20, 13, 1, .5);
-    }
-
-    span {
+    a {
+        width:48%;
         display: block;
-        color:white;
-        text-align: center;
-        padding-left:7rem;
+        position: relative;
+        float: left;
+        margin:0 1%;
+        font-size:1em;
+        font-family: @ase-trend-sans;
+        line-height: @font-size-base;
         text-shadow: 0 1px 3px rgba(20, 13, 1, .5);
         font-weight: normal;
-        letter-spacing: -1.65px;
-
-        &.ase-dl-btn-top {
-            font-family: @ase-trend-slab;
-            font-size:2.6rem;
-            line-height: 2.6rem;
-        }
-        &.ase-dl-btn-bottom {
-            font-family: @ase-trend-sans;
-            line-height: @font-size-base;
-        }
-    }
-
-    &:hover {
-        .ase-orange-back;
+        letter-spacing: -2px;
+        padding:.9em 0 .9em 2.9em;
         .ase-speckle;
-    }
+        .box-shadow(0px 3px 4px rgba(20, 13, 1, .15));
 
-    &:active {
-        span{
-            text-shadow:none;
+        span {
+            position: relative;
+            top:1px;
         }
-        &:before {
-            text-shadow:none;
+
+        &:hover {
+            .ase-orange-back;
+            .ase-speckle;
+        }
+
+        &:active {
+            span{
+                text-shadow:none;
+            }
+            &:before {
+                text-shadow:none;
+            }
+        }
+
+        &.dl-aesop:before,
+        &.see-library:before {
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            top:0;
+            height: 58px;
+            font-size: 1.4em;
+            padding: 0.7em 0.7em;
+            border-right:3px solid white;
+            text-shadow: 0 1px 3px rgba(20, 13, 1, .5);
+        }
+
+        &.dl-aesop:before {
+            content:'\f0ed';
+        }
+
+        &.see-library:before {
+            content:'\f07a';
+            padding:0.7em 0.8em 0.7em 0.6em;
+
         }
     }
 }
-

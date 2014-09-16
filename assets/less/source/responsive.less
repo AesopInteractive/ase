@@ -221,23 +221,12 @@
             }
         }
 
-        .btn-ase-big-action {
-            padding:0.6rem;
-            margin:1.5rem auto;
-            &:before {
-                content:none;
+        .ase-big-action {
+
+            a:before {
+                height:55px;
             }
 
-            span {
-                line-height: 1;
-                padding-left: 0;
-            }
-            .ase-dl-btn-top {
-                font-size:1.45rem;
-            }
-            .ase-dl-btn-bottom {
-                font-size:1.15rem;
-            }
         }
 
         //review
@@ -269,6 +258,19 @@
         //footer 
         .ase-site-footer {
             display: none;
+        }
+    }
+}
+
+@media(max-width:960px) {
+    .ase-big-action {
+        a {
+            display: block;
+            width:90%;
+            float:none;
+            margin-bottom:1em;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -354,6 +356,19 @@
                 display: block;
                 float:none;
                 margin:0 auto 1rem;
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .ase .ase-big-action {
+        a{
+            padding:0.6em;
+            text-align: center;
+            font-size:0.8em;
+            &:before {
+                content:none;
             }
         }
     }

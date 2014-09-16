@@ -66,7 +66,7 @@
 	<?php do_action('aesop_inside_body_top');?>
 
 	<?php if (!is_front_page()){ ?>
-		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
+		<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo-tiny" src="<?php echo ASE_URL.'/assets/img/aesop-logo.svg';?>" alt="logo"></a>
 	<?php }
 
 	if( !is_home() ){ ?>
@@ -74,11 +74,11 @@
 
 		<div class="aesop-content">
 
-			<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/logo.jpg';?>" alt="logo"></a>
+			<a href="<?php echo get_bloginfo('wpurl');?>"><img class="ase-site-logo" src="<?php echo ASE_URL.'/assets/img/aesop-logo.svg';?>" alt="logo"></a>
 
 			<?php if(is_front_page()) {?>
 				<h2 class="ase-site-title">Write stories instead of code</h2>
-				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in (almost) any WordPress theme.</p>
+				<p class="ase-sub-title"><span class="ase-italic ase-bold">Aesop Story Engine</span> is a collection of thirteen unique components wrapped in a plugin that can be used to tell rich, interactive stories in any WordPress theme.</p>
 				<?php get_template_part('partials/red-btn');?>
 				<ul class="unstyled ase-social-links">
 					<li class="ase-nav-social"><a href="http://twitter.com/aesopinteractiv"><i class="asecon asecon-twitter-square"></i></a></li>
@@ -86,7 +86,7 @@
 					<li class="ase-nav-social"><a href="https://plus.google.com/+Aesopstoryengine/"><i class="asecon asecon-google-plus-square"></i></a></li>
 					<li class="ase-nav-social"><a href="http://www.pinterest.com/aesopinteractiv/"><i class="asecon asecon-pinterest-square"></i></a></li>
 				</ul>
-				<p class="ase-site-sub-title-more">Check out the <a href="http://playground.aesopstories.com">demo</a>. Our site is also proudly built with <span class="ase-bold">Aesop Story Engine</span>.</p>
+				<p class="ase-site-sub-title-more">Check out the <a href="http://playground.aesopstories.com">demo</a>, or a <a href="http://aesopstoryseri.es/the-quiet-day/?utm_source=asecom&utm_medium=demolink&utm_campaign=Quiet%20Day%20-%20ASE%20Link" tilte="The Quiet Day - An Original Story by Aesopinteractive LLC">real story</a> built with Aesop Story Engine.</p>
 			<?php } elseif (is_post_type_archive('download')) {?>
 				<h2 class="ase-page-title">Library</h2>
 				<p class="ase-sub-title"><span class="ase-bold">Enhance your story experience</span>, by leveraging the power <br />  of themes and add-ons built specifically for Aesop Story Engine.</p>
