@@ -181,26 +181,25 @@ get_header();?>
 			<h2 class="aesop-timeline-stop">Resources</h2>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-quick-start.png';?>" alt="resources quick start"></a>
-					<div class="ase-resource">
-						<h3>Quick Start Guide</h3>
+					<a href="/quick-start-guide"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-quick-start.jpg';?>" alt="resources quick start"></a>
+					<div class="ase-comp-col">
+						<h2>Quick Start Guide</h2>
 						<p>Get Aesop Story Engine up and running in any theme with these quick tutorials.</p>
-
 					</div>
 					<a class="btn btn-primary" href="/quick-start-guide">Get started</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/themes"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-themes.png';?>" alt="aesop resources themes"></a>
-					<div class="ase-resource">
-						<h3>Aesop Themes</h3>
+					<a href="/library/category/themes"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-themes.jpg';?>" alt="aesop resources themes"></a>
+					<div class="ase-comp-col">
+						<h2>Aesop Themes</h2>
 						<p>Sure, Aesop works with any theme, but these have been built specifically for storytelling.</p>
 					</div>
 					<a class="btn btn-primary" href="/library/category/themes">See all themes</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/library/category/add-ons"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-add-ons.png';?>" alt="aesop resources add-ons"></a>
-					<div class="ase-resource">
-						<h3>Add-ons</h3>
+					<a href="/library/category/add-ons"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-addons.jpg';?>" alt="aesop resources add-ons"></a>
+					<div class="ase-comp-col">
+						<h2>Add-ons</h2>
 						<p>Plugins to add lazy image loading, and Google Analytics integration to Aesop Story Engine.</p>
 					</div>
 					<a class="btn btn-primary" href="/library/category/add-ons">View add-ons</a>
@@ -208,25 +207,25 @@ get_header();?>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
-					<a href="/help"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-docs.png';?>" alt="aesop resource documentation"></a>
-					<div class="ase-resource">
-						<h3>Help Center</h3>
+					<a href="/help"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-help.jpg';?>" alt="aesop resource documentation"></a>
+					<div class="ase-comp-col">
+						<h2>Help Center</h2>
 						<p>Get Aesop Story Engine up and running in any theme with the Aesop Story Engine Help Center.</p>
 					</div>
 					<a class="btn btn-primary" href="/help">Read the docs</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-devs.png';?>" alt="aesop resource developer documentation"></a>
-					<div class="ase-resource">
-						<h3>Developer Portal</h3>
+					<a href="/developers"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-developers.jpg';?>" alt="aesop resource developer documentation"></a>
+					<div class="ase-comp-col">
+						<h2>Developer Portal</h2>
 						<p>Interested in building themes and add-ons for Aesop? This place is just for you.</p>
 					</div>
 					<a class="btn btn-primary" href="/developers">Write some code</a>
 				</div>
 				<div class="col-md-4">
-					<a href="/blog"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-blog.png';?>" alt="aesop resource blog"></a>
-					<div class="ase-resource">
-						<h3>The Latest</h3>
+					<a href="/blog"><img class="ase-img" src="<?php echo ASE_URL.'/assets/img/resources-latest.jpg';?>" alt="aesop resource blog"></a>
+					<div class="ase-comp-col">
+						<h2>The Latest</h2>
 						<p>Catch up with the latest Aesop themes, add-ons, tips, tutorials, and original stories.</p>
 					</div>
 					<a class="btn btn-primary" href="/blog">Read the latest</a>
