@@ -37,7 +37,7 @@ class aseCustomizer {
             'transport'  => 'postMessage'
         ) );
         $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_librarycard_id', array(
-            'label'    	=> __( 'Library Card ID', 'genji' ),
+            'label'    	=> __( 'Library Card ID', 'ase' ),
             'section'  	=> 'aesop_appearence',
             'settings' 	=> 'ase_librarycard_id',
         ) ) );
@@ -49,7 +49,7 @@ class aseCustomizer {
             'transport'  => 'postMessage'
         ) );
         $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_excluded_items', array(
-            'label'    	=> __( 'Comma Separated Excluded IDs', 'genji' ),
+            'label'    	=> __( 'Comma Separated Excluded IDs', 'ase' ),
             'section'  	=> 'aesop_appearence',
             'settings' 	=> 'ase_excluded_items',
         ) ) );
@@ -71,9 +71,20 @@ class aseCustomizer {
             'transport'  => 'postMessage'
         ) );
         $wp_customize->add_control( new ASE_WP_Customize_Textarea_Control( $wp_customize, 'ase_hey_bar', array(
-            'label'    	=> __( 'Global Message', 'genji' ),
+            'label'    	=> __( 'Global Message', 'ase' ),
             'section'  	=> 'aesop_appearence',
             'settings' 	=> 'ase_hey_bar',
+        ) ) );
+
+		$wp_customize->add_setting( 'ase_theme_compare', array(
+            'default'    =>  '',
+            'type'       => 'theme_mod',
+            'transport'  => 'postMessage'
+        ) );
+        $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ase_theme_compare', array(
+            'label'    	=> __( 'Theme Comparison Chart', 'ase' ),
+            'section'  	=> 'aesop_appearence',
+            'settings' 	=> 'ase_theme_compare',
         ) ) );
 
 		$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';

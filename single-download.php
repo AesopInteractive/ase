@@ -3,6 +3,8 @@
 global $post;
 $slug = $post->post_name;
 
+$chart = get_theme_mod('ase_theme_compare');
+
 if(have_posts()) : while(have_posts()) : the_post(); 
 
 	$features 		= get_post_meta( get_the_ID(), 'ase_item_features', false);
@@ -53,11 +55,24 @@ if(have_posts()) : while(have_posts()) : the_post();
 				}
 				?>
 			</li>
+			<?php }
+
+			if ( $chart ) { ?>
+				<li>
+					<b>Compare Themes</b>
+					<a class="changelog-toggle" data-toggle="collapse" data-target="#theme-compare">Open Chart</a>
+				</li>
 			<?php } ?>
 		</ul>
 		<div id="library-item-changelog" class="collapse">
 			<?php echo wpautop($changelog);?>
 		</div>
+
+		<?php if ( $chart ) { ?>
+			<div id="theme-compare" class="collapse">
+				<img src="<?php echo $chart;?>" alt="compare themes">
+			</div>
+		<?php } ?>
 
 		<div class="ase-item-entry">
 			<?php echo the_content();?>
