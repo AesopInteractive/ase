@@ -5,6 +5,7 @@ $slug = $post->post_name;
 
 $chart = get_theme_mod('ase_theme_compare');
 
+
 if(have_posts()) : while(have_posts()) : the_post(); 
 
 	$features 		= get_post_meta( get_the_ID(), 'ase_item_features', false);
@@ -13,6 +14,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 	$slversion   	= 	get_post_meta( get_the_ID(), '_edd_sl_version', true );
 	$supported      =   get_post_meta( get_the_ID(), 'ase_item_supports', false);
 	$designed       =   get_post_meta( get_the_ID(), 'ase_designed_by', true);
+	$isaddon        = get_post_meta( get_the_ID(),'ase_is_addon', true );
 
 	?>
 
@@ -40,7 +42,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 				<b>Support</b>
 				<a href="/forum/product-support/<?php echo $slug;?>">Forum Link</a>
 			</li>
-			<?php if ( $supported ){ ?>
+			<?php if ( $supported && !$isaddon){ ?>
 			<li>
 				<b>Plugins Supported</b>
 				<?php
@@ -57,7 +59,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 			</li>
 			<?php }
 
-			if ( $chart ) { ?>
+			if ( $chart && !$isaddon) { ?>
 				<li>
 					<b>Compare Themes</b>
 					<a class="changelog-toggle" data-toggle="collapse" data-target="#theme-compare">Open Chart</a>
@@ -68,7 +70,7 @@ if(have_posts()) : while(have_posts()) : the_post();
 			<?php echo wpautop($changelog);?>
 		</div>
 
-		<?php if ( $chart ) { ?>
+		<?php if ( $chart && !$isaddon ) { ?>
 			<div id="theme-compare" class="collapse">
 				<img src="<?php echo $chart;?>" alt="compare themes">
 			</div>

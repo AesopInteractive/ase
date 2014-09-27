@@ -102,6 +102,11 @@ class aseUserMeta {
 					'id' 			=> 'ase_item_demo',
 					'name' 			=> __('Item Demo Link', 'aesop-core'),
 					'type' 			=> 'text'
+				),
+				array(
+					'id' 			=> 'ase_is_addon',
+					'name' 			=> __('Is this item an addon?', 'aesop-core'),
+					'type' 			=> 'checkbox'
 				)
 			)
 		);

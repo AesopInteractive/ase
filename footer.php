@@ -13,13 +13,13 @@
 				$items = edd_get_cart_quantity() > 1 ? 'items' : 'item';
 			?>
 			<div id="ase-cart-block" class="ase-cart-block">
-				<div>
-					<a class="ase-cart-checkout" href="<?php echo edd_get_checkout_uri(); ?>">Checkout</a>
-		        	<p><span class="edd-cart-quantity"><?php echo edd_get_cart_quantity().'</span> '.$items; ?> - <span class="cart_item edd_subtotal">
-	<span class="subtotal">
-		<?php echo edd_currency_filter( edd_format_amount( edd_get_cart_subtotal() ) ); ?>
-	</span>
-</span></p>
+						<div>
+							<a class="ase-cart-checkout" href="<?php echo edd_get_checkout_uri(); ?>">Checkout</a>
+				        	<p><span class="edd-cart-quantity"><?php echo edd_get_cart_quantity().'</span> '.$items; ?> - <span class="cart_item edd_subtotal">
+			<span class="subtotal">
+				<?php echo edd_currency_filter( edd_format_amount( edd_get_cart_subtotal() ) ); ?>
+			</span>
+		</span></p>
 		        </div>
 			</div>
 			<?php } ?>
