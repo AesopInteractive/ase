@@ -10,7 +10,7 @@ $isaddon        = get_post_meta( get_the_ID(),'ase_is_addon', true );
 	<?php if ( $demo ) {
 
 		if ( $isaddon ) { ?>
-			<a href="#ase-addon-demo" id="open-addon-demo" data-toggle="modal" class="btn btn-primary">Live Demo</a>
+			<a href="#ase-addon-demo" data-toggle="modal" class="btn open-addon-demo btn-primary">Live Demo</a>
 		<?php } else { ?>
 			<a href="<?php echo $demo;?>" class="btn btn-primary">Create Personal Demo</a>
 		<?php }
@@ -25,8 +25,10 @@ $isaddon        = get_post_meta( get_the_ID(),'ase_is_addon', true );
     	jQuery(document).ready(function() {
     		jQuery('#ase-addon-demo iframe').attr('src', '');
 
-    		jQuery('#open-addon-demo').click(function(){
-    			jQuery('#ase-addon-demo iframe').attr('src','<?php echo $demo;?>');
+    		jQuery('.open-addon-demo').each(function(){
+    			jQuery(this).on('click',function(){
+    				jQuery('#ase-addon-demo iframe').attr('src','<?php echo $demo;?>');
+    			});
     		});
 
     	});
