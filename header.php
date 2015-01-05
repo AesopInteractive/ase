@@ -130,13 +130,19 @@
 		</div>
 
 		<?php if (!is_single()){?>
-			<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="0">
-				<div style="background:url(<?php echo ASE_URL.'/assets/img/christmas-bg.jpg';?>);background-size:cover;background-position:center center;"></div>
+			<div class="ase-header-show cycle-slideshow" data-cycle-slides="> div" data-cycle-log="false" data-cycle-fx="fadeOut" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-timeout="15000">
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/04.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/02.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/03.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/06.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/05.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
 			</div>
 		<?php } else {
+
 			?>
 			<div class="ase-header-show">
-				<div class="ase-header-single-show" style="background:url(<?php echo ASE_URL.'/assets/img/christmas-bg.jpg';?>);background-size:cover;background-position:center center;"></div>
+				<div class="ase-header-single-show" style="background:url(<?php echo ASE_URL.'/assets/img/ss/01.jpg';?>);background-size:cover;background-position:center center;"></div>
 			</div>
 		<?php } ?>
 
